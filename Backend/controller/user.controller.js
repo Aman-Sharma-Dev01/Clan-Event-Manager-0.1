@@ -27,6 +27,10 @@ export const register= async (req,res)=>{
 
 
      await newUser.save()
+     if(newUser){
+        const token=  await createTokenAndSaveCookies(newUser._id,res)
+        res.status(201).json({message:"User registered successfully", newUser, token:token})
+       }
 
      if(newUser){
    
@@ -40,7 +44,7 @@ export const register= async (req,res)=>{
 export const login = async (req, resp)=>{
    
     const {email, password}=req.body;
-    
+
     try {
         if(!email || !password){
             return resp.status(400).json({error: 'Please fill all the required field'});
