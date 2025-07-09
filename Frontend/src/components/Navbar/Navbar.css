@@ -1,15 +1,18 @@
 .navbar{
     width: 100%;
-    height: 60px;
+    height: 120px;
     display: flex;
     justify-content:space-around    ;
     align-items: center;
     padding: 0 20px;
-    background-color: #b22b2e;
+    background-color: red;
 }
 .navbar h1{
     color: white;
-    font-size: 24px;
+    font-size: 60px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+   
 }   
 
 .rightThings{
@@ -19,5 +22,6 @@
 .navname{
     color: white;
     font-size: 18px;
+    
     margin-right: 20px;
 }

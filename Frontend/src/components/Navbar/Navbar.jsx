@@ -3,9 +3,9 @@ import './Navbar.css'
 const Navbar = () => {
   return (
     <div className="navbar">
-        <div className="logo"><h1>Clan Event Manager</h1></div>
+        <div className="name"><h1>Manav Rachna University</h1></div>
         <div className="rightThings">
-            <div className="navname">Welcome, User</div>
+            <div className="navname">Welcome</div>
             <div className="navname">Logout</div>
         </div>
     </div>
