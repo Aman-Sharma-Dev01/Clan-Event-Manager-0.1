@@ -1,4 +1,11 @@
-/* From Uiverse.io by nathann09 */ 
+.login-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 30px;
+}
 .form {
   background-color: #fff;
   display: block;
