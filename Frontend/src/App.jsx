@@ -1,7 +1,7 @@
 import Navbar from './components/Navbar/Navbar.jsx'
 import Login from './components/login/login.jsx'
 import Register from './components/register/register.jsx'
-
+import Dashboard from './components/Dashboard/Dashboard.jsx'
 
 
 
@@ -10,6 +10,8 @@ const App = () => {
     <div>
      
       <Navbar/>
+
+      <Dashboard/>
 
     <Register/>
 
