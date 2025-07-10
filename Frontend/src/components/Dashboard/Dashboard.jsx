@@ -1,181 +1,98 @@
-import React, { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
+import React from 'react';
 import './Dashboard.css';
 
-const ClanAdminDashboard = ({ clanName }) => {
-  const [sidebarVisible, setSidebarVisible] = useState(true);
-  const [greeting, setGreeting] = useState('');
-  const [events, setEvents] = useState([]);
-  const [newEvent, setNewEvent] = useState({ title: '', description: '', image: null });
-  const [editingId, setEditingId] = useState(null);
+const events = [
+  {
+    id: 1,
+    title: 'Phoenix Coding Challenge',
+    date: '15/01/2024',
+    participants: '23/50',
+    participation: 46,
+    status: 'upcoming',
+  },
+  {
+    id: 2,
+    title: 'Phoenix Gaming Tournament',
+    date: '10/01/2024',
+    participants: '45/48',
+    participation: 94,
+    status: 'completed',
+  },
+  {
+    id: 3,
+    title: 'Phoenix Innovation Workshop',
+    date: '25/01/2024',
+    participants: '8/25',
+    participation: 32,
+    status: 'upcoming',
+  },
+];
 
-  useEffect(() => {
-    const hour = new Date().getHours();
-    let greet = 'Welcome';
-    if (hour < 12) greet = 'Good Morning';
-    else if (hour < 18) greet = 'Good Afternoon';
-    else greet = 'Good Evening';
-    setGreeting(`${greet}, Clan Admin`);
-  }, []);
-
-  const toggleSidebar = () => {
-    setSidebarVisible(!sidebarVisible);
-  };
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setNewEvent({ ...newEvent, [name]: value });
-  };
-
-  const handleImageChange = (e) => {
-    const file = e.target.files[0];
-    if (file) {
-      const imageURL = URL.createObjectURL(file);
-      setNewEvent({ ...newEvent, image: imageURL });
-    }
-  };
-
-  const handleEventSubmit = (e) => {
-    e.preventDefault();
-    if (!newEvent.title || !newEvent.description) return;
-
-    if (editingId) {
-      const updated = events.map((event) =>
-        event.id === editingId ? { ...event, ...newEvent, edited: true } : event
-      );
-      setEvents(updated);
-      setEditingId(null);
-    } else {
-      setEvents([
-        ...events,
-        {
-          ...newEvent,
-          id: crypto.randomUUID(),
-          date: new Date().toLocaleString(),
-          edited: false,
-        },
-      ]);
-    }
-
-    setNewEvent({ title: '', description: '', image: null });
-  };
-
-  const handleEdit = (id) => {
-    const eventToEdit = events.find((event) => event.id === id);
-    if (!eventToEdit) return;
-    setNewEvent({
-      title: eventToEdit.title,
-      description: eventToEdit.description,
-      image: eventToEdit.image,
-    });
-    setEditingId(id);
-  };
-
-  const handleDelete = (id) => {
-    const updated = events.filter((event) => event.id !== id);
-    setEvents(updated);
-    if (editingId === id) {
-      setEditingId(null);
-      setNewEvent({ title: '', description: '', image: null });
-    }
-  };
-
+const Dashboard = () => {
   return (
-    <div className="dashboard-wrapper">
-      <aside className={`sidebar ${!sidebarVisible ? 'collapsed' : ''}`}>
-        <h2>{clanName} Admin</h2>
-        <ul>
-          <li>Dashboard</li>
-          <li>Post Event</li>
-          <li>Manage Events</li>
-          <li>Notifications</li>
-          <li>Logout</li>
-        </ul>
-      </aside>
+    <div className="dashboard-container">
+      <div className="dashboard-header">
+        <div>
+          <h1>Clan Admin Dashboard</h1>
+          <p>Manage your clan events and track participation</p>
+        </div>
+        <button className="create-btn">+ Create Event</button>
+      </div>
 
-      <main className={`main ${!sidebarVisible ? 'full-width' : ''}`}>
-        <header className="topbar">
-          <button onClick={toggleSidebar} className="toggle-btn">☰</button>
-          <h1>{greeting}</h1>
-        </header>
+      <div className="stats">
+        <div className="stat-card">
+          <h3>Total Events</h3>
+          <p className="stat-value">12 <span className="stat-change">+2 from last month</span></p>
+        </div>
+        <div className="stat-card">
+          <h3>Active Events</h3>
+          <p className="stat-value">3 <span className="stat-sub">Currently running</span></p>
+        </div>
+        <div className="stat-card">
+          <h3>Total Participants</h3>
+          <p className="stat-value">156 <span className="stat-change">+12% from last month</span></p>
+        </div>
+        <div className="stat-card">
+          <h3>Completion Rate</h3>
+          <p className="stat-value">85% <span className="stat-change">+5% from last month</span></p>
+        </div>
+      </div>
 
-        <section className="welcome-section">
-          <div className="welcome-text">
-            <h2>Hello, {clanName} Admin 👋</h2>
-            <p>Manage your clan's events and updates here.</p>
-          </div>
-        </section>
+      <div className="content-wrapper">
+        <div className="tabs">
+          <button className="tab active">My Events</button>
+          <button className="tab">Participants</button>
+          <button className="tab">Analytics</button>
+        </div>
 
-        <section className="panel">
-          <h3>{editingId ? 'Edit Event' : 'Post a New Event'}</h3>
-          <form onSubmit={handleEventSubmit} className="event-form">
-            <input
-              type="text"
-              name="title"
-              placeholder="Event Title"
-              value={newEvent.title}
-              onChange={handleInputChange}
-              required
-            />
-            <textarea
-              name="description"
-              placeholder="Event Description"
-              value={newEvent.description}
-              onChange={handleInputChange}
-              required
-            />
-            <input
-              type="file"
-              accept="image/*"
-              onChange={handleImageChange}
-            />
-            {newEvent.image && (
-              <img
-                src={newEvent.image}
-                alt="Preview"
-                className="preview-image"
-              />
-            )}
-            <button type="submit">
-              {editingId ? 'Update Event' : 'Post Event'}
-            </button>
-          </form>
-        </section>
-
-        <section className="panel">
-          <h3>Recently Posted Events</h3>
-          {events.length === 0 ? (
-            <p>No events posted yet.</p>
-          ) : (
-            <ul className="event-list">
-              {events.map((event) => (
-                <li key={event.id}>
-                  {event.image && (
-                    <img
-                      src={event.image}
-                      alt="Event"
-                      className="event-thumbnail"
-                    />
-                  )}
-                  <strong>{event.title}</strong><br />
-                  <small>{event.date}{event.edited ? ' (edited)' : ''}</small>
-                  <p>{event.description}</p>
-                  <div className="event-actions">
-                    <button onClick={() => handleEdit(event.id)}>✏️ Edit</button>
-                    <button onClick={() => handleDelete(event.id)}>🗑️ Delete</button>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          )}
-        </section>
-      </main>
+        <div className="events-list">
+          {events.map((event) => (
+            <div className="event-card" key={event.id}>
+              <div className="event-info">
+                <div>
+                  <h4>{event.title}</h4>
+                  <p>{event.date} • {event.participants} participants</p>
+                  <p>Participation: {event.participation}%</p>
+                </div>
+                <div className="event-actions">
+                  <span className={`status-tag ${event.status}`}>{event.status}</span>
+                  <span className="icon">👁</span>
+                  <span className="icon">✏️</span>
+                  <span className="icon">🗑️</span>
+                </div>
+              </div>
+              <div className="progress-bar">
+                <div
+                  className="progress-fill"
+                  style={{ width: `${event.participation}%` }}
+                ></div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
 
-ClanAdminDashboard.propTypes = {
-  clanName: PropTypes.string.isRequired,
-};
-
-export default ClanAdminDashboard;
+export default Dashboard;
