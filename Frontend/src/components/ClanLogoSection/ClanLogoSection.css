@@ -1,12 +1,14 @@
 .clans-section {
   padding: 2rem;
   text-align: center;
+  background-color: rgb(231, 230, 230);
 }
 
 .clans-section h2 {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 2rem;
+  color: black;
 }
 
 .clan-grid {

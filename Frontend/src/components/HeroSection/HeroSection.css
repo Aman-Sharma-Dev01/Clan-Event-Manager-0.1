@@ -1,6 +1,5 @@
 .Hero-section {
-    
-
+   
     background-blend-mode: darken;
     padding: 50px;
     text-align: center;
@@ -10,10 +9,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-   background:rgba(0 ,0 ,0 ,0.4) url(/clf_img-Photoroom.png);
+   background:rgba(0 ,0 ,0 ,0.6) url(/clf_img-Photoroom.png);
     background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center;;
 }
 .mid-part{
     display: flex;
@@ -23,7 +22,7 @@
 }
 .Hero-section h1 {
     font-size: 64px;
-    color: #fff;
+    color: white;
     margin-bottom: 10px;
    
 }
@@ -41,13 +40,14 @@
     padding: 12px 26px;
     font-size: 16px;
     color: #fff;
-    background-color: #000000;
+    background-color: #bc2027;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
+    transition: .5s ease;
 }
 .home-btns button:hover {
-    background-color: #424242;
+    background-color: #FCD200;
+    color: black;
 }
 .home-btns button:focus {
     outline: none;

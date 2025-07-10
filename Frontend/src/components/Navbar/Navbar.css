@@ -5,9 +5,13 @@
   padding: 1rem 2rem;
   background-color: #ffffff;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
-  position: sticky;
   top: 0;
   z-index: 1000;
+  position: absolute;
+  background: transparent;
+  backdrop-filter: blur(5px);
+  width: 100%;
+  height: 9.3vh;
 }
 
 .navbar-left {
@@ -17,14 +21,14 @@
 }
 
 .logo-icon {
-  color: #3b82f6;
-  font-size: 1.5rem;
+  color: #bc2027;
+  font-size: 2rem;
 }
 
 .brand-name {
   font-weight: 700;
-  font-size: 1.2rem;
-  color: #000;
+  font-size: 1.5rem;
+  color: white;
 }
 
 .navbar-center {
@@ -34,29 +38,30 @@
 
 .nav-link {
   text-decoration: none;
-  color: #374151;
+  color: white;
   font-weight: 500;
-  font-size: 1rem;
-  transition: color 0.2s ease;
+  font-size: 1.2rem;
+  transition: color 0.2s ease;;
 }
 
 .nav-link:hover {
-  color: #1f2937;
+  color: #FCD200;
 }
 
 .navbar-right .login-btn {
-  background-color: #111827;
+  background-color: #bc2027;
   color: white;
-  padding: 0.4rem 1rem;
+  padding: 0.6rem 2rem;
   border: none;
-  border-radius: 0.4rem;
   font-weight: 500;
+  font-size: 1rem;
   cursor: pointer;
   transition: background 0.3s ease;
 }
 
 .login-btn:hover {
-  background-color: #1f2937;
+  background-color: #FCD200;
+  color: black;
 }
 
 

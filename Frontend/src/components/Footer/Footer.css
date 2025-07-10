@@ -1,5 +1,5 @@
 .footer-cta {
-  background-color: #0f172a; /* Deep navy */
+  background-color: #CC014A; /* Deep navy */
   color: #ffffff;
   text-align: center;
   padding: 3rem 1.5rem;
@@ -12,8 +12,8 @@
 }
 
 .footer-cta p {
-  color: #94a3b8;
-  font-size: 1rem;
+  color: #fff;
+  font-size: 1.2rem;
   margin-bottom: 1.5rem;
 }
 
