@@ -1,0 +1,34 @@
+.footer-cta {
+  background-color: #0f172a; /* Deep navy */
+  color: #ffffff;
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+
+.footer-cta h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.footer-cta p {
+  color: #94a3b8;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-btn {
+  background-color: #f1f5f9;
+  color: #1f2937;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #e2e8f0;
+}

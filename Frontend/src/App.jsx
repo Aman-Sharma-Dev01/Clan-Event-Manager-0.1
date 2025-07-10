@@ -3,7 +3,8 @@ import Navbar from './components/Navbar/Navbar.jsx'
 // import Login from './components/login/login.jsx'
 // import Register from './components/register/register.jsx'
 // import Dashboard from './components/Dashboard/Dashboard.jsx'
-import Homepage from './components/HomePage/Homepage.jsx'
+import Homepage from './components/Homepage/Homepage.jsx'
+import Footer from './components/Footer/Footer.jsx'
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
      
       <Navbar/>
       <Homepage/>
+      <Footer/>
 
       {/* <Dashboard/> */}
 
