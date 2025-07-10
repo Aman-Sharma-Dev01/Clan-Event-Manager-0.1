@@ -4,25 +4,25 @@ import { FaUsers } from "react-icons/fa";
 
 const clans = [
   {
-    name: "Phoenix",
+    name: "Wild Cats",
     description: "Rise from the ashes",
     color: "#EF4444",
     members: 45,
   },
   {
-    name: "Dragon",
+    name: "Forest Rhinos",
     description: "Strength and wisdom",
     color: "#10B981",
     members: 52,
   },
   {
-    name: "Wolf",
+    name: "Air Falcons",
     description: "Unity and loyalty",
     color: "#3B82F6",
     members: 38,
   },
   {
-    name: "Eagle",
+    name: "Water Sharks",
     description: "Vision and freedom",
     color: "#FACC15",
     members: 41,

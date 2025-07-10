@@ -1,18 +1,32 @@
 import React from 'react'
 import Navbar from './components/Navbar/Navbar.jsx'
-// import Login from './components/login/login.jsx'
-// import Register from './components/register/register.jsx'
-// import Dashboard from './components/Dashboard/Dashboard.jsx'
+import Login from './components/login/login.jsx'
+import Register from './components/register/register.jsx'
+import Dashboard from './components/Dashboard/Dashboard.jsx'
 import Homepage from './components/Homepage/Homepage.jsx'
 import Footer from './components/Footer/Footer.jsx'
+import EventPage from './components/EventPage/EventPage.jsx'
+import {Routes,Route,useLocation} from "react-router-dom"
 
 const App = () => {
+  const location = useLocation();
+  const hideNavbarFooter = ["/login","/register","/dashboard"].includes(
+    location.pathname
+  );
   return (
     <div>
      
-      <Navbar/>
-      <Homepage/>
-      <Footer/>
+      {!hideNavbarFooter  && <Navbar/>}
+     
+    <Routes>
+     <Route exact path="/" element = {<Homepage/>} />
+       <Route exact path="/dashboard" element = {<Dashboard/>} />
+       <Route exact path="/login" element = {<Login/>} />
+       <Route exact path="/register" element = {<Register/>} />
+       <Route exact path="/events" element = {<EventPage/>} />
+      </Routes> 
+
+ {!hideNavbarFooter  && <Footer/>}
 
       {/* <Dashboard/> */}
 

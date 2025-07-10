@@ -1,6 +1,6 @@
 import React from 'react'
 import './Login.css'
-
+import { Link } from 'react-router-dom'
 const login = () => {
   return (
     <div className="login-container">
@@ -20,7 +20,7 @@ const login = () => {
   </button>
   <p className="signup-link">
     No account?{' '}
-    <a href="./">Sign up</a>
+    <Link to="/register">Sign up</Link>
   </p>
 </form>
 

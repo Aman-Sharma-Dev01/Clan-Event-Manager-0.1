@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import { FaShieldAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -11,10 +12,9 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-center">
-        <a href="#home" className="nav-link">Home</a>
-        <a href="#events" className="nav-link">Events</a>
-        <a href="#dashboard" className="nav-link">Dashboard</a>
-      
+        <Link to= "/" className="nav-link">Home</Link>
+        <Link to= "/events" className="nav-link">Events</Link>
+        <Link to= "/dashboard"className="nav-link">Dashboard</Link>
       </div>
 
 
