@@ -39,3 +39,33 @@
 .register-btn:hover {
   background: #21618c;
 }
+.event-detail-page {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+}
+
+.event-poster {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.detail-box p {
+  margin: 10px 0;
+}
+
+.register-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+

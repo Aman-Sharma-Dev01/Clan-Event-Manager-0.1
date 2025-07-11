@@ -40,7 +40,7 @@ export const AuthProvider = ({ children }) => {
           { withCredentials: true }
         );
         console.log(data);
-        setEvents(data);
+        setEvents(data.events);
       } catch (error) {
         console.log(error);
       }

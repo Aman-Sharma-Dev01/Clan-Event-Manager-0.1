@@ -29,7 +29,9 @@
   gap: 10px;
   margin-bottom: 10px;
 }
-
+.clan-default{
+  background-color: #b22b2e;
+}
 .badge {
   padding: 5px 10px;
   border-radius: 12px;
@@ -43,10 +45,16 @@
 .clan-wolf { background-color: #3498db; }
 .clan-eagle { background-color: #f39c12; }
 
-.status-upcoming { background-color: #000; }
+.status-upcoming { background-color: #0DACE5; }
 .status-completed { background-color: #7f8c8d; }
 
 .prize {
   margin-top: 10px;
   font-weight: 500;
+}
+.event-poster {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
 }
