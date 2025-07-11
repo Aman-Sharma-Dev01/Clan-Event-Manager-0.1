@@ -6,6 +6,7 @@ import userRoute from "./routes/user.route.js"
 import eventRoute from "./routes/event.route.js"
 import fileUpload from "express-fileupload";
 import { v2 as cloudinary } from "cloudinary";
+import cors from "cors";
 
 const app = express()
 dotenv.config()
@@ -18,6 +19,11 @@ app.use(express.json());
 app.use(cookieParser()); 
 
 app.use(fileUpload({ useTempFiles: true }));
+
+app.use(cors({
+  origin: "http://localhost:5173", // your React app URL
+  credentials: true               // to allow cookies with requests
+}));
 
 //DBCODE
 try {

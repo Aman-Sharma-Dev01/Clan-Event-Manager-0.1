@@ -1,6 +1,8 @@
 import mongoose, { mongo } from "mongoose";
 import { Event } from "../models/event.model.js";
 import { v2 as cloudinary } from "cloudinary";
+import { User } from "../models/user.model.js";
+
 
 export const createEvent = async (req, res) => {
   try {
@@ -97,5 +99,50 @@ export const deleteEvent = async (req, res) => {
   } catch (error) {
     console.error("Error deleting event:", error);
     return res.status(500).json({ message: "Internal server error" });
+  }
+};
+
+// 1. Get All Events (Public)
+export const getAllEvents = async (req, res) => {
+  try {
+    const events = await Event.find().sort({ Date: -1 }); // newest first
+    res.status(200).json({ events });
+  } catch (error) {
+    console.error("Error fetching all events:", error);
+    res.status(500).json({ message: "Internal server error" });
+  }
+};
+
+// 2. Get Logged-in Clan’s Events (Protected)
+export const getMyEvents = async (req, res) => {
+  try {
+    const userId = req.user._id;
+    const events = await Event.find({ createdBy: userId }).sort({ Date: -1 });
+
+    res.status(200).json({ events });
+  } catch (error) {
+    console.error("Error fetching my events:", error);
+    res.status(500).json({ message: "Internal server error" });
+  }
+};
+// controller/clan.controller.js
+
+export const getMyClanMembers = async (req, res) => {
+  try {
+    const clanName = req.user.clanName;
+
+    if (!clanName) {
+      return res.status(400).json({ message: "Clan not found for this user" });
+    }
+
+    const members = await User.find({ clanName }, "Firstname Lastname email role");
+
+    res.status(200).json({
+      clan: clanName,
+      members,
+    });
+  } catch (error) {
+    console.error("Error fetching clan members:", error);
+    res.status(500).json({ message: "Internal server error" });
   }
 };
