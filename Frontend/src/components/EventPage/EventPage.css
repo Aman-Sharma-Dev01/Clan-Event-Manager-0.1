@@ -1,131 +1,52 @@
 .events-container {
-  padding: 2rem;
-  background-color: #f5f8fc;
-  font-family: 'Segoe UI', sans-serif;
+  padding: 40px;
+  background-color: #f5f8fd;
+  font-family: sans-serif;
 }
 
-.events-container h1 {
-  font-size: 2rem;
-  margin-bottom: 0.3rem;
-}
-
-.events-container p {
-  font-size: 1rem;
-  color: #666;
-  margin-bottom: 1.5rem;
-}
-
-/* ✅ FIXED LAYOUT USING CSS GRID */
-.cards-wrapper {
+.event-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  gap: 1.2rem;
-  justify-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
 }
 
 .event-card {
-  width: 270px;
-  height: 300px;
   background: #fff;
   border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  display: flex;
-  flex-direction: column;
+  padding: 20px;
+  cursor: pointer;
   transition: transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
 }
 
 .event-card:hover {
-  transform: scale(1.01);
+  transform: scale(1.03);
 }
 
-.event-tags {
+.badge-container {
   display: flex;
-  gap: 0.4rem;
-  padding: 0.6rem 0.8rem 0;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
-.clan-tag,
-.status-tag {
-  padding: 0.2rem 0.6rem;
-  border-radius: 20px;
+.badge {
+  padding: 5px 10px;
+  border-radius: 12px;
   color: white;
-  font-weight: 600;
-  font-size: 0.65rem;
-  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
 }
 
-.clan-tag.phoenix { background-color: #e63946; }
-.clan-tag.dragon { background-color: #2a9d8f; }
-.clan-tag.wolf { background-color: #457b9d; }
-.clan-tag.eagle { background-color: #f4a261; }
+.clan-phoenix { background-color: #e74c3c; }
+.clan-dragon { background-color: #2ecc71; }
+.clan-wolf { background-color: #3498db; }
+.clan-eagle { background-color: #f39c12; }
 
-.status-tag.upcoming { background-color: #000; }
-.status-tag.completed { background-color: #888; }
-
-.event-image-placeholder {
-  height: 80px;
-  background-color: #e0e0e0;
-  background-image: url('data:image/svg+xml,%3Csvg width="100" height="100" xmlns="http://www.w3.org/2000/svg"%3E%3Ccircle cx="50" cy="50" r="45" stroke="gray" stroke-width="4" fill="none" /%3E%3Cline x1="50" y1="5" x2="50" y2="95" stroke="gray" stroke-width="2"/%3E%3Cline x1="5" y1="50" x2="95" y2="50" stroke="gray" stroke-width="2"/%3E%3C/svg%3E');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 32px 32px;
-}
-
-.event-info {
-  padding: 0.6rem 0.8rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-  flex-grow: 1;
-  justify-content: space-between;
-}
-
-.event-info h2 {
-  font-size: 0.95rem;
-  margin: 0;
-  font-weight: 600;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.desc {
-  color: #555;
-  font-size: 0.75rem;
-  line-height: 1.1;
-  max-height: 2.2em;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.event-details {
-  font-size: 0.75rem;
-  display: grid;
-  gap: 0.2rem;
-  margin-top: 0.2rem;
-  color: #444;
-}
+.status-upcoming { background-color: #000; }
+.status-completed { background-color: #7f8c8d; }
 
 .prize {
-  font-size: 0.75rem;
+  margin-top: 10px;
   font-weight: 500;
-  margin-top: 0.2rem;
-}
-
-.join-btn {
-  margin-top: 0.4rem;
-  padding: 0.4rem;
-  background-color: #111;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 0.75rem;
-  transition: background 0.3s;
-}
-
-.join-btn:hover {
-  background-color: #333;
 }

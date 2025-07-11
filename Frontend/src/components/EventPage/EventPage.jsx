@@ -1,131 +1,133 @@
-import React from 'react';
-import './EventPage.css';
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import "./EventPage.css";
 
-const events = [
+const eventData = [
   {
-    id: 'event1',
-    clan: 'Phoenix',
-    status: 'upcoming',
-    title: 'Phoenix Coding Challenge',
-    desc: 'Test your programming skills in this intense coding competition.',
-    date: '15/01/2024',
-    time: '14:00',
-    location: 'Computer Lab A',
-    participants: '23/50',
-    prize: 'Trophy + Certificate',
+    id: 1,
+    clan: "PHOENIX",
+    status: "UPCOMING",
+    title: "Phoenix Coding Challenge",
+    description: "Test your programming skills in this intense coding",
+    date: "15/01/2024",
+    time: "14:00",
+    location: "Computer Lab A",
+    participants: "23/50",
+    prize: "Trophy + Certificate"
   },
   {
-    id: 'event2',
-    clan: 'Dragon',
-    status: 'upcoming',
-    title: 'Dragon Sports Tournament',
-    desc: 'Multi-sport tournament including basketball, volleyball, and more.',
-    date: '18/01/2024',
-    time: '10:00',
-    location: 'Sports Complex',
-    participants: '31/40',
-    prize: 'Medal + Sports Gear',
+    id: 2,
+    clan: "DRAGON",
+    status: "UPCOMING",
+    title: "Dragon Sports Tournament",
+    description: "Multi-sport tournament including basketball",
+    date: "18/01/2024",
+    time: "10:00",
+    location: "Sports Complex",
+    participants: "31/40",
+    prize: "Medal + Sports Gear"
+  },
+    {
+    id: 3,
+    clan: "WOLF",
+    status: "UPCOMING",
+    title: "Wolf Art Exhibition",
+    description: "Showcase your creativity in painting, sculpture, and",
+    date: "20/01/2024",
+    time: "16:00",
+    location: "Art Gallery",
+    participants: "18/30",
+    prize: "Art Supplies"
   },
   {
-    id: 'event3',
-    clan: 'Wolf',
-    status: 'upcoming',
-    title: 'Wolf Art Exhibition',
-    desc: 'Showcase your creativity in painting, sculpture, and digital art.',
-    date: '20/01/2024',
-    time: '16:00',
-    location: 'Art Gallery',
-    participants: '18/30',
-    prize: 'Art Supplies',
+    id: 4,
+    clan: "EAGLE",
+    status: "UPCOMING",
+    title: "Eagle Debate League",
+    description: "Sharpen your public speaking skills in a formal",
+    date: "22/01/2024",
+    time: "11:30",
+    location: "Auditorium B",
+    participants: "20/25",
+    prize: "Books + Certificate"
   },
   {
-    id: 'event4',
-    clan: 'Eagle',
-    status: 'upcoming',
-    title: 'Eagle Debate League',
-    desc: 'Sharpen your public speaking skills in a formal debate setting.',
-    date: '22/01/2024',
-    time: '11:30',
-    location: 'Auditorium B',
-    participants: '20/25',
-    prize: 'Books + Certificate',
+    id: 5,
+    clan: "PHOENIX",
+    status: "COMPLETED",
+    title: "Phoenix Hackathon",
+    description: "An intense 24-hour hackathon for real-world",
+    date: "05/01/2024",
+    time: "09:00",
+    location: "Innovation Hub",
+    participants: "50/50",
+    prize: "Cash + Internship"
   },
   {
-    id: 'event5',
-    clan: 'Phoenix',
-    status: 'completed',
-    title: 'Phoenix Hackathon',
-    desc: 'An intense 24-hour hackathon for real-world project building.',
-    date: '05/01/2024',
-    time: '09:00',
-    location: 'Innovation Hub',
-    participants: '50/50',
-    prize: 'Cash + Internship',
+    id: 6,
+    clan: "DRAGON",
+    status: "UPCOMING",
+    title: "Dragon Music Night",
+    description: "An open mic event for singers, musicians, and",
+    date: "25/01/2024",
+    time: "18:00",
+    location: "Main Lawn",
+    participants: "15/30",
+    prize: "Trophy + Spotlight Feature"
   },
   {
-    id: 'event6',
-    clan: 'Dragon',
-    status: 'upcoming',
-    title: 'Dragon Music Night',
-    desc: 'An open mic event for singers, musicians, and beatboxers.',
-    date: '25/01/2024',
-    time: '18:00',
-    location: 'Main Lawn',
-    participants: '15/30',
-    prize: 'Trophy + Spotlight Feature',
+    id: 7,
+    clan: "WOLF",
+    status: "UPCOMING",
+    title: "Wolf Gaming League",
+    description: "Face off in e-sports tournaments for popular",
+    date: "28/01/2024",
+    time: "17:00",
+    location: "GameZone Arena",
+    participants: "40/50",
+    prize: "Gaming Gear"
   },
   {
-    id: 'event7',
-    clan: 'Wolf',
-    status: 'upcoming',
-    title: 'Wolf Gaming League',
-    desc: 'Face off in e-sports tournaments for popular titles.',
-    date: '28/01/2024',
-    time: '17:00',
-    location: 'GameZone Arena',
-    participants: '40/50',
-    prize: 'Gaming Gear',
-  },
-  {
-    id: 'event8',
-    clan: 'Eagle',
-    status: 'upcoming',
-    title: 'Eagle Science Fair',
-    desc: 'Present innovative science projects and experiments.',
-    date: '30/01/2024',
-    time: '12:00',
-    location: 'Hall B',
-    participants: '22/30',
-    prize: 'Trophy + Certificate',
+    id: 8,
+    clan: "EAGLE",
+    status: "UPCOMING",
+    title: "Eagle Science Fair",
+    description: "Present innovative science projects and experiments.",
+    date: "30/01/2024",
+    time: "12:00",
+    location: "Hall B",
+    participants: "22/30",
+    prize: "Trophy + Certificate"
   }
 ];
 
-const EventPage = () => {
+const ClanCardsSection = () => {
+  const navigate = useNavigate();
+
+  const handleCardClick = (event) => {
+    navigate(`/event/${event.id}`, { state: event });
+  };
+
   return (
     <div className="events-container">
-     
       <h1>Events</h1>
       <p>Discover and participate in exciting clan events</p>
-      <div className="cards-wrapper">
-        {events.map((event) => (
-          <div className="event-card" key={event.id}>
-            <div className="event-tags">
-              <span className={`clan-tag ${event.clan.toLowerCase()}`}>{event.clan}</span>
-              <span className={`status-tag ${event.status}`}>{event.status}</span>
+      <div className="event-grid">
+        {eventData.map((event) => (
+          <div key={event.id} className="event-card" onClick={() => handleCardClick(event)}>
+            <div className="badge-container">
+              <span className={`badge clan-${event.clan.toLowerCase()}`}>{event.clan}</span>
+              <span className={`badge status-${event.status.toLowerCase()}`}>{event.status}</span>
             </div>
-            <div className="event-image-placeholder"></div>
-            <div className="event-info">
-              <h2>{event.title}</h2>
-              <p className="desc">{event.desc}</p>
-              <div className="event-details">
-                <div><span>📅</span> {event.date}</div>
-                <div><span>🕒</span> {event.time}</div>
-                <div><span>📍</span> {event.location}</div>
-                <div><span>👥</span> {event.participants}</div>
-              </div>
-              <p className="prize"><strong>Prize:</strong> {event.prize}</p>
-              <button className="join-btn">Join Event</button>
+            <h3>{event.title}</h3>
+            <p className="description">{event.description}</p>
+            <div className="info">
+              <p>📅 {event.date}</p>
+              <p>⏰ {event.time}</p>
+              <p>📍 {event.location}</p>
+              <p>👥 {event.participants}</p>
             </div>
+            <p className="prize"><strong>Prize:</strong> {event.prize}</p>
           </div>
         ))}
       </div>
@@ -133,4 +135,4 @@ const EventPage = () => {
   );
 };
 
-export default EventPage;
+export default ClanCardsSection;

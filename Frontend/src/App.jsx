@@ -8,39 +8,42 @@ import Footer from './components/Footer/Footer.jsx'
 import EventPage from './components/EventPage/EventPage.jsx'
 import {Routes,Route,useLocation} from "react-router-dom"
 import EventUpload from './components/EventUploadPage/EventUpload.jsx'
+import EventDetail from './components/EventDetail/EventDetail.jsx'
+
+
+
+
+
+
+
 
 const App = () => {
   const location = useLocation();
-  const hideNavbarFooter = ["/login","/register","/dashboard","/events","/uploadevent"].includes(
-    location.pathname
-  );
+  
+  const path = location.pathname;
+
+  // Handle dynamic paths
+  const hideNavbarFooter =
+    path.startsWith("/event/") || 
+    ["/login", "/register", "/dashboard", "/event", "/uploadevent"].includes(path);
+
   return (
     <div>
-     
-      {!hideNavbarFooter  && <Navbar/>}
-     
-    <Routes>
-     <Route exact path="/" element = {<Homepage/>} />
-       <Route exact path="/dashboard" element = {<Dashboard/>} />
-       <Route exact path="/login" element = {<Login/>} />
-       <Route exact path="/register" element = {<Register/>} />
-       <Route exact path="/events" element = {<EventPage/>} />
-       <Route exact path="/uploadevent" element = {<EventUpload/>} />
-       
+      {!hideNavbarFooter && <Navbar />}
 
-      </Routes> 
+      <Routes>
+        <Route exact path="/" element={<Homepage />} />
+        <Route exact path="/dashboard" element={<Dashboard />} />
+        <Route exact path="/login" element={<Login />} />
+        <Route exact path="/register" element={<Register />} />
+        <Route exact path="/event" element={<EventPage />} />
+        <Route exact path="/uploadevent" element={<EventUpload />} />
+        <Route path="/event/:id" element={<EventDetail />} />
+      </Routes>
 
- {!hideNavbarFooter  && <Footer/>}
-
-      {/* <Dashboard/> */}
-
-    {/* <Register/> */}
-
-      {/* <Login/> */}
-      
-    
+      {!hideNavbarFooter && <Footer />}
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

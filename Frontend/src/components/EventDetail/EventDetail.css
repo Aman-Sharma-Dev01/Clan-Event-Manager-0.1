@@ -1,0 +1,41 @@
+.event-detail-page {
+  padding: 40px;
+  font-family: sans-serif;
+  background-color: #f0f4fc;
+}
+
+.detail-box {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 600px;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.badges {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.badge {
+  padding: 5px 12px;
+  border-radius: 14px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.register-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.register-btn:hover {
+  background: #21618c;
+}
