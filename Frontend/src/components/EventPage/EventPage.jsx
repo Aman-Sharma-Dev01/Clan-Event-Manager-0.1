@@ -103,7 +103,7 @@ const events = [
 const EventPage = () => {
   return (
     <div className="events-container">
-      <h1>   E </h1>
+     
       <h1>Events</h1>
       <p>Discover and participate in exciting clan events</p>
       <div className="cards-wrapper">

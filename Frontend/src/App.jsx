@@ -11,7 +11,7 @@ import EventUpload from './components/EventUploadPage/EventUpload.jsx'
 
 const App = () => {
   const location = useLocation();
-  const hideNavbarFooter = ["/login","/register","/dashboard"].includes(
+  const hideNavbarFooter = ["/login","/register","/dashboard","/events","/uploadevent"].includes(
     location.pathname
   );
   return (

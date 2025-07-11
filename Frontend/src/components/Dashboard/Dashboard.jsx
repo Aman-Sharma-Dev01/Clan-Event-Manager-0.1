@@ -41,30 +41,12 @@ const Dashboard = () => {
 
       </div>
 
-      <div className="stats">
-        <div className="stat-card">
-          <h3>Total Events</h3>
-          <p className="stat-value">12 <span className="stat-change">+2 from last month</span></p>
-        </div>
-        <div className="stat-card">
-          <h3>Active Events</h3>
-          <p className="stat-value">3 <span className="stat-sub">Currently running</span></p>
-        </div>
-        <div className="stat-card">
-          <h3>Total Participants</h3>
-          <p className="stat-value">156 <span className="stat-change">+12% from last month</span></p>
-        </div>
-        <div className="stat-card">
-          <h3>Completion Rate</h3>
-          <p className="stat-value">85% <span className="stat-change">+5% from last month</span></p>
-        </div>
-      </div>
 
       <div className="content-wrapper">
         <div className="tabs">
           <button className="tab active">My Events</button>
-          <button className="tab">Participants</button>
-          <button className="tab">Analytics</button>
+          <button className="tab">Clan Members</button>
+         
         </div>
 
         <div className="events-list">
