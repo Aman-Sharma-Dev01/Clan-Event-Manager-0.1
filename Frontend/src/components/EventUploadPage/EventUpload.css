@@ -1,0 +1,144 @@
+.create-event-container {
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8fafc;
+  color: #111;
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin: 0.3rem 0;
+}
+
+.header p {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.back-link {
+  background: none;
+  border: none;
+  color: #555;
+  font-size: 0.9rem;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 0.5rem;
+}
+
+.event-form {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.form-left,
+.form-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex: 1;
+  min-width: 300px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+  margin-bottom: 0.3rem;
+  font-size: 1.2rem;
+}
+
+.card p {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.card label {
+  display: block;
+  margin-top: 0.8rem;
+  margin-bottom: 0.3rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.card input,
+.card select,
+.card textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.card textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.upload-box {
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  padding: 1.2rem;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  transition: border-color 0.3s ease;
+}
+
+.upload-box:hover {
+  border-color: #333;
+}
+
+.upload-box input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.upload-hint {
+  font-size: 0.75rem;
+  color: #888;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.cancel-btn,
+.create-btn {
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.cancel-btn {
+  background-color: #eee;
+  color: #333;
+}
+
+.create-btn {
+  background-color: #111;
+  color: white;
+}
+
+.create-btn:hover {
+  background-color: #333;
+}
