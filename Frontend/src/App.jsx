@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './components/Navbar/Navbar.jsx'
-import Login from './components/login/login.jsx'
+import Login from './components/Login/Login.jsx'
 import Register from './components/register/register.jsx'
 import Dashboard from './components/Dashboard/Dashboard.jsx'
 import Homepage from './components/Homepage/Homepage.jsx'

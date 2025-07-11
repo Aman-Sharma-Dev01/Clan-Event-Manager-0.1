@@ -2,8 +2,11 @@ import React from "react";
 import "./Navbar.css";
 import { FaShieldAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useAuth } from "../../Context/AuthProvider.jsx";
 
 const Navbar = () => {
+  const { profile } = useAuth(); // Uncomment if you want to use profile data
+  
   return (
     <nav className="navbar">
       <div className="navbar-left">
@@ -20,7 +23,7 @@ const Navbar = () => {
 
 
       <div className="navbar-right">
-         <a href="#events" className="nav-link">Welcome,User</a>
+         <a href="#events" className="nav-link">Welcome,{profile?.Firstname ? `${profile.Firstname}` : "Welcome"}</a>
         <button className="login-btn">Logout</button>
       
       </div>

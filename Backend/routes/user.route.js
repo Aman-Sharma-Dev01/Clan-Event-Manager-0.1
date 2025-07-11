@@ -9,4 +9,5 @@ router.get('/logout',isAuthentication,logout)
 router.get('/get-my-profile',isAuthentication,getMyProfile)
 router.get('/profile', isAuthentication, getUserProfile);
 
+
 export default router;
