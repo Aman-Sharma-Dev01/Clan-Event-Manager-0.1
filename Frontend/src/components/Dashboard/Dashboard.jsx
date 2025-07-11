@@ -1,5 +1,6 @@
 import React from 'react';
 import './Dashboard.css';
+import { Link } from 'react-router-dom';
 
 const events = [
   {
@@ -36,7 +37,8 @@ const Dashboard = () => {
           <h1>Clan Admin Dashboard</h1>
           <p>Manage your clan events and track participation</p>
         </div>
-        <button className="create-btn">+ Create Event</button>
+        <Link to="/uploadevent" className="create-btn">+ Create Event</Link>
+
       </div>
 
       <div className="stats">

@@ -7,6 +7,7 @@ import Homepage from './components/Homepage/Homepage.jsx'
 import Footer from './components/Footer/Footer.jsx'
 import EventPage from './components/EventPage/EventPage.jsx'
 import {Routes,Route,useLocation} from "react-router-dom"
+import EventUpload from './components/EventUploadPage/EventUpload.jsx'
 
 const App = () => {
   const location = useLocation();
@@ -24,6 +25,9 @@ const App = () => {
        <Route exact path="/login" element = {<Login/>} />
        <Route exact path="/register" element = {<Register/>} />
        <Route exact path="/events" element = {<EventPage/>} />
+       <Route exact path="/uploadevent" element = {<EventUpload/>} />
+       
+
       </Routes> 
 
  {!hideNavbarFooter  && <Footer/>}
