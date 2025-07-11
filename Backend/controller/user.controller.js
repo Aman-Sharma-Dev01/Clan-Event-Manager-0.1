@@ -4,40 +4,41 @@ import createTokenAndSaveCookies from "../jwt/AuthToken.js"
 
 export const register= async (req,res)=>{
    
-    const{Firstname,Lastname,email,password,clanName}= req.body;
-   if(!Firstname||!Lastname||!email||!password||!clanName){
-    return res.status(400).json({message:"All fields are required"});
-   }
-     const user= await User.findOne({email})
-     if(user) {
-        return res.status(400).json({message:"User already registered with this email"});
-     }
-     
-     const hashedPassword = await bcrypt.hash(password,10);
-     const newUser = new User({
-        Firstname,
-        Lastname,
-        email,
-        password:hashedPassword,
-        clanName
-    });
-
+   try {
+     const{Firstname,Lastname,email,password,clanName}= req.body;
+    if(!Firstname||!Lastname||!email||!password||!clanName){
+     return res.status(400).json({message:"All fields are required"});
+    }
+      const user= await User.findOne({email})
+      if(user) {
+         return res.status(400).json({message:"User already registered with this email"});
+      }
+      
+      const hashedPassword = await bcrypt.hash(password,10);
+      const newUser = new User({
+         Firstname,
+         Lastname,
+         email,
+         password:hashedPassword,
+         clanName
+     });
+      // Save the new user to the database
+      await newUser.save()
+      if(newUser){
+         const token=  await createTokenAndSaveCookies(newUser._id,res)
+         res.status(201).json({message:"User registered successfully", newUser, token:token})
+        }
+ 
+      if(newUser){
     
-
-
-
-     await newUser.save()
-     if(newUser){
-        const token=  await createTokenAndSaveCookies(newUser._id,res)
-        res.status(201).json({message:"User registered successfully", newUser, token:token})
-       }
-
-     if(newUser){
-   
-      const token = await createTokenAndSaveCookies(newUser._id,res);
-      console.log(token)
-        res.status(201).json({message:"User registered successfully",newUser,token:token});
-     }
+       const token = await createTokenAndSaveCookies(newUser._id,res);
+       console.log(token)
+         res.status(201).json({message:"User registered successfully",newUser,token:token});
+      }
+   } catch (error) {
+    console.log('Error fetching profile:', error);
+    res.status(500).json({ message: 'Internal server error' });
+   }
 
 };
 
@@ -87,10 +88,15 @@ export const logout = async(req, resp)=>{
    }
 }
 export const getMyProfile = async(req,resp)=>{
-    const user = req.user;
-    resp.status(200).json(user)
+    try {
+      const user = req.user;
+      resp.status(200).json(user)
+    } catch (error) {
+      console.log('Error fetching profile:', error);
+    resp.status(500).json({ message: 'Internal server error' });
+    }
 }
-// Get User Profile (with total points)
+
 export const getUserProfile = async (req, resp) => {
   try {
     const user = await User.findById(req.user._id).select('-password'); // Exclude password
