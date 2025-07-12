@@ -1,138 +1,127 @@
-.register-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: #f0f0f0;
-  padding: 30px;
-}
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  max-width: 350px;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 20px;
-  position: relative;
+/* Register.css */
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f8fafc;
 }
 
-.title {
-  font-size: 28px;
-  color: royalblue;
-  font-weight: 600;
-  letter-spacing: -1px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  padding-left: 30px;
-}
-
-.title::before,.title::after {
-  position: absolute;
-  content: "";
-  height: 16px;
-  width: 16px;
-  border-radius: 50%;
-  left: 0px;
-  background-color: royalblue;
-}
-
-.title::before {
-  width: 18px;
-  height: 18px;
-  background-color: royalblue;
-}
-
-.title::after {
-  width: 18px;
-  height: 18px;
-  animation: pulse 1s linear infinite;
-}
-
-.message, .signin {
-  color: rgba(88, 87, 87, 0.822);
-  font-size: 14px;
-}
-
-.signin {
+.register-wrapper {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 0 16px;
   text-align: center;
 }
 
-.signin a {
-  color: royalblue;
+.branding .logo {
+  font-size: 32px;
 }
 
-.signin a:hover {
-  text-decoration: underline royalblue;
+.branding .brand-name {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 8px 0 4px;
+  color: black;
 }
 
-.flex {
+.branding .tagline {
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.tab-container {
   display: flex;
-  width: 100%;
-  gap: 6px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  background-color: #f3f4f6;
 }
 
-.form label {
-  position: relative;
+.tab {
+  flex: 1;
+  padding: 12px;
+  text-decoration: none;
+  color: #6b7280;
+  background-color: #f3f4f6;
+  font-weight: 500;
 }
 
-.form label .input {
-  width: 100%;
-  padding: 10px 10px 20px 10px;
-  outline: 0;
-  border: 1px solid rgba(105, 105, 105, 0.397);
-  border-radius: 10px;
-}
-
-.form label .input + span {
-  position: absolute;
-  left: 10px;
-  top: 15px;
-  color: grey;
-  font-size: 0.9em;
-  cursor: text;
-  transition: 0.3s ease;
-}
-
-.form label .input:placeholder-shown + span {
-  top: 15px;
-  font-size: 0.9em;
-}
-
-.form label .input:focus + span,.form label .input:valid + span {
-  top: 30px;
-  font-size: 0.7em;
+.tab.active {
+  background-color: #fff;
+  color: #111827;
   font-weight: 600;
+  border-bottom: 2px solid transparent;
 }
 
-.form label .input:valid + span {
-  color: green;
+.register-form {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.1);
+  text-align: left;
 }
 
-.submit {
-  border: none;
-  outline: none;
-  background-color: royalblue;
+.form-heading {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.subheading {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.input-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.input-group {
+  flex: 1;
+  margin-bottom: 16px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
   padding: 10px;
-  border-radius: 10px;
-  color: #fff;
-  font-size: 16px;
-  transform: .3s ease;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
 }
 
-.submit:hover {
-  background-color: rgb(56, 90, 194);
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #111827;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
 }
 
-@keyframes pulse {
-  from {
-    transform: scale(0.9);
-    opacity: 1;
-  }
+.submit-btn:disabled {
+  background-color: #4b5563;
+  cursor: not-allowed;
+}
 
-  to {
-    transform: scale(1.8);
-    opacity: 0;
-  }
+.back-home {
+  display: block;
+  margin-top: 16px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 14px;
+  text-decoration: none;
 }

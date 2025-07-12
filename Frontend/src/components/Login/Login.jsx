@@ -11,59 +11,62 @@ const Login = () => {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [loading, setLoading] = useState(false); // 👈 loading state
+  const [loading, setLoading] = useState(false);
 
   const handleLogin = async (e) => {
     e.preventDefault();
-
     try {
-      setLoading(true); // start loading
-
+      setLoading(true);
       const { data } = await axios.post(
         "http://localhost:4001/api/users/login",
         { email, password },
         {
           withCredentials: true,
-          headers: {
-            "Content-Type": "application/json",
-          },
+          headers: { "Content-Type": "application/json" },
         }
       );
-
       localStorage.setItem("jwt", data.token);
-
-      toast.success(data.message || "User1 logged in successfully", {
-        duration: 3000,
-      });
-
+      toast.success(data.message || "User logged in successfully", { duration: 3000 });
       setProfile(data.user);
       setIsAuthenticated(true);
       setEmail("");
       setPassword("");
       navigateTo("/");
-      
     } catch (error) {
       console.error(error);
       toast.error(
-  error?.response?.data?.message ||
-  error?.response?.data?.error ||
-  "Something went wrong. Please try again.",
-  { duration: 3000 }
-);
+        error?.response?.data?.message ||
+          error?.response?.data?.error ||
+          "Something went wrong. Please try again.",
+        { duration: 3000 }
+      );
     } finally {
-      setLoading(false); // stop loading
+      setLoading(false);
     }
   };
 
   return (
-    <div className="login-container">
-      <form className="form" onSubmit={handleLogin}>
-        <p className="form-title">Sign in to your account</p>
+    <div className="login-wrapper">
+      <div className="branding">
+        <div className="logo">🛡️</div>
+        <h1 className="brand-name">ClanEvents</h1>
+        <p className="tagline">Join your clan and start your adventure</p>
+      </div>
 
-        <div className="input-container">
+      <div className="tab-container">
+        <Link to="/login" className="tab active">Login</Link>
+        <Link to="/register" className="tab">Register</Link>
+      </div>
+
+      <form className="login-form" onSubmit={handleLogin}>
+        <h2 className="form-heading">Welcome Back</h2>
+        <p className="subheading">Sign in to your account to continue</p>
+
+        <div className="input-group">
+          <label>Email</label>
           <input
             type="email"
-            placeholder="Enter email"
+            placeholder="Enter your email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
@@ -71,10 +74,11 @@ const Login = () => {
           />
         </div>
 
-        <div className="input-container">
+        <div className="input-group">
+          <label>Password</label>
           <input
             type="password"
-            placeholder="Enter password"
+            placeholder="Enter your password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
@@ -82,13 +86,11 @@ const Login = () => {
           />
         </div>
 
-        <button type="submit" className="submit" disabled={loading}>
-          {loading ? "Logging in..." : "Sign in"}
+        <button type="submit" className="submit-btn" disabled={loading}>
+          {loading ? "Logging in..." : "Sign In"}
         </button>
 
-        <p className="signup-link">
-          No account? <Link to="/register">Sign up</Link>
-        </p>
+        <Link to="/" className="back-home">← Back to Home</Link>
       </form>
     </div>
   );

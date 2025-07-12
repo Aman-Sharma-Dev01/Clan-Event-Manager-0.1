@@ -1,47 +1,148 @@
-import React from 'react'
-import './Register.css'
-import { Link } from 'react-router-dom'
+import React, { useState } from "react";
+import "./Register.css";
+import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
+import toast from "react-hot-toast";
 
 const Register = () => {
+  const navigate = useNavigate();
+
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    password: "",
+    clan: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    try {
+      const { data } = await axios.post(
+        "http://localhost:4001/api/users/register",
+        formData,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      toast.success(data.message || "Registration successful");
+      navigate("/login");
+    } catch (error) {
+      toast.error(
+        error?.response?.data?.message ||
+          error?.response?.data?.error ||
+          "Registration failed"
+      );
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
-    <div className="register-container">
-      
-<form className="form">
-  <p className="title">Register </p>
-  <p className="message">Signup now and get full access to our app. </p>
-  <div className="flex">
-    <label>
-      <input required="" placeholder="" type="text" className="input" />
-      <span>Firstname</span>
-    </label>
-    <label>
-      <input required="" placeholder="" type="text" className="input" />
-      <span>Lastname</span>
-    </label>
-  </div>
-  <label>
-    <input required="" placeholder="" type="email" className="input" />
-    <span>Email</span>
-  </label>
-  <label>
-    <input required="" placeholder="" type="password" className="input" />
-    <span>Password</span>
-  </label>
-  <label>
-    <input required="" placeholder="" type="password" className="input" />
-    <span>Confirm password</span>
-  </label>
-  <button className="submit">Submit</button>
-  <p className="signin">
-    Already have an acount ? <Link to="/login">Signin</Link>
-  </p>
-</form>
+    <div className="register-wrapper">
+      <div className="branding">
+        <div className="logo">🛡️</div>
+        <h1 className="brand-name">ClanEvents</h1>
+        <p className="tagline">Join your clan and start your adventure</p>
+      </div>
 
+      <div className="tab-container">
+        <Link to="/login" className="tab">Login</Link>
+        <Link to="/register" className="tab active">Register</Link>
+      </div>
 
+      <form className="register-form" onSubmit={handleSubmit}>
+        <h2 className="form-heading">Create Account</h2>
+        <p className="subheading">Join a clan and start participating in events</p>
 
+        <div className="input-row">
+          <div className="input-group">
+            <label>First Name</label>
+            <input
+              type="text"
+              name="firstName"
+              placeholder="John"
+              value={formData.firstName}
+              onChange={handleChange}
+              required
+              disabled={loading}
+            />
+          </div>
+          <div className="input-group">
+            <label>Last Name</label>
+            <input
+              type="text"
+              name="lastName"
+              placeholder="Doe"
+              value={formData.lastName}
+              onChange={handleChange}
+              required
+              disabled={loading}
+            />
+          </div>
+        </div>
 
+        <div className="input-group">
+          <label>Email</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+            disabled={loading}
+          />
+        </div>
+
+        <div className="input-group">
+          <label>Password</label>
+          <input
+            type="password"
+            name="password"
+            placeholder="Create a password"
+            value={formData.password}
+            onChange={handleChange}
+            required
+            disabled={loading}
+          />
+        </div>
+
+        <div className="input-group">
+          <label>Choose Your Clan</label>
+          <select
+            name="clan"
+            value={formData.clan}
+            onChange={handleChange}
+            required
+            disabled={loading}
+          >
+            <option value="">Select a clan</option>
+            <option value="Wild Cats">Wild Cats</option>
+            <option value="Wild Dogs">Wild Dogs</option>
+            <option value="Wild Cars">Wild Cars</option>
+            <option value="Wild Fish">Wild Fish</option>
+          </select>
+        </div>
+
+        <button type="submit" className="submit-btn" disabled={loading}>
+          {loading ? "Creating Account..." : "Create Account"}
+        </button>
+
+        <Link to="/" className="back-home">← Back to Home</Link>
+      </form>
     </div>
-  )
-}
+  );
+};
 
-export default Register
+export default Register;

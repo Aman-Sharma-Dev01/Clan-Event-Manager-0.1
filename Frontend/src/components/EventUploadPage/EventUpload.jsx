@@ -62,8 +62,8 @@ const EventUpload = () => {
             <h2>Participation & Rewards</h2>
             <p>Set limits and incentives for participants</p>
 
-            <label htmlFor="maxParticipants">Maximum Participants *</label>
-            <input id="maxParticipants" type="number" placeholder="50" required />
+            <label htmlFor="maxParticipants">Event Registration Link *</label>
+            <input id="maxParticipants" type="text" placeholder="Event Registration Link" required />
 
             <label htmlFor="reward">Prize/Reward</label>
             <input id="reward" type="text" placeholder="Trophy, Certificate, etc." />
