@@ -95,3 +95,8 @@
   align-items: center;
   gap: 0.4rem;
 }
+.event-image{
+  height: 160px;
+  object-fit: cover;
+  border-radius: 0.75rem 0.75rem 0 0;
+}

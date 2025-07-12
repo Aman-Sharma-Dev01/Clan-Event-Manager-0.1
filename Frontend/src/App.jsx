@@ -40,8 +40,8 @@ const App = () => {
           path="/"
           element={token ? <Homepage /> : <Navigate to={"/login"} />}
         />
-     <Route exact path="/home" element = {<Homepage/>} />
-       <Route exact path="/dashboard" element = {<Dashboard/>} />
+     <Route exact path="/" element = {<Homepage/>} />
+       <Route exact path="/dashboard" element = {<Dashboard/>}/>
        <Route exact path="/login" element = {<Login/>} />
        <Route exact path="/register" element = {<Register/>} />
        <Route exact path="/event" element = {<EventPage/>} />

@@ -70,3 +70,7 @@
 .signup-link a {
   text-decoration: underline;
 }
+button.submit[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

@@ -26,15 +26,6 @@
   font-weight: bold;
 }
 
-.register-btn {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: #2980b9;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
 
 .register-btn:hover {
   background: #21618c;
@@ -60,12 +51,12 @@
 }
 
 .register-btn {
-  margin-top: 20px;
+  margin-top: 30px;
   padding: 10px 20px;
   background-color: #0077ff;
   color: white;
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  text-decoration: none;
 }
-

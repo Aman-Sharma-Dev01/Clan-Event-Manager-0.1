@@ -56,6 +56,10 @@ clanName: {
     ref: "User",
     required: true,
   },
+  GoogleFormLink: {
+  type: String,
+  required: true,
+}
 
 })
 

@@ -27,8 +27,8 @@ if (!allowedAdmins.includes(req.user._id.toString())) {
         message: "Invalid photo format. Only jpg and png are allowed",
       });
     }
-    const { EventTitle, Description, Category, Date , Time , Location , Reward , Requirements} = req.body;
-    if (!EventTitle || !Description || !Category || !Date || !Time || !Location || !Reward) {
+    const { EventTitle, Description, Category, Date , Time , Location , Reward , Requirements,GoogleFormLink} = req.body;
+    if (!EventTitle || !Description || !Category || !Date || !Time || !Location || !Reward || !GoogleFormLink) {
       return res
         .status(400)
         .json({ message: "title, category & description are required fields" });
@@ -52,6 +52,7 @@ if (!allowedAdmins.includes(req.user._id.toString())) {
       Location,
       Reward,
       Requirements,
+      GoogleFormLink,
       createdBy,
       poster: {
         public_id: cloudinaryResponse.public_id,

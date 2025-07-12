@@ -11,11 +11,14 @@ const Login = () => {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [loading, setLoading] = useState(false); // 👈 loading state
 
   const handleLogin = async (e) => {
     e.preventDefault();
 
     try {
+      setLoading(true); // start loading
+
       const { data } = await axios.post(
         "http://localhost:4001/api/users/login",
         { email, password },
@@ -27,10 +30,9 @@ const Login = () => {
         }
       );
 
-      // Store token
       localStorage.setItem("jwt", data.token);
 
-      toast.success(data.message || "User logged in successfully", {
+      toast.success(data.message || "User1 logged in successfully", {
         duration: 3000,
       });
 
@@ -39,12 +41,17 @@ const Login = () => {
       setEmail("");
       setPassword("");
       navigateTo("/");
+      
     } catch (error) {
       console.error(error);
       toast.error(
-        error.response?.data?.message || "Please fill all required fields",
-        { duration: 3000 }
-      );
+  error?.response?.data?.message ||
+  error?.response?.data?.error ||
+  "Something went wrong. Please try again.",
+  { duration: 3000 }
+);
+    } finally {
+      setLoading(false); // stop loading
     }
   };
 
@@ -60,8 +67,8 @@ const Login = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
+            disabled={loading}
           />
-          <span></span>
         </div>
 
         <div className="input-container">
@@ -71,11 +78,12 @@ const Login = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
+            disabled={loading}
           />
         </div>
 
-        <button type="submit" className="submit">
-          Sign in
+        <button type="submit" className="submit" disabled={loading}>
+          {loading ? "Logging in..." : "Sign in"}
         </button>
 
         <p className="signup-link">

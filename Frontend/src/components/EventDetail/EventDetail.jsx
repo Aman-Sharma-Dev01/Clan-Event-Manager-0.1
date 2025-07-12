@@ -7,7 +7,6 @@ const EventDetail = () => {
 
   if (!event) return <p>Event not found</p>;
 
-  // Format date to DD-MM-YYYY
   const formattedDate = new Date(event.Date).toLocaleDateString("en-IN");
 
   return (
@@ -15,7 +14,6 @@ const EventDetail = () => {
       <h2>{event.EventTitle}</h2>
 
       <div className="detail-box">
-        {/* Optional: show poster image */}
         {event.poster?.url && (
           <img src={event.poster.url} alt="Event Poster" className="event-poster" />
         )}
@@ -29,7 +27,18 @@ const EventDetail = () => {
         <p><strong>Reward:</strong> {event.Reward}</p>
         <p><strong>Requirements:</strong> {event.Requirements || "None"}</p>
 
-        <button className="register-btn">Register Now</button>
+        {event.GoogleFormLink ? (
+          <a
+            href={event.GoogleFormLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="register-btn"
+          >
+            Register Now
+          </a>
+        ) : (
+          <p><em>Registration link not available</em></p>
+        )}
       </div>
     </div>
   );
