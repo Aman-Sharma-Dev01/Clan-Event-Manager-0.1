@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   background-color: #f8fafc;
+  
 }
 
 .register-wrapper {
@@ -103,7 +104,7 @@ body {
 .submit-btn {
   width: 100%;
   padding: 12px;
-  background-color: #111827;
+  background-color: #b22b2e;
   color: white;
   border: none;
   border-radius: 6px;
@@ -124,4 +125,12 @@ body {
   color: #6b7280;
   font-size: 14px;
   text-decoration: none;
+}
+
+
+.logo-img {
+  width: 240px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
 }

@@ -4,6 +4,8 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { useAuth } from "../../Context/AuthProvider.jsx";
+import mruLogo from "../../assets/mru.jpg"; // adjust the path if needed
+
 
 const Login = () => {
   const { setIsAuthenticated, setProfile } = useAuth();
@@ -48,9 +50,10 @@ const Login = () => {
   return (
     <div className="login-wrapper">
       <div className="branding">
-        <div className="logo">🛡️</div>
-        <h1 className="brand-name">ClanEvents</h1>
-        <p className="tagline">Join your clan and start your adventure</p>
+       <img src={mruLogo} alt="Manav Rachna Logo" className="logo-img" />
+
+
+       
       </div>
 
       <div className="tab-container">
