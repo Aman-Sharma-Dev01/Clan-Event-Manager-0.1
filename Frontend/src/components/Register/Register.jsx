@@ -1,19 +1,20 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import "./Register.css";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
 import mruLogo from "../../assets/mru.jpg"; // adjust the path if needed
 
+
 const Register = () => {
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
+    FirstName: "",
+    LastName: "",
     email: "",
     password: "",
-    clan: "",
+    clanName: "",
   });
 
   const [loading, setLoading] = useState(false);
@@ -72,9 +73,9 @@ const Register = () => {
             <label>First Name</label>
             <input
               type="text"
-              name="firstName"
+              name="FirstName"
               placeholder="John"
-              value={formData.firstName}
+              value={formData.FirstName}
               onChange={handleChange}
               required
               disabled={loading}
@@ -84,9 +85,9 @@ const Register = () => {
             <label>Last Name</label>
             <input
               type="text"
-              name="lastName"
+              name="LastName"
               placeholder="Doe"
-              value={formData.lastName}
+              value={formData.LastName}
               onChange={handleChange}
               required
               disabled={loading}
@@ -123,8 +124,8 @@ const Register = () => {
         <div className="input-group">
           <label>Choose Your Clan</label>
           <select
-            name="clan"
-            value={formData.clan}
+            name="clanName"
+            value={formData.clanName}
             onChange={handleChange}
             required
             disabled={loading}
