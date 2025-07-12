@@ -10,8 +10,8 @@ const Register = () => {
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
-    FirstName: "",
-    LastName: "",
+    Firstname: "",
+    Lastname: "",
     email: "",
     password: "",
     clanName: "",
@@ -73,9 +73,9 @@ const Register = () => {
             <label>First Name</label>
             <input
               type="text"
-              name="FirstName"
+              name="Firstname"
               placeholder="John"
-              value={formData.FirstName}
+              value={formData.Firstname}
               onChange={handleChange}
               required
               disabled={loading}
@@ -85,9 +85,9 @@ const Register = () => {
             <label>Last Name</label>
             <input
               type="text"
-              name="LastName"
+              name="Lastname"
               placeholder="Doe"
-              value={formData.LastName}
+              value={formData.Lastname}
               onChange={handleChange}
               required
               disabled={loading}
