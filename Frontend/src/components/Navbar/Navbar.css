@@ -7,7 +7,6 @@
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
   top: 0;
   z-index: 1000;
-  position: absolute;
   background: transparent;
   backdrop-filter: blur(5px);
   width: 100%;
@@ -70,4 +69,17 @@
     gap: 10px;
     align-items: center;
 
+}
+/* Dashboard: make text black and position relative */
+.dashboard-navbar {
+  position: relative;
+}
+
+.dashboard-navbar .nav-link,
+.dashboard-navbar .brand-name {
+  color: black;
+}
+/* Home: position absolute */
+.home-navbar {
+  position: absolute;
 }
