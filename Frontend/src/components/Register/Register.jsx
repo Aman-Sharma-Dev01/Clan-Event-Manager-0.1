@@ -131,9 +131,9 @@ const Register = () => {
           >
             <option value="">Select a clan</option>
             <option value="Wild Cats">Wild Cats</option>
-            <option value="Wild Dogs">Wild Dogs</option>
-            <option value="Wild Cars">Wild Cars</option>
-            <option value="Wild Fish">Wild Fish</option>
+            <option value="Forest Rhinos">Forest Rhinos</option>
+            <option value="Air Falcons">Air Falcons</option>
+            <option value="Water Sharks">Water Sharks</option>
           </select>
         </div>
 

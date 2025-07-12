@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './components/Navbar/Navbar.jsx'
 import Login from './components/Login/Login.jsx'
-import Register from './components/register/register.jsx'
+import Register from './components/Register/Register.jsx'
 import Dashboard from './components/Dashboard/Dashboard.jsx'
 import Homepage from './components/Homepage/Homepage.jsx'
 import EventDetail from './components/EventDetail/EventDetail.jsx'
@@ -21,7 +21,7 @@ const App = () => {
   // Handle dynamic paths
   const hideNavbarFooter =
     path.startsWith("/event/") || 
-    ["/login", "/register", "/dashboard", "/event", "/uploadevent"].includes(path);
+    ["/login", "/register","/event", "/uploadevent"].includes(path);
 
   const { events, isAuthenticated , profile } = useAuth();
   let token = localStorage.getItem("jwt"); // Retrieve the token directly from the localStorage to maininting the routes protect (Go to login.jsx)
