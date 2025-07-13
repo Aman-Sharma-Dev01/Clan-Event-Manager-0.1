@@ -28,7 +28,7 @@ const ClanCardsSection = () => {
                 <span className="badge clan-default">
                   {event.clanName || "Clan"}
                 </span>
-                <span className="badge status-upcoming">UPCOMING</span>
+                <span className={`badge ${event.status}`}>{event.status}</span>
               </div>
                <img
                 src={event.poster?.url}

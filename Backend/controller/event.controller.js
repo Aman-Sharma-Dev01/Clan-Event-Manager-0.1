@@ -147,3 +147,31 @@ export const getMyClanMembers = async (req, res) => {
     res.status(500).json({ message: "Internal server error" });
   }
 };
+
+export const updateEventStatus = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { status } = req.body;
+
+    const allowedStatuses = ['UPCOMING', 'COMPLETED']; // ⛔️ Removed 'ONGOING'
+
+    if (!allowedStatuses.includes(status)) {
+      return res.status(400).json({ message: "Invalid status value" });
+    }
+
+    const event = await Event.findByIdAndUpdate(
+      id,
+      { status },
+      { new: true }
+    );
+
+    if (!event) {
+      return res.status(404).json({ message: "Event not found" });
+    }
+
+    res.status(200).json({ message: "Status updated successfully", event });
+  } catch (error) {
+    console.error("Error updating event status:", error);
+    res.status(500).json({ message: "Internal server error" });
+  }
+};

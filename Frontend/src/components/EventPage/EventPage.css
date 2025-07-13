@@ -35,7 +35,6 @@
 .badge {
   padding: 5px 10px;
   border-radius: 12px;
-  color: white;
   font-size: 12px;
   font-weight: bold;
 }
@@ -57,4 +56,13 @@
   height: auto;
   border-radius: 8px;
   margin-top: 10px;
+}
+.badge.UPCOMING {
+  background-color: #bc2027;
+  color: white;
+}
+
+.badge.COMPLETED {
+  background-color: #0DACE5;
+  color: white;
 }

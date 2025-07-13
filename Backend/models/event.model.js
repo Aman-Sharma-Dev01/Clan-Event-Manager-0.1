@@ -59,7 +59,12 @@ clanName: {
   GoogleFormLink: {
   type: String,
   required: true,
-}
+},
+ status: {
+    type: String,
+    enum: ['UPCOMING', 'COMPLETED'],
+    default: 'UPCOMING',
+  },
 
 })
 
