@@ -5,6 +5,8 @@ import axios from "axios";
 import toast from "react-hot-toast";
 import { useAuth } from "../../Context/AuthProvider.jsx";
 import mruLogo from "../../assets/mru.jpg"; // adjust the path if needed
+import { FaEye, FaEyeSlash } from "react-icons/fa";
+
 
 
 const Login = () => {
@@ -14,6 +16,7 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -77,17 +80,25 @@ const Login = () => {
           />
         </div>
 
-        <div className="input-group">
-          <label>Password</label>
-          <input
-            type="password"
-            placeholder="Enter your password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-            disabled={loading}
-          />
-        </div>
+        <div className="input-group password-group">
+  <label>Password</label>
+  <div className="password-wrapper">
+    <input
+      type={showPassword ? "text" : "password"}
+      placeholder="Enter your password"
+      value={password}
+      onChange={(e) => setPassword(e.target.value)}
+      required
+      disabled={loading}
+    />
+    <span
+      className="eye-icon"
+      onClick={() => setShowPassword(!showPassword)}
+    >
+      {showPassword ? <FaEyeSlash /> : <FaEye />}
+    </span>
+  </div>
+</div>
 
         <button type="submit" className="submit-btn" disabled={loading}>
           {loading ? "Logging in..." : "Sign In"}

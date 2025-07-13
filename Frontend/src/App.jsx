@@ -22,7 +22,7 @@ const App = () => {
   // Handle dynamic paths
   const hideNavbarFooter =
     path.startsWith("/event/") || 
-    ["/login", "/register","/event", "/uploadevent"].includes(path);
+    ["/login", "/register", "/uploadevent"].includes(path);
 
   const { events, isAuthenticated , profile } = useAuth();
   let token = localStorage.getItem("jwt"); // Retrieve the token directly from the localStorage to maininting the routes protect (Go to login.jsx)
@@ -42,28 +42,20 @@ const App = () => {
           element={token ? <Homepage /> : <Navigate to={"/login"} />}
         />
      <Route exact path="/" element = {<Homepage/>} />
-       <Route exact path="/dashboard" element = {<Dashboard/>}/>
-        <Route exact path="/about" element = {<About/>}/>
+       <Route exact path="/dashboard" element = {token ? <Dashboard /> : <Navigate to={"/login"} />}/>
+        <Route exact path="/about" element = {token ? <About /> : <Navigate to={"/login"} />}/>
 
        <Route exact path="/login" element = {<Login/>} />
        <Route exact path="/register" element = {<Register/>} />
-       <Route exact path="/event" element = {<EventPage/>} />
-       <Route exact path="/uploadevent" element = {<EventUpload/>} />
-       <Route exact path="/uploadevent" element={<EventUpload />} />
-        <Route path="/event/:id" element={<EventDetail />} />
+       <Route exact path="/event" element = {token ? <EventPage /> : <Navigate to={"/login"} />} />
+       <Route exact path="/uploadevent" element={token ? <EventUpload /> : <Navigate to={"/login"} />}/>
+        <Route path="/event/:id" element={token ? <EventDetail /> : <Navigate to={"/login"} />} />
        
 
       </Routes> 
 
  {!hideNavbarFooter  && <Footer/>}
 
-      {/* <Dashboard/> */}
-
-    {/* <Register/> */}
-
-      {/* <Login/> */}
-      
-    
     </div>
   )
 }

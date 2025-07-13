@@ -124,7 +124,6 @@
 .create-btn {
   padding: 0.6rem 1.2rem;
   font-size: 0.9rem;
-  border-radius: 6px;
   border: none;
   cursor: pointer;
   font-weight: 600;
@@ -136,10 +135,10 @@
 }
 
 .create-btn {
-  background-color: #111;
+  background-color: #bc2027;
   color: white;
 }
 
 .create-btn:hover {
-  background-color: #333;
+  background-color: #FCD200;
 }

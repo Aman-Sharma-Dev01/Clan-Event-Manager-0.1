@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Dashboard.css';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { useAuth } from '../../Context/AuthProvider';
+import { useAuth } from '../../Context/AuthProvider.jsx';
 
 
 const Dashboard = () => {
@@ -11,6 +11,8 @@ const Dashboard = () => {
   const [events, setEvents] = useState([]);
   const [clanMembers, setClanMembers] = useState([]);
   const [confirmDeleteId, setConfirmDeleteId] = useState(null);
+  const { profile } = useAuth();
+  const clanName = profile?.clanName || "My Clan"; // Fallback to "My Clan" if clanName is not available
 
   const uploadEvetnt = () => navigate('/uploadevent');
 
@@ -19,9 +21,7 @@ const Dashboard = () => {
     fetchMembers();
   }, []);
 
-
-  
-    const {  profile } = useAuth();
+    
 
   const fetchEvents = async () => {
     try {
@@ -34,6 +34,7 @@ const Dashboard = () => {
     status: (event.status || "")
   }))
 );
+
 
     } catch (error) {
       console.error("Failed to fetch events:", error);
@@ -91,7 +92,7 @@ const Dashboard = () => {
     <div className="dashboard">
       <div className="header">
         <div>
-          <h1>Clan Admin Dashboard</h1>
+          <h1>Welcom Back, {clanName}</h1>
           <p>Manage your clan events and track participation</p>
         </div>
         <button onClick={uploadEvetnt} className="ctr-btn">+ Create Event</button>

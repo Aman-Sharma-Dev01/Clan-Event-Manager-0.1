@@ -16,19 +16,19 @@
 }
 .mid-part{
     display: flex;
-    
     flex-direction: column;
     align-items: center;
 }
 .Hero-section h1 {
     font-size: 64px;
     color: white;
-    margin-bottom: 10px;
+    margin: 0;
    
 }
 .mid-part p {
     font-size: 25px;
     color: #fff;
+    margin: -4px;
 }
 .home-btns{
     display: flex;

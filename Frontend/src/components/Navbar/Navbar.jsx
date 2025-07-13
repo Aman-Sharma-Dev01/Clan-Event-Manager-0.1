@@ -13,7 +13,15 @@ const Navbar = () => {
   const location = useLocation();
   const path = location.pathname;
 
-  const isDashboard = path === "/dashboard";
+  const adminIds = [
+  "6870f6f9436c91c3428aa9b2",
+  "6870fbc9883f05472f4eacaf",
+  "6870fb4a0cd078b2ab0b02e0",
+  "6870fc10f93932714cff478a"
+  ];
+
+  const isAdmin = profile && adminIds.includes(profile._id);
+  const isDashboard = path === "/dashboard" || path === "/about" || path === "/event";
   const isHome = path === "/";
 
   const logout = async () => {
@@ -52,7 +60,7 @@ const Navbar = () => {
       <div className="navbar-center">
         <Link to="/" className="nav-link">Home</Link>
         <Link to="/event" className="nav-link">Events</Link>
-        <Link to="/dashboard" className="nav-link">Dashboard</Link>
+        {isAdmin && <Link to="/dashboard" className="nav-link">Dashboard</Link>}
         <Link to="/about" className="nav-link">About</Link>
       </div>
 

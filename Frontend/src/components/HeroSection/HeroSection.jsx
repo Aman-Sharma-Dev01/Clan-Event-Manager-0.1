@@ -1,6 +1,14 @@
 import React from 'react'
 import './HeroSection.css'; // Assuming you have a CSS file for styling
+import { useNavigate } from 'react-router-dom';
 const HeroSection = () => {
+  const nevigate = useNavigate();
+  const toRegister = () => {
+   nevigate('/register');
+  };
+  const toEvent = () => {
+    nevigate('/event');
+  };
   return (
     <div className='Hero-section'>
         <div className="mid-part">
@@ -10,8 +18,8 @@ const HeroSection = () => {
         <p> Unite with your fellow clan members and make your mark!</p>
 
         <div className="home-btns">
-        <button>Join Now</button>
-        <button id='btn2' >View Event</button>
+        <button onClick={toRegister}>Join Now</button>
+        <button id='btn2' onClick={toEvent} >View Event</button>
         </div>
         </div>
     </div>

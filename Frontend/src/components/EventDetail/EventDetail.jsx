@@ -15,7 +15,7 @@ const EventDetail = () => {
 
       <div className="detail-box">
         {event.poster?.url && (
-          <img src={event.poster.url} alt="Event Poster" className="event-poster" />
+          <img src={event.poster.url} alt="Event Poster" className="event-pstr" />
         )}
 
         <p><strong>Clan:</strong> {event.clanName}</p>
