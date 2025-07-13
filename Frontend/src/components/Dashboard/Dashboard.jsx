@@ -95,7 +95,12 @@ const Dashboard = () => {
           <h1>Welcom Back, {clanName}</h1>
           <p>Manage your clan events and track participation</p>
         </div>
-        <button onClick={uploadEvetnt} className="ctr-btn">+ Create Event</button>
+        <button onClick={uploadEvetnt} className="ctr-btn">
+
+<span class="shadow"></span>
+  <span class="edge"></span>
+  <span class="front text"> +Create event
+  </span> </button>
       </div>
 
       <div className="stats">
