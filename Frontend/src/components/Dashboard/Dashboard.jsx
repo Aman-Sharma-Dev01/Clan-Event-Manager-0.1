@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import './Dashboard.css';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import { useAuth } from '../../Context/AuthProvider';
+
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -16,6 +18,10 @@ const Dashboard = () => {
     fetchEvents();
     fetchMembers();
   }, []);
+
+
+  
+    const {  profile } = useAuth();
 
   const fetchEvents = async () => {
     try {

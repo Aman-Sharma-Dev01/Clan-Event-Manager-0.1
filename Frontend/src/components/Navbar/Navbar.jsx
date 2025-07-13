@@ -1,10 +1,12 @@
 import React from "react";
 import "./Navbar.css";
-import { FaShieldAlt } from "react-icons/fa";
+
 import { Link, useLocation } from "react-router-dom";
 import { useAuth } from "../../Context/AuthProvider.jsx";
 import axios from "axios";
 import toast from "react-hot-toast";
+import mruLogo from "../../assets/logo2.png"; // adjust path if necessary
+
 
 const Navbar = () => {
   const { profile } = useAuth();
@@ -43,14 +45,15 @@ const Navbar = () => {
         ${isHome ? "home-navbar" : ""}`}
     >
       <div className="navbar-left">
-        <FaShieldAlt className="logo-icon" />
-        <span className="brand-name">ClanEvents</span>
+        <img src={mruLogo} alt="MRU Logo" className="logo-img" />
+        <span className="brand-name"></span>
       </div>
 
       <div className="navbar-center">
         <Link to="/" className="nav-link">Home</Link>
         <Link to="/event" className="nav-link">Events</Link>
         <Link to="/dashboard" className="nav-link">Dashboard</Link>
+        <Link to="/about" className="nav-link">About</Link>
       </div>
 
       <div className="navbar-right">

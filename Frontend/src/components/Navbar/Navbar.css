@@ -83,3 +83,12 @@
 .home-navbar {
   position: absolute;
 }
+
+
+.logo-img {
+ height: 150px;        /* Adjust height for better fit */
+  width: auto;         /* Maintains aspect ratio */
+  margin-right: 10px;  /* Space between logo and text */
+  object-fit: contain; /* Ensures logo fits without distortion */
+  vertical-align: middle; /* optional */
+}

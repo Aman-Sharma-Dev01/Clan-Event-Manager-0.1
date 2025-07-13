@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './components/Navbar/Navbar.jsx'
 import Login from './components/Login/Login.jsx'
 import Register from './components/Register/Register.jsx'
+import About from './components/About/About.jsx'
 import Dashboard from './components/Dashboard/Dashboard.jsx'
 import Homepage from './components/Homepage/Homepage.jsx'
 import EventDetail from './components/EventDetail/EventDetail.jsx'
@@ -42,6 +43,8 @@ const App = () => {
         />
      <Route exact path="/" element = {<Homepage/>} />
        <Route exact path="/dashboard" element = {<Dashboard/>}/>
+        <Route exact path="/about" element = {<About/>}/>
+
        <Route exact path="/login" element = {<Login/>} />
        <Route exact path="/register" element = {<Register/>} />
        <Route exact path="/event" element = {<EventPage/>} />
