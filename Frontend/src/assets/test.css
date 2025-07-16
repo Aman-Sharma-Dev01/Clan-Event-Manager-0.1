@@ -1,0 +1,168 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  width: 100%;
+  height: 9.3vh;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  top: 0;
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-img {
+  height: 120px;
+  width: auto;
+  margin-right: 10px;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+.logo-icon {
+  color: #bc2027;
+  font-size: 2rem;
+}
+
+.brand-name {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.navbar-center {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1.2rem;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #FCD200;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-right .login-btn {
+  background-color: #bc2027;
+  color: white;
+  padding: 0.6rem 2rem;
+  border: none;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #FCD200;
+  color: black;
+}
+
+/* Dashboard navbar: text black */
+.dashboard-navbar {
+  position: relative;
+}
+
+.dashboard-navbar .nav-link,
+.dashboard-navbar .brand-name {
+  color: black;
+}
+
+/* Home navbar: absolute positioning */
+.home-navbar {
+  position: absolute;
+}
+
+/* ========================== */
+/* ✅ Responsive Styling Here */
+/* ========================== */
+
+@media (max-width: 1024px) {
+  .brand-name {
+    font-size: 1.3rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  .login-btn {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .logo-img {
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    height: auto;
+  }
+
+  .navbar-center {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    align-items: flex-start;
+    margin-top: 0.5rem;
+  }
+
+  .navbar-right {
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 1rem;
+  }
+
+  .login-btn {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .logo-img {
+    height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-name {
+    font-size: 1.1rem;
+  }
+
+  .nav-link {
+    font-size: 0.95rem;
+  }
+
+  .login-btn {
+    font-size: 0.9rem;
+  }
+
+  .logo-img {
+    height: 60px;
+  }
+}

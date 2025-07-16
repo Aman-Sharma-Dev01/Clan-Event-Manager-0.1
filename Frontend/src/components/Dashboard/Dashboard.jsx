@@ -92,14 +92,14 @@ const Dashboard = () => {
     <div className="dashboard">
       <div className="header">
         <div>
-          <h1>Welcom Back, {clanName}</h1>
+          <h1>Welcome Back, {clanName}</h1>
           <p>Manage your clan events and track participation</p>
         </div>
         <button onClick={uploadEvetnt} className="ctr-btn">
 
-<span class="shadow"></span>
-  <span class="edge"></span>
-  <span class="front text"> +Create event
+<span className="shadow"></span>
+  <span className="edge"></span>
+  <span className="front text"> +Create event
   </span> </button>
       </div>
 
