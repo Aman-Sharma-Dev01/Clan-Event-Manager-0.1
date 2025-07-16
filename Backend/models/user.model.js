@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose, { Types } from "mongoose";
 import validator from "validator";
 const userSchema = new mongoose.Schema({
 
@@ -32,7 +32,12 @@ clanName:{
 },
 token: {
     type: String,
-  }
+  },
+
+RollNo:{
+    type:String,
+    required:true
+}
 
 })
 

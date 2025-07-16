@@ -5,8 +5,8 @@ import createTokenAndSaveCookies from "../jwt/AuthToken.js"
 export const register= async (req,res)=>{
    
    try {
-     const{Firstname,Lastname,email,password,clanName}= req.body;
-    if(!Firstname||!Lastname||!email||!password||!clanName){
+     const{Firstname,Lastname,email,password,clanName,RollNo}= req.body;
+    if(!Firstname||!Lastname||!email||!password||!clanName||!RollNo){
      return res.status(400).json({message:"All fields are required"});
     }
       const user= await User.findOne({email})
@@ -19,6 +19,7 @@ export const register= async (req,res)=>{
          Firstname,
          Lastname,
          email,
+         RollNo,
          password:hashedPassword,
          clanName
      });
