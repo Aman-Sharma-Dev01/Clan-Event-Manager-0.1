@@ -5,6 +5,7 @@ import axios from "axios";
 import toast from "react-hot-toast";
 import mruLogo from "../../assets/mru.jpg"; // adjust the path if needed
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { BACKEND_URL } from "../utils";
 
 const Register = () => {
   const navigate = useNavigate();
@@ -31,7 +32,7 @@ const Register = () => {
 
     try {
       const { data } = await axios.post(
-        "http://localhost:4001/api/users/register",
+        `${BACKEND_URL}api/users/register`,
         formData,
         {
           headers: {

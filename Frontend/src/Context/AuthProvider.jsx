@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { createContext, useContext, useEffect, useState } from "react";
+import { BACKEND_URL } from "../components/utils";
 
 export const AuthContext = createContext();
 
@@ -16,7 +17,7 @@ export const AuthProvider = ({ children }) => {
         console.log(token);
         if (token) {
           const { data } = await axios.get(
-            "http://localhost:4001/api/users/get-my-profile",
+            `${BACKEND_URL}api/users/get-my-profile`,
             {
               withCredentials: true,
               headers: {
@@ -36,7 +37,7 @@ export const AuthProvider = ({ children }) => {
     const fetchEvents = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:4001/api/event/allevents",
+          `${BACKEND_URL}api/event/allevents`,
           { withCredentials: true }
         );
         console.log(data);

@@ -3,6 +3,7 @@ import './EventUpload.css';
 import axios from 'axios';
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
+import { BACKEND_URL } from '../utils';
 
 const EventUpload = () => {
   const navigate = useNavigate();
@@ -53,7 +54,7 @@ const EventUpload = () => {
       }
 
       const { data } = await axios.post(
-        "http://localhost:4001/api/event/upload",
+        `${BACKEND_URL}api/event/upload`,
         eventData,
         {
           headers: { "Content-Type": "multipart/form-data" },

@@ -5,6 +5,7 @@ import { useAuth } from "../../Context/AuthProvider.jsx";
 import axios from "axios";
 import toast from "react-hot-toast";
 import mruLogo from "../../assets/logo2.png";
+import { BACKEND_URL } from "../utils.js";
 
 const Navbar = () => {
   const { profile } = useAuth();
@@ -29,7 +30,7 @@ const Navbar = () => {
 
   const logout = async () => {
     try {
-      await axios.get("http://localhost:4001/api/users/logout", {
+      await axios.get(`${BACKEND_URL}api/users/logout`, {
         withCredentials: true,
         headers: {
           "Content-Type": "application/json",
