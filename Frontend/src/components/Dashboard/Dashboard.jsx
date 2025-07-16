@@ -3,6 +3,7 @@ import './Dashboard.css';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { useAuth } from '../../Context/AuthProvider.jsx';
+import { BACKEND_URL } from '../utils.js';
 
 
 const Dashboard = () => {
@@ -25,7 +26,7 @@ const Dashboard = () => {
 
   const fetchEvents = async () => {
     try {
-      const { data } = await axios.get("http://localhost:4001/api/event/myevents", {
+      const { data } = await axios.get(`${BACKEND_URL}api/event/myevents`, {
         withCredentials: true,
       });
       setEvents(
@@ -43,7 +44,7 @@ const Dashboard = () => {
 
   const fetchMembers = async () => {
     try {
-      const { data } = await axios.get("http://localhost:4001/api/event/my-members", {
+      const { data } = await axios.get(`${BACKEND_URL}api/event/my-members`, {
         withCredentials: true,
       });
       setClanMembers(data.members || []);
@@ -54,7 +55,7 @@ const Dashboard = () => {
 
   const deleteEvent = async (eventId) => {
     try {
-      await axios.delete(`http://localhost:4001/api/event/${eventId}`, {
+      await axios.delete(`${BACKEND_URL}api/event/${eventId}`, {
         withCredentials: true,
       });
       setEvents(prev => prev.filter(event => event._id !== eventId));
@@ -67,7 +68,7 @@ const Dashboard = () => {
   const toggleEventStatus = async (eventId, currentStatus) => {
       const newStatus = currentStatus === "COMPLETED" ? "UPCOMING" : "COMPLETED";
     try {
-      await axios.patch(`http://localhost:4001/api/event/${eventId}/status`, 
+      await axios.patch(`${BACKEND_URL}api/event/${eventId}/status`, 
         { status: newStatus }, 
         { withCredentials: true }
       );

@@ -6,6 +6,7 @@ import toast from "react-hot-toast";
 import { useAuth } from "../../Context/AuthProvider.jsx";
 import mruLogo from "../../assets/mru.jpg"; // adjust the path if needed
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { BACKEND_URL } from "../utils.js";
 
 
 
@@ -23,7 +24,7 @@ const Login = () => {
     try {
       setLoading(true);
       const { data } = await axios.post(
-        "http://localhost:4001/api/users/login",
+        `${BACKEND_URL}api/users/login`,
         { email, password },
         {
           withCredentials: true,
