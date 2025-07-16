@@ -20,10 +20,13 @@ app.use(cookieParser());
 
 app.use(fileUpload({ useTempFiles: true }));
 
-app.use(cors({
-  origin: "http://localhost:5173", // your React app URL
-  credentials: true               // to allow cookies with requests
-}));
+app.use(
+  cors({
+    origin: process.env.FRONTEND_URL,
+    credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE"],
+  })
+);
 
 //DBCODE
 try {
