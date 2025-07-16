@@ -1,8 +1,6 @@
 import React from 'react';
 import './About.css';
 
-
-
 const About = () => {
   return (
     <div className="about-container">
@@ -27,14 +25,18 @@ const About = () => {
               <li>Fosters a vibrant campus culture</li>
             </ul>
           </div>
-          <div className="image image1"></div>
+          <div className="image-wrapper">
+            <img src="/assets/clan-1.webp" alt="Clan System" className="responsive-image" />
+          </div>
         </div>
       </section>
 
       <section className="role-section">
         <h2>The Role of the Clans</h2>
         <div className="content-row reverse">
-          <div className="image image2"></div>
+          <div className="image-wrapper">
+            <img src="/assets/clan-2.webp" alt="Clan Activity" className="responsive-image" />
+          </div>
           <div className="text">
             <p>
               The clans play an integral role in the overall personality development of students by conducting various activities, challenges, and mentorship programs across the year.
@@ -67,19 +69,19 @@ const About = () => {
         </p>
         <div className="clan-logos">
           <div className="logo-card">
-            <img src="public/assets/WaterShark.jpg" alt="Water Sharks" />
+            <img src="/assets/WaterShark.jpg" alt="Water Sharks" />
             <p>Water Sharks</p>
           </div>
           <div className="logo-card">
-            <img src="public/assets/WildCat.jpg" alt="Wild Cats" />
+            <img src="/assets/WildCat.jpg" alt="Wild Cats" />
             <p>Wild Cats</p>
           </div>
           <div className="logo-card">
-            <img src="public/assets/AirFal.jpg" alt="Air Falcons" />
+            <img src="/assets/AirFal.jpg" alt="Air Falcons" />
             <p>Air Falcons</p>
           </div>
           <div className="logo-card">
-            <img src="public/assets/Rhino.jpg" alt="Forest Rhinos" />
+            <img src="/assets/Rhino.jpg" alt="Forest Rhinos" />
             <p>Forest Rhinos</p>
           </div>
         </div>
