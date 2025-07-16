@@ -32,7 +32,7 @@ const Register = () => {
 
     try {
       const { data } = await axios.post(
-        `${BACKEND_URL}api/users/register`,
+        `${BACKEND_URL}/api/users/register`,
         formData,
         {
           headers: {

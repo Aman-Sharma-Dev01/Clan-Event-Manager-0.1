@@ -17,7 +17,7 @@ export const AuthProvider = ({ children }) => {
         console.log(token);
         if (token) {
           const { data } = await axios.get(
-            `${BACKEND_URL}api/users/get-my-profile`,
+            `${BACKEND_URL}/api/users/get-my-profile`,
             {
               withCredentials: true,
               headers: {
@@ -37,7 +37,7 @@ export const AuthProvider = ({ children }) => {
     const fetchEvents = async () => {
       try {
         const { data } = await axios.get(
-          `${BACKEND_URL}api/event/allevents`,
+          `${BACKEND_URL}/api/event/allevents`,
           { withCredentials: true }
         );
         console.log(data);

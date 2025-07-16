@@ -1,1 +1,1 @@
-export const BACKEND_URL="https://clan-event-manager.onrender.com/"
+export const BACKEND_URL="https://clan-event-manager.onrender.com"

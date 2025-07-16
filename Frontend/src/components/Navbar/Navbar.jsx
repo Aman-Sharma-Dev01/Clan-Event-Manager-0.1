@@ -30,7 +30,7 @@ const Navbar = () => {
 
   const logout = async () => {
     try {
-      await axios.get(`${BACKEND_URL}api/users/logout`, {
+      await axios.get(`${BACKEND_URL}/api/users/logout`, {
         withCredentials: true,
         headers: {
           "Content-Type": "application/json",

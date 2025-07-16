@@ -26,7 +26,7 @@ const Dashboard = () => {
 
   const fetchEvents = async () => {
     try {
-      const { data } = await axios.get(`${BACKEND_URL}api/event/myevents`, {
+      const { data } = await axios.get(`${BACKEND_URL}/api/event/myevents`, {
         withCredentials: true,
       });
       setEvents(
@@ -44,7 +44,7 @@ const Dashboard = () => {
 
   const fetchMembers = async () => {
     try {
-      const { data } = await axios.get(`${BACKEND_URL}api/event/my-members`, {
+      const { data } = await axios.get(`${BACKEND_URL}/api/event/my-members`, {
         withCredentials: true,
       });
       setClanMembers(data.members || []);
@@ -55,7 +55,7 @@ const Dashboard = () => {
 
   const deleteEvent = async (eventId) => {
     try {
-      await axios.delete(`${BACKEND_URL}api/event/${eventId}`, {
+      await axios.delete(`${BACKEND_URL}/api/event/${eventId}`, {
         withCredentials: true,
       });
       setEvents(prev => prev.filter(event => event._id !== eventId));
@@ -68,7 +68,7 @@ const Dashboard = () => {
   const toggleEventStatus = async (eventId, currentStatus) => {
       const newStatus = currentStatus === "COMPLETED" ? "UPCOMING" : "COMPLETED";
     try {
-      await axios.patch(`${BACKEND_URL}api/event/${eventId}/status`, 
+      await axios.patch(`${BACKEND_URL}/api/event/${eventId}/status`, 
         { status: newStatus }, 
         { withCredentials: true }
       );

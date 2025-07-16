@@ -54,7 +54,7 @@ const EventUpload = () => {
       }
 
       const { data } = await axios.post(
-        `${BACKEND_URL}api/event/upload`,
+        `${BACKEND_URL}/api/event/upload`,
         eventData,
         {
           headers: { "Content-Type": "multipart/form-data" },
