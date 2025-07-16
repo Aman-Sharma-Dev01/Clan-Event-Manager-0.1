@@ -15,6 +15,7 @@ const Register = () => {
     email: "",
     password: "",
     clanName: "",
+    RollNo:"",
   });
 
   const [loading, setLoading] = useState(false);
@@ -94,7 +95,22 @@ const Register = () => {
               disabled={loading}
             />
           </div>
+           
         </div>
+
+ <div className="input-group">
+            <label>Roll Number</label>
+            <input
+              type="text"
+              name="RollNo"
+              placeholder="Enter Your Roll Number "
+              value={formData.RollNo}
+              onChange={handleChange}
+              required
+              disabled={loading}
+            />
+          </div>
+
 
         <div className="input-group">
           <label>Email</label>
