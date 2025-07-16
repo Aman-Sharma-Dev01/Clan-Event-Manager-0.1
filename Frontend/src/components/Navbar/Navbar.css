@@ -131,7 +131,7 @@
   }
 }
 
-/* Optional: Black navbar text for dashboard */
+
 .dashboard-navbar .nav-link,
 .dashboard-navbar .brand-name {
   color: black;
@@ -154,10 +154,7 @@
   position: relative;
 }
 
-.dashboard-navbar .nav-link,
-.dashboard-navbar .brand-name {
-  color: black;
-}
+
 
 /* Home navbar: absolute positioning */
 .home-navbar {

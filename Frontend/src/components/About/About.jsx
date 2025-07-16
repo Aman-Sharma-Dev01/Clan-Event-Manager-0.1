@@ -5,9 +5,11 @@ const About = () => {
   return (
     <div className="about-container">
       <section className="intro-section">
-        <h1>About Our College</h1>
+        <h1>About Our University</h1>
         <p>
-          Our college fosters a holistic environment that emphasizes not only academic excellence but also personal and professional development through a dynamic clan system and engaging co-curricular activities.
+          "Our University fosters a holistic and inclusive environment that goes beyond traditional academics, emphasizing not only intellectual excellence but also the personal, social, and professional development of every student. Through our unique and dynamic clan system, we encourage leadership, teamwork, and healthy competition, while a diverse range of co-curricular activities—ranging from cultural events to technical workshops—ensures that students are empowered to discover their passions, develop essential life skills, and become well-rounded individuals ready to lead in a global society."
+
+
         </p>
       </section>
 
@@ -23,6 +25,9 @@ const About = () => {
               <li>Promotes leadership and soft skills</li>
               <li>Develops healthy competition</li>
               <li>Fosters a vibrant campus culture</li>
+              <li>Instills a Sense of Identity & Pride</li>
+              <li>Strengthens Problem-Solving Abilities</li>
+              <li>Builds Lifelong Bonds</li>
             </ul>
           </div>
           <div className="image-wrapper">
@@ -45,7 +50,8 @@ const About = () => {
               <li>Organize cultural and technical events</li>
               <li>Encourage student initiatives</li>
               <li>Support peer learning and mentorship</li>
-            </ul>
+              <li>Improves Event Management Skills</li>
+           </ul>
           </div>
         </div>
       </section>

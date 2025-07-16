@@ -21,6 +21,7 @@ const EventUpload = () => {
   });
 
   const [loading, setLoading] = useState(false);
+  const [posterPreview, setPosterPreview] = useState(null); // preview URL
 
   const handleChange = (e) => {
     const { id, value } = e.target;
@@ -31,10 +32,14 @@ const EventUpload = () => {
   };
 
   const handleFileChange = (e) => {
-    setFormData((prev) => ({
-      ...prev,
-      poster: e.target.files[0],
-    }));
+    const file = e.target.files[0];
+    if (file) {
+      setFormData((prev) => ({
+        ...prev,
+        poster: file,
+      }));
+      setPosterPreview(URL.createObjectURL(file));
+    }
   };
 
   const handleSubmit = async (e) => {
@@ -48,12 +53,10 @@ const EventUpload = () => {
       }
 
       const { data } = await axios.post(
-        "http://localhost:4001/api/event/upload", // your API endpoint
+        "http://localhost:4001/api/event/upload",
         eventData,
         {
-          headers: {
-            "Content-Type": "multipart/form-data",
-          },
+          headers: { "Content-Type": "multipart/form-data" },
           withCredentials: true,
         }
       );
@@ -83,10 +86,10 @@ const EventUpload = () => {
             <p>Basic information about your event</p>
 
             <label htmlFor="EventTitle">Event Title *</label>
-            <input id="EventTitle" type="text" placeholder="Enter event title" required onChange={handleChange} />
+            <input id="EventTitle" type="text" required placeholder="Enter event title" onChange={handleChange} />
 
             <label htmlFor="Description">Description *</label>
-            <textarea id="Description" placeholder="Describe your event..." required onChange={handleChange}></textarea>
+            <textarea id="Description" required placeholder="Describe your event..." onChange={handleChange}></textarea>
 
             <label htmlFor="Category">Category *</label>
             <select id="Category" required onChange={handleChange}>
@@ -104,7 +107,19 @@ const EventUpload = () => {
             <div className="upload-box">
               <p>📁 Click to upload or drag and drop</p>
               <p className="upload-hint">PNG, JPG up to 10MB</p>
-              <input id="poster" type="file" accept="image/*" onChange={handleFileChange} required />
+              <input
+                id="poster"
+                type="file"
+                accept="image/*"
+                onChange={handleFileChange}
+                required
+              />
+              {posterPreview && (
+                <div className="poster-preview">
+                  <p>Preview:</p>
+                  <img src={posterPreview} alt="Event Poster Preview" className="preview-image" />
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -121,7 +136,7 @@ const EventUpload = () => {
             <input id="Time" type="time" required onChange={handleChange} />
 
             <label htmlFor="Location">Location *</label>
-            <input id="Location" type="text" placeholder="Enter event location" required onChange={handleChange} />
+            <input id="Location" type="text" required placeholder="Enter event location" onChange={handleChange} />
           </div>
 
           <div className="card">
@@ -129,7 +144,7 @@ const EventUpload = () => {
             <p>Set limits and incentives for participants</p>
 
             <label htmlFor="GoogleFormLink">Event Registration Link *</label>
-            <input id="GoogleFormLink" type="text" placeholder="Paste your Google Form link" required onChange={handleChange} />
+            <input id="GoogleFormLink" type="text" required placeholder="Paste your Google Form link" onChange={handleChange} />
 
             <label htmlFor="Reward">Prize/Reward</label>
             <input id="Reward" type="text" placeholder="Trophy, Certificate, etc." onChange={handleChange} />

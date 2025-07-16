@@ -46,7 +46,7 @@
   background-color: #fff;
   border-radius: 10px;
   padding: 1.5rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 .card h2 {
@@ -113,6 +113,25 @@
   color: #888;
 }
 
+.poster-preview {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.poster-preview p {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.preview-image {
+  max-width: 100%;
+  max-height: 200px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-top: 0.5rem;
+}
+
 .actions {
   display: flex;
   justify-content: flex-end;
@@ -137,8 +156,10 @@
 .create-btn {
   background-color: #bc2027;
   color: white;
+  transition: background-color 0.3s ease;
 }
 
 .create-btn:hover {
   background-color: #FCD200;
+  color: #000;
 }
