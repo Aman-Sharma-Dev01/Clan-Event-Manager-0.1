@@ -150,8 +150,8 @@ const Dashboard = () => {
                 <div className="event-actions">
                   <span className={`status ${event.status}`}>{event.status}</span>
                   <div className="icons">
-                    <span title="View">👁️</span>
-                    <span title="Edit">✏️</span>
+                    {/* <span title="View">👁️</span> */}
+                    {/* <span title="Edit">✏️</span> */}
                     <span title="Delete" onClick={() => setConfirmDeleteId(event._id)}>🗑️</span>
                     <button 
                       className="toggle-status" 
