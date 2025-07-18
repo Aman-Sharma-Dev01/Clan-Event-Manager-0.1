@@ -1,51 +1,47 @@
-import React from "react";
 import "./ClanLogoSection.css";
-import { FaUsers } from "react-icons/fa";
-
+import WildCatLogo from "../../assets/WildCat.jpg"
+import ForestRhinoLogo from "../../assets/Rhino.jpg"
+import AirFalconLogo from "../../assets/AirFal.jpg"
+import WaterSharksLogo from "../../assets/WaterShark.jpg"
 const clans = [
   {
     name: "Wild Cats",
     description: "Rise from the ashes",
-    color: "#EF4444",
     members: 45,
+    img: WildCatLogo,
   },
   {
     name: "Forest Rhinos",
     description: "Strength and wisdom",
-    color: "#10B981",
     members: 52,
+    img: ForestRhinoLogo,
   },
   {
     name: "Air Falcons",
     description: "Unity and loyalty",
-    color: "#3B82F6",
     members: 38,
+    img: AirFalconLogo,
   },
   {
     name: "Water Sharks",
     description: "Vision and freedom",
-    color: "#FACC15",
     members: 41,
+    img: WaterSharksLogo,
   },
 ];
 
 const ClanLogoSection = () => {
   return (
     <section className="clans-section">
-      <h2>Choose Your Clan</h2>
+      <h2>Know Your Clan</h2>
       <div className="clan-grid">
         {clans.map((clan) => (
           <div key={clan.name} className="clan-card">
-            <div
-              className="clan-icon"
-              style={{ backgroundColor: clan.color }}
-            >
-              🏆
-            </div>
+            
+              <img src={clan.img} alt="" className="clan-icon" />
             <h3>{clan.name}</h3>
             <p className="clan-desc">{clan.description}</p>
             <div className="clan-members">
-              <FaUsers className="members-icon" />
               <span>{clan.members} members</span>
             </div>
           </div>

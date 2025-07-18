@@ -49,7 +49,7 @@ const App = () => {
        <Route exact path="/register" element = {<Register/>} />
        <Route exact path="/event" element = {token ? <EventPage /> : <Navigate to={"/login"} />} />
        <Route exact path="/uploadevent" element={token ? <EventUpload /> : <Navigate to={"/login"} />}/>
-        <Route path="/event/:id" element={token ? <EventDetail /> : <Navigate to={"/login"} />} />
+       <Route path="/event/:id" element={token ? <EventDetail /> : <Navigate to={"/login"} />} />
        
 
       </Routes> 
