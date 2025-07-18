@@ -22,11 +22,12 @@ app.use(fileUpload({ useTempFiles: true }));
 
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL,
+    origin: [process.env.FRONTEND_URL, "http://localhost:3000", "http://localhost:5173"], // Added common localhost origins
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
   })
 );
+
 
 //DBCODE
 try {
