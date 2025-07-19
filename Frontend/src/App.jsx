@@ -17,7 +17,7 @@ import WaterSharksPage from './components/KnowYourClan/WaterSharksPage.jsx'
 import ForestRhinosPage from './components/KnowYourClan/ForestRhinosPage.jsx'
 import AirFalconsPage from './components/KnowYourClan/AirFalconsPage.jsx'
 import WildCatsPage from './components/KnowYourClan/WildCatsPage.jsx'
-import Khalbali from './components/Khalbali/khalbali.jsx';
+import Khalbali from './components/Society/Khalbali/Khalbali.jsx'
 
 const App = () => {
   const location = useLocation();
@@ -54,6 +54,7 @@ const App = () => {
        <Route exact path="/forest-rhinos-page" element = {<ForestRhinosPage/>} />
        <Route exact path="/water-sharks-page" element = {<WaterSharksPage/>} />
        <Route exact path="/air-falcons-page" element = {<AirFalconsPage/>} />
+        <Route exact path="/khalbali" element = {<Khalbali/>} />
 
 
       </Routes> 
