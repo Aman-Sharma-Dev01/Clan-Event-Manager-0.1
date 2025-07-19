@@ -61,12 +61,12 @@ const Login = () => {
       </div>
 
       <div className="tab-container">
-        <Link to="/login" className="tab active">Login</Link>
-        <Link to="/register" className="tab">Register</Link>
+        {/* <Link to="/login" className="tab active">Login</Link> */}
+        {/* <Link to="/register" className="tab">Register</Link> */}
       </div>
 
       <form className="login-form" onSubmit={handleLogin}>
-        <h2 className="form-heading">Welcome Back</h2>
+        <h2 className="form-heading">Welcome Back , Admins</h2>
         <p className="subheading">Sign in to your account to continue</p>
 
         <div className="input-group">

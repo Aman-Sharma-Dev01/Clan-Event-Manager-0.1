@@ -3,30 +3,31 @@ import WildCatLogo from "../../assets/WildCat.jpg"
 import ForestRhinoLogo from "../../assets/Rhino.jpg"
 import AirFalconLogo from "../../assets/AirFal.jpg"
 import WaterSharksLogo from "../../assets/WaterShark.jpg"
+import { Link } from "react-router-dom";
 const clans = [
   {
     name: "Wild Cats",
     description: "Rise from the ashes",
-    members: 45,
     img: WildCatLogo,
+    btn: "/wild-cats-page"
   },
   {
     name: "Forest Rhinos",
     description: "Strength and wisdom",
-    members: 52,
     img: ForestRhinoLogo,
+    btn: "/forest-rhinos-page"
   },
   {
     name: "Air Falcons",
     description: "Unity and loyalty",
-    members: 38,
     img: AirFalconLogo,
+    btn: "/air-falcons-page"
   },
   {
     name: "Water Sharks",
     description: "Vision and freedom",
-    members: 41,
     img: WaterSharksLogo,
+    btn: "/water-sharks-page"
   },
 ];
 
@@ -42,7 +43,7 @@ const ClanLogoSection = () => {
             <h3>{clan.name}</h3>
             <p className="clan-desc">{clan.description}</p>
             <div className="clan-members">
-              <span>{clan.members} members</span>
+              <Link className="know-clan" to={clan.btn} >Know More</Link>
             </div>
           </div>
         ))}

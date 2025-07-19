@@ -43,10 +43,6 @@ const EventSection = () => {
                     <FaCalendarAlt />
                     <span>{new Date(event.Date).toLocaleDateString()}</span>
                   </div>
-                  <div className="meta-item">
-                    <FaUsers />
-                    <span>0 joined</span> {/* Placeholder */}
-                  </div>
                 </div>
               </div>
             </div>
