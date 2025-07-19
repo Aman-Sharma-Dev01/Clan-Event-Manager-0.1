@@ -16,4 +16,4 @@ const WildCatsPage = () => {
   )
 }
 
-export default WildCatsPage
+export default WildCatsPage;
