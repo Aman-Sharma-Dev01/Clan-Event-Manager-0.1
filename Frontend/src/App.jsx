@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './components/Navbar/Navbar.jsx'
 import Login from './components/Login/Login.jsx'
-import Register from './components/Register/Register.jsx'
+// import Register from './components/Register/Register.jsx'
 import About from './components/About/About.jsx'
 import Dashboard from './components/Dashboard/Dashboard.jsx'
 import Homepage from './components/HomePage/Homepage.jsx'
@@ -13,10 +13,10 @@ import EventUpload from './components/EventUploadPage/EventUpload.jsx'
 import { useAuth } from './Context/AuthProvider.jsx'
 import { Navigate } from 'react-router-dom'
 import { Toaster } from 'react-hot-toast'
-import WildCatsPage from './components/KnowYourClan/WildcatsPage.jsx'
 import WaterSharksPage from './components/KnowYourClan/WaterSharksPage.jsx'
 import ForestRhinosPage from './components/KnowYourClan/ForestRhinosPage.jsx'
 import AirFalconsPage from './components/KnowYourClan/AirFalconsPage.jsx'
+import WildCatsPage from './components/KnowYourClan/WildCatsPage.jsx'
 import Khalbali from './components/Khalbali/khalbali.jsx';
 
 const App = () => {

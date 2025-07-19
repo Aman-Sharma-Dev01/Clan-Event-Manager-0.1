@@ -6,7 +6,7 @@ const WildCats = [
     name: "Wild Cats",
   }
 ];
-const WildcatsPage = () => {
+const WildCatsPage = () => {
   return (
     <div>
     {WildCats.map((props) => (
@@ -16,4 +16,4 @@ const WildcatsPage = () => {
   )
 }
 
-export default WildcatsPage;
+export default WildCatsPage;
