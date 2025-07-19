@@ -36,7 +36,7 @@ const ClanCardsSection = () => {
                 className="event-poster"
               />
               <h3>{event.EventTitle}</h3>
-              <p className="description">{event.Description}</p>
+              {/* <p className="description">{event.Description}</p> */}
               <div className="info">
                 <p>📅 {new Date(event.Date).toLocaleDateString()}</p>
                 <p>⏰ {event.Time}</p>
