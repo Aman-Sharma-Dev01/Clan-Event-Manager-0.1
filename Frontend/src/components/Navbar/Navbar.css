@@ -49,7 +49,7 @@
   color: #FCD200;
 }
 
-.login-btn {
+.login-btn , .know-clan {
   background-color: #bc2027;
   color: white;
   padding: 0.6rem 1.8rem;
@@ -58,9 +58,10 @@
   font-size: 1rem;
   cursor: pointer;
   transition: background 0.3s ease;
+  text-decoration: none;
 }
 
-.login-btn:hover {
+.login-btn:hover , .know-clan:hover {
   background-color: #FCD200;
   color: black;
 }

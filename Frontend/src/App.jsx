@@ -13,6 +13,10 @@ import EventUpload from './components/EventUploadPage/EventUpload.jsx'
 import { useAuth } from './Context/AuthProvider.jsx'
 import { Navigate } from 'react-router-dom'
 import { Toaster } from 'react-hot-toast'
+import WildCatsPage from './components/KnowYourClan/WildCatsPage.jsx'
+import WaterSharksPage from './components/KnowYourClan/WaterSharksPage.jsx'
+import ForestRhinosPage from './components/KnowYourClan/ForestRhinosPage.jsx'
+import AirFalconsPage from './components/KnowYourClan/AirFalconsPage.jsx'
 import Khalbali from './components/Khalbali/khalbali.jsx';
 
 const App = () => {
@@ -37,21 +41,20 @@ const App = () => {
       {!hideNavbarFooter  && <Navbar/>}
      
     <Routes>
-      <Route
-          exact
-          path="/"
-          element={token ? <Homepage /> : <Navigate to={"/login"} />}
-        />
      <Route exact path="/" element = {<Homepage/>} />
        <Route exact path="/dashboard" element = {token ? <Dashboard /> : <Navigate to={"/login"} />}/>
-        <Route exact path="/about" element = {token ? <About /> : <Navigate to={"/login"} />}/>
+        <Route exact path="/about" element = {<About />}/>
+       <Route exact path="/uploadevent" element={token ? <EventUpload /> : <Navigate to={"/login"} />}/>
 
        <Route exact path="/login" element = {<Login/>} />
-       <Route exact path="/register" element = {<Register/>} />
-       <Route exact path="/event" element = {token ? <EventPage /> : <Navigate to={"/login"} />} />
-       <Route exact path="/uploadevent" element={token ? <EventUpload /> : <Navigate to={"/login"} />}/>
-       <Route path="/event/:id" element={token ? <EventDetail /> : <Navigate to={"/login"} />} />
-       
+       {/* <Route exact path="/register" element = {<Register/>} /> */}
+       <Route exact path="/event" element = {<EventPage/>} />
+       <Route path="/event/:id" element={<EventDetail/> } />
+       <Route exact path="/wild-cats-page" element = {<WildCatsPage/>} />
+       <Route exact path="/forest-rhinos-page" element = {<ForestRhinosPage/>} />
+       <Route exact path="/water-sharks-page" element = {<WaterSharksPage/>} />
+       <Route exact path="/air-falcons-page" element = {<AirFalconsPage/>} />
+
 
       </Routes> 
 

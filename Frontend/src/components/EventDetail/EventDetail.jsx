@@ -6,7 +6,7 @@ const EventDetail = () => {
   const { state: event } = useLocation();
 
   if (!event) return <p>Event not found</p>;
-
+  
   const formattedDate = new Date(event.Date).toLocaleDateString("en-IN");
 
   return (
@@ -27,18 +27,23 @@ const EventDetail = () => {
         <p><strong>Reward:</strong> {event.Reward}</p>
         <p><strong>Requirements:</strong> {event.Requirements || "None"}</p>
 
-        {event.GoogleFormLink ? (
-          <a
-            href={event.GoogleFormLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="register-btn"
-          >
-            Register Now
-          </a>
-        ) : (
-          <p><em>Registration link not available</em></p>
-        )}
+        {event.status === 'COMPLETED' ? (
+  <button className="register-btn expired" disabled>
+    Expired
+  </button>
+) : event.GoogleFormLink ? (
+  <a
+    href={event.GoogleFormLink}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="register-btn"
+  >
+    Register Now
+  </a>
+) : (
+  <p><em>Registration link not available</em></p>
+)}
+
       </div>
     </div>
   );
