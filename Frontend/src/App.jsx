@@ -13,6 +13,7 @@ import EventUpload from './components/EventUploadPage/EventUpload.jsx'
 import { useAuth } from './Context/AuthProvider.jsx'
 import { Navigate } from 'react-router-dom'
 import { Toaster } from 'react-hot-toast'
+import Khalbali from './components/Khalbali/khalbali.jsx';
 
 const App = () => {
   const location = useLocation();
