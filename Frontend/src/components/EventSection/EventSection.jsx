@@ -1,6 +1,6 @@
 import React from "react";
 import "./EventSection.css";
-import { FaCalendarAlt, FaUsers } from "react-icons/fa";
+import { FaCalendarAlt } from "react-icons/fa";
 import { useAuth } from "../../Context/AuthProvider.jsx";
 import { useNavigate } from "react-router-dom";
 
