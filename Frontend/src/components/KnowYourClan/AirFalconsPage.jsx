@@ -1,5 +1,4 @@
 import React from 'react'
-import "./WildCatsPage.css"
 
 const AirFalcon = [
   {
