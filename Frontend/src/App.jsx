@@ -17,6 +17,7 @@ import WildCatsPage from './components/KnowYourClan/WildcatsPage.jsx'
 import WaterSharksPage from './components/KnowYourClan/WaterSharksPage.jsx'
 import ForestRhinosPage from './components/KnowYourClan/ForestRhinosPage.jsx'
 import AirFalconsPage from './components/KnowYourClan/AirFalconsPage.jsx'
+import Khalbali from './components/Khalbali/khalbali.jsx';
 
 const App = () => {
   const location = useLocation();
