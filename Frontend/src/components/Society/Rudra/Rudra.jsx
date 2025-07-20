@@ -59,41 +59,8 @@ import "./Rudra.css"
                         </h1>
                     </div>
                     <div className="hidden md:flex space-x-8">
-                        <a
-                            href="#about"
-                            className="hover:text-primary-400 transition-colors duration-300 relative group"
-                        >
-                            About
-                            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-400 group-hover:w-full transition-all duration-300"></span>
-                        </a>
-                        <a
-                            href="#performances"
-                            className="hover:text-primary-400 transition-colors duration-300 relative group"
-                        >
-                            Performances
-                            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-400 group-hover:w-full transition-all duration-300"></span>
-                        </a>
-                        <a
-                            href="#team"
-                            className="hover:text-primary-400 transition-colors duration-300 relative group"
-                        >
-                            Team
-                            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-400 group-hover:w-full transition-all duration-300"></span>
-                        </a>
-                        <a
-                            href="#events"
-                            className="hover:text-primary-400 transition-colors duration-300 relative group"
-                        >
-                            Events
-                            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-400 group-hover:w-full transition-all duration-300"></span>
-                        </a>
-                        <a
-                            href="#contact"
-                            className="hover:text-primary-400 transition-colors duration-300 relative group"
-                        >
-                            Contact
-                            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-400 group-hover:w-full transition-all duration-300"></span>
-                        </a>
+                       
+                       
                     </div>
                     <div className="md:hidden">
                         <details className="relative">
