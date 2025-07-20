@@ -103,9 +103,13 @@ const Navbar = () => {
         <Link to="/about" className="nav-link" onClick={toggleMenu}>About</Link>
 
         <span className="nav-link">Welcome, {profile?.Firstname || "Guest"}</span>
-        {!isDashboard && (
-          <button onClick={logout} className="login-btn">Logout</button>
-        )}
+        {(
+                    isAdmin ? (
+                   <button onClick={logout} className="login-btn">Logout</button>
+                 ) : (
+              <Link to="/login" className="login-btn">Login</Link>
+             )
+           )}
       </div>
     </>
   );
