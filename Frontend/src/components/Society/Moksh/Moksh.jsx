@@ -18,23 +18,7 @@ const Moksh= () => {
           />
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-indigo-900 to-transparent"></div>
-        
-        <nav className="relative z-10 flex justify-between items-center p-6">
-          <div className="flex items-center space-x-2">
-            <span className="material-symbols-outlined text-3xl text-primary-300">music_note</span>
-            <h1 className="text-2xl font-bold text-white tracking-wide">MOKSH</h1>
-          </div>
-          <ul className="hidden md:flex space-x-8 text-white/90">
-            <li className="hover:text-primary-300 transition-colors duration-300 cursor-pointer">Home</li>
-            <li className="hover:text-primary-300 transition-colors duration-300 cursor-pointer">About Us</li>
-            <li className="hover:text-primary-300 transition-colors duration-300 cursor-pointer">Events</li>
-            <li className="hover:text-primary-300 transition-colors duration-300 cursor-pointer">Gallery</li>
-            <li className="hover:text-primary-300 transition-colors duration-300 cursor-pointer">Join Us</li>
-          </ul>
-          <button className="md:hidden text-white">
-            <span className="material-symbols-outlined">menu</span>
-          </button>
-        </nav>
+      
         
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
           <h1 className="text-5xl md:text-7xl font-bold mb-4 text-white tracking-wide">

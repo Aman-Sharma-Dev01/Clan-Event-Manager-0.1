@@ -21,6 +21,13 @@ import Khalbali from './components/Society/Khalbali/Khalbali.jsx'
 import Moksh from './components/Society/Moksh/Moksh.jsx'
 import Noora from './components/Society/Noora/Noora.jsx'
 import Felicia from './components/Society/Felicia/Felicia.jsx'
+import ScrollToTop from './ScrollToTop.jsx'
+import Rehnuma from './components/Society/Rehnuma/Rehnuma.jsx'
+import Drishti from './components/Society/Drishti/Drishti.jsx'
+import Rudra from './components/Society/Rudra/Rudra.jsx'
+import Athelites from './components/Society/Athelites/Athelites.jsx'
+import Gamenix from './components/Society/Gamenix/Gamenix.jsx'
+import Techsoul from './components/Society/Techsoul/Techsoul.jsx'
 
 const App = () => {
   const location = useLocation();
@@ -30,7 +37,7 @@ const App = () => {
   // Handle dynamic paths
   const hideNavbarFooter =
     path.startsWith("/event/") || 
-    ["/login", "/register", "/uploadevent"].includes(path);
+    ["/login", "/register", "/uploadevent" , "/techsoul-page" , "/rudra-page" , "/noora-page" , "/rehnuma-page" ,"/khalbali-page" , "/drishti-page" ,"/gamenix-page" , "/athelites-page" , "/moksh-page" , "/felicia-page" ].includes(path);
 
   const { events, isAuthenticated , profile } = useAuth();
   let token = localStorage.getItem("jwt"); // Retrieve the token directly from the localStorage to maininting the routes protect (Go to login.jsx)
@@ -42,6 +49,7 @@ const App = () => {
     <div>
      <Toaster position="top-center" />
       {!hideNavbarFooter  && <Navbar/>}
+      <ScrollToTop />
      
     <Routes>
      <Route exact path="/" element = {<Homepage/>} />
@@ -57,10 +65,17 @@ const App = () => {
        <Route exact path="/forest-rhinos-page" element = {<ForestRhinosPage/>} />
        <Route exact path="/water-sharks-page" element = {<WaterSharksPage/>} />
        <Route exact path="/air-falcons-page" element = {<AirFalconsPage/>} />
-           <Route exact path="/khalbali-page" element = {<Khalbali/>} />
-      <Route exact path="/moksh-page" element = {<Moksh/>} />
+
+       <Route exact path="/khalbali-page" element = {<Khalbali/>} />
+       <Route exact path="/moksh-page" element = {<Moksh/>} />
        <Route exact path="/noora-page" element = {<Noora/>} />
        <Route exact path="/felicia-page" element = {<Felicia/>} />
+       <Route exact path="/rehnuma-page" element = {<Rehnuma/>} />
+       <Route exact path="/drishti-page" element = {<Drishti/>} />
+       <Route exact path="/rudra-page" element = {<Rudra/>} />
+       <Route exact path="/athelites-page" element = {<Athelites/>} />
+       <Route exact path="/gamenix-page" element = {<Gamenix/>} />
+       <Route exact path="/techsoul-page" element = {<Techsoul/>} />
 
   
 

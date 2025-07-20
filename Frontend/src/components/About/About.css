@@ -31,7 +31,7 @@ p {
 }
 
 section {
-  background: #ffffffc5;
+  background: transparent;
   backdrop-filter: blur(14px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   padding: 2.5rem;

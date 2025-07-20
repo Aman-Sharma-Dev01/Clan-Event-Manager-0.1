@@ -1,266 +1,371 @@
-import React from "react";
+import React from "react"
 
-import "./Noora.css";
+import "./Noora.css"
 
+export const Noora = () => {
+    return (
+        <div id="webcrumbs">
+            <div className="min-h-screen bg-white overflow-hidden">
+                {/* Hero Section */}
+                <div className="relative h-[600px]">
+                    <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40 z-10"></div>
+                    <img
+                        src="https://images.unsplash.com/photo-1605289355680-75fb41239154?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2064&q=80"
+                        alt="Fashion runway show"
+                        className="absolute inset-0 w-full h-full object-cover"
+                        keywords="fashion, runway, models, high fashion"
+                    />
+                    <div className="relative z-20 flex flex-col items-center justify-center h-full text-white px-4">
+                        <h1 className="text-5xl md:text-7xl font-bold mb-4 text-center animate-fade-in-down">NOORA</h1>
+                        <p className="text-xl md:text-2xl italic text-center mb-6">Fashion Society</p>
+                        <div className="w-24 h-1 bg-primary-500 mb-8 transform transition-all duration-300 hover:w-32 hover:bg-primary-400"></div>
+                        <p className="text-center max-w-2xl text-lg">
+                            The most prestigious and accomplished fashion society, known for creative excellence and
+                            outstanding performances.
+                        </p>
+                    </div>
+                </div>
 
-const Noora = () => {
-  return (
-<div id="webcrumbs"> 
-        	<div className="bg-gradient-to-b from-white to-amber-50 min-h-screen font-sans">
-	  {/* Hero Section */}
-	  <header className="relative h-[80vh] overflow-hidden">
-	    <img  
-	      src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNDZ8MHwxfHNlYXJjaHwxfHxmYXNoaW9ufGVufDB8fHx8MTc1Mjk5NDA5NXww&ixlib=rb-4.1.0&q=80&w=1080" 
-	      alt="Fashion model on runway" 
-	      className="absolute inset-0 w-full h-full object-cover filter brightness-90"
-	      keywords="fashion, runway, model, elegance, high fashion"
-	    />
-	    <div className="absolute inset-0 bg-black bg-opacity-30"></div>
-	    <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
-	      <h1 className="text-6xl md:text-8xl font-thin tracking-widest mb-4 transform hover:scale-105 transition-transform duration-500">NOORA</h1>
-	      <p className="text-xl md:text-2xl font-light tracking-wider max-w-2xl text-center">FASHION SOCIETY</p>
-	      <button className="mt-8 px-8 py-3 bg-primary-500 hover:bg-primary-600 text-white tracking-widest text-sm uppercase transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1">Discover Collection</button>
-	    </div>
-	    {/* Next: "Add a scroll down indicator with animation" */}
-	  </header>
-	
-	  {/* About Section */}
-	  <section className="py-16 md:py-24 px-4">
-	    <div className="max-w-6xl mx-auto">
-	      <div className="text-center mb-16">
-	        <h2 className="text-3xl md:text-4xl font-light tracking-wide mb-4">Our Story</h2>
-	        <div className="w-20 h-1 bg-primary-500 mx-auto"></div>
-	      </div>
-	      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-	        <div className="flex flex-col items-center text-center p-6 transition-all duration-300 hover:shadow-md rounded-lg">
-	          <span className="material-symbols-outlined text-4xl mb-4 text-primary-600">diamond</span>
-	          <h3 className="text-xl font-medium mb-3">Luxury Approach</h3>
-	          <p className="text-gray-600">We bring a luxury approach to sustainable fashion, creating timeless pieces that transcend seasonal trends.</p>
-	        </div>
-	        <div className="flex flex-col items-center text-center p-6 transition-all duration-300 hover:shadow-md rounded-lg">
-	          <span className="material-symbols-outlined text-4xl mb-4 text-primary-600">landscape</span>
-	          <h3 className="text-xl font-medium mb-3">Sustainability</h3>
-	          <p className="text-gray-600">Every garment is ethically produced using responsibly sourced materials with minimal environmental impact.</p>
-	        </div>
-	        <div className="flex flex-col items-center text-center p-6 transition-all duration-300 hover:shadow-md rounded-lg">
-	          <span  className="material-symbols-outlined text-4xl mb-4 text-primary-600">diversity_3</span>
-	          <h3 className="text-xl font-medium mb-3">Community</h3>
-	          <p  className="text-gray-600">Noora is more than fashion—it's a community of like-minded individuals passionate about style and sustainability.</p>
-	        </div>
-	      </div>
-	    </div>
-	    {/* Next: "Add a timeline of the brand history" */}
-	  </section>
-	
-	  {/* Featured Collection */}
-	  <section className="py-16 md:py-24 bg-white">
-	    <div className="max-w-6xl mx-auto px-4">
-	      <div className="text-center mb-16">
-	        <h2 className="text-3xl md:text-4xl font-light tracking-wide mb-4">Featured Collection</h2>
-	        <div className="w-20 h-1 bg-primary-500 mx-auto"></div>
-	        <p  className="mt-6 text-gray-600 max-w-3xl mx-auto">Discover our latest designs that blend contemporary aesthetics with timeless elegance.</p>
-	      </div>
-	      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-	        <div className="group relative overflow-hidden rounded-lg transition-all duration-300 hover:shadow-xl">
-	          <img 
-	            src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1052&q=80"
-	            alt="Woman in elegant dress" 
-	            className="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-105"
-	            keywords="fashion, elegant dress, woman, luxury, style"
-	          />
-	          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-	          <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
-	            <h3 className="text-xl font-medium mb-2">Summer Elegance</h3>
-	            <p className="text-sm text-gray-200">Lightweight fabrics in flowing silhouettes</p>
-	          </div>
-	        </div>
-	        <div className="group relative overflow-hidden rounded-lg transition-all duration-300 hover:shadow-xl">
-	          <img 
-	            src="https://images.unsplash.com/photo-1509631179647-0177331693ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1088&q=80"
-	            alt="Man in stylish suit" 
-	            className="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-105"
-	            keywords="fashion, suit, men's fashion, tailored, formal wear"
-	          />
-	          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-	          <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
-	            <h3 className="text-xl font-medium mb-2">Urban Sophistication</h3>
-	            <p className="text-sm text-gray-200">Modern tailoring with minimalist details</p>
-	          </div>
-	        </div>
-	        <div className="group relative overflow-hidden rounded-lg transition-all duration-300 hover:shadow-xl">
-	          <img 
-	            src="https://images.unsplash.com/photo-1615397349754-cfa2066a298e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-	            alt="Accessories collection" 
-	            className="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-105"
-	            keywords="fashion, accessories, jewelry, luxury, details"
-	          />
-	          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-	          <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
-	            <h3  className="text-xl font-medium mb-2">Statement Accessories</h3>
-	            <p className="text-sm text-gray-200">Handcrafted pieces that elevate any outfit</p>
-	          </div>
-	        </div>
-	      </div>
-	      <div className="text-center mt-12">
-	        <button className="px-8 py-3 border border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white tracking-widest text-sm uppercase transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1">View All Collections</button>
-	      </div>
-	    </div>
-	    {/* Next: "Add a seasonal lookbook carousel" */}
-	  </section>
-	
-	  {/* Testimonials */}
-	  <section className="py-16 md:py-24 bg-amber-50">
-	    <div className="max-w-6xl mx-auto px-4">
-	      <div className="text-center mb-16">
-	        <h2 className="text-3xl md:text-4xl font-light tracking-wide mb-4">What People Say</h2>
-	        <div className="w-20 h-1 bg-primary-500 mx-auto"></div>
-	      </div>
-	      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-	        <div className="bg-white p-8 rounded-lg shadow-sm transition-all duration-300 hover:shadow-lg">
-	          <div className="flex items-center mb-4">
-	            <span className="text-amber-400">★★★★★</span>
-	          </div>
-	          <p className="text-gray-600 italic mb-6">"Noora's commitment to quality is unmatched. Each piece feels like it was made just for me, with impeccable attention to detail."</p>
-	          <div className="flex items-center">
-	            <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
-	              <img 
-	                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-	                alt="Customer profile" 
-	                className="w-full h-full object-cover"
-	                keywords="woman, portrait, customer, testimonial"
-	              />
-	            </div>
-	            <div >
-	              <h4 className="font-medium">Sophia Chen</h4>
-	              <p className="text-sm text-gray-500">Fashion Editor</p>
-	            </div>
-	          </div>
-	        </div>
-	        <div className="bg-white p-8 rounded-lg shadow-sm transition-all duration-300 hover:shadow-lg">
-	          <div className="flex items-center mb-4">
-	            <span className="text-amber-400">★★★★★</span>
-	          </div>
-	          <p className="text-gray-600 italic mb-6">"I appreciate how Noora balances sustainability with style. Their pieces are timeless yet contemporary, and I feel good about my purchase."</p>
-	          <div className="flex items-center">
-	            <div  className="w-12 h-12 rounded-full overflow-hidden mr-4">
-	              <img 
-	                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-	                alt="Customer profile" 
-	                className="w-full h-full object-cover"
-	                keywords="man, portrait, customer, testimonial"
-	              />
-	            </div>
-	            <div>
-	              <h4 className="font-medium">James Rodriguez</h4>
-	              <p className="text-sm text-gray-500">Architect</p>
-	            </div>
-	          </div>
-	        </div>
-	        <div className="bg-white p-8 rounded-lg shadow-sm transition-all duration-300 hover:shadow-lg">
-	          <div className="flex items-center mb-4">
-	            <span className="text-amber-400">★★★★★</span>
-	          </div>
-	          <p  className="text-gray-600 italic mb-6">"The craftsmanship of Noora's pieces speaks volumes. I've never felt more confident than when wearing their designs."</p>
-	          <div className="flex items-center">
-	            <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
-	              <img 
-	                src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-	                alt="Customer profile" 
-	                className="w-full h-full object-cover"
-	                keywords="woman, portrait, customer, testimonial"
-	              />
-	            </div>
-	            <div>
-	              <h4 className="font-medium">Aisha Johnson</h4>
-	              <p className="text-sm text-gray-500">Creative Director</p>
-	            </div>
-	          </div>
-	        </div>
-	      </div>
-	    </div>
-	    {/* Next: "Add a testimonial carousel with navigation controls" */}
-	  </section>
-	
-	  {/* Join Newsletter */}
-	  <section className="py-16 md:py-24 bg-primary-50">
-	    <div className="max-w-4xl mx-auto px-4 text-center">
-	      <h2 className="text-3xl md:text-4xl font-light tracking-wide mb-4">Join Our Community</h2>
-	      <p className="text-gray-600 mb-8">Subscribe to our newsletter for exclusive updates, styling tips, and early access to new collections.</p>
-	      <div className="flex flex-col md:flex-row gap-4 justify-center max-w-xl mx-auto">
-	        <input 
-	          type="email" 
-	          placeholder="Your email address" 
-	          className="flex-grow py-3 px-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300"
-	        />
-	        <button className="bg-primary-500 hover:bg-primary-600 text-white py-3 px-6 tracking-widest text-sm uppercase transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1 rounded">Subscribe</button>
-	      </div>
-	      <div className="mt-8 flex justify-center space-x-6">
-	        <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-white text-primary-500 hover:bg-primary-500 hover:text-white transition-all duration-300">
-	          <i className="fa-brands fa-instagram text-xl"></i>
-	        </a>
-	        <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-white text-primary-500 hover:bg-primary-500 hover:text-white transition-all duration-300">
-	          <i className="fa-brands fa-pinterest text-xl"></i>
-	        </a>
-	        <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-white text-primary-500 hover:bg-primary-500 hover:text-white transition-all duration-300">
-	          <i className="fa-brands fa-twitter text-xl"></i>
-	        </a>
-	        <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-white text-primary-500 hover:bg-primary-500 hover:text-white transition-all duration-300">
-	          <i className="fa-brands fa-facebook text-xl"></i>
-	        </a>
-	      </div>
-	    </div>
-	    {/* Next: "Add a privacy policy consent checkbox" */}
-	  </section>
-	
-	  {/* Footer */}
-	  <footer className="bg-gray-900 text-gray-300 py-12">
-	    <div className="max-w-6xl mx-auto px-4">
-	      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-	        <div>
-	          <h3 className="text-2xl font-thin tracking-widest text-white mb-4">NOORA</h3>
-	          <p className="text-sm text-gray-400 leading-relaxed">Elevating sustainable fashion through timeless designs and ethical practices. We believe in quality over quantity.</p>
-	        </div>
-	        <div>
-	          <h4 className="text-lg font-medium text-white mb-4">Explore</h4>
-	          <ul className="space-y-2">
-	            <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Collections</a></li>
-	            <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Sustainability</a></li>
-	            <li ><a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Our Story</a></li>
-	            <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Journal</a></li>
-	          </ul>
-	        </div>
-	        <div>
-	          <h4 className="text-lg font-medium text-white mb-4">Customer Care</h4>
-	          <ul className="space-y-2">
-	            <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Shipping & Returns</a></li>
-	            <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Size Guide</a></li>
-	            <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">FAQs</a></li>
-	            <li><a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Contact Us</a></li>
-	          </ul>
-	        </div>
-	        <div >
-	          <h4 className="text-lg font-medium text-white mb-4">Visit Us</h4>
-	          <address className="text-gray-400 not-italic">
-	            123 Fashion Avenue<br />
-	            New York, NY 10001<br />
-	            <a  href="tel:+12125551234" className="hover:text-white transition-colors duration-300">+1 (212) 555-1234</a><br />
-	            <a href="mailto:hello@noorafashion.com" className="hover:text-white transition-colors duration-300">hello@noorafashion.com</a>
-	          </address>
-	        </div>
-	      </div>
-	      <div  className="border-t border-gray-800 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
-	        <p className="text-sm text-gray-500">© 2023 Noora Fashion Society. All rights reserved.</p>
-	        <div className="flex space-x-4 mt-4 md:mt-0">
-	          <a href="#" className="text-gray-500 hover:text-white transition-colors duration-300">Privacy Policy</a>
-	          <a href="#" className="text-gray-500 hover:text-white transition-colors duration-300">Terms of Service</a>
-	        </div>
-	      </div>
-	    </div>
-	    {/* Next: "Add a back-to-top button with smooth scroll" */}
-	  </footer>
-	</div> 
+                {/* About Section */}
+                <section className="py-16 px-6 md:px-12 lg:px-24">
+                    <div className="max-w-7xl mx-auto">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                            <div className="order-2 md:order-1">
+                                <h2 className="text-3xl md:text-4xl font-bold mb-6 relative">
+                                    About <span className="text-primary-600">Noora</span>
+                                    <span className="absolute bottom-0 left-0 w-16 h-1 bg-primary-500 transform -translate-y-2"></span>
+                                </h2>
+                                <p className="text-gray-700 mb-4 leading-relaxed">
+                                    Noora has been the most active and highest achiever among all societies. People have
+                                    appreciated and fallen in love with Noora's exceptional talent and creative vision
+                                    in the fashion world.
+                                </p>
+                                <p className="text-gray-700 mb-6 leading-relaxed">
+                                    Our society brings together the most talented models, designers, and choreographers
+                                    to create unforgettable fashion experiences that push boundaries and set new trends.
+                                </p>
+                                <div className="flex space-x-4">
+                                    <button className="px-6 py-3 bg-primary-600 text-white rounded-full hover:bg-primary-700 transition duration-300 transform hover:scale-105">
+                                        Join Us
+                                    </button>
+                                    <button className="px-6 py-3 border-2 border-primary-600 text-primary-600 rounded-full hover:bg-primary-50 transition duration-300 transform hover:scale-105">
+                                        Learn More
+                                    </button>
+                                </div>
+                            </div>
+                            <div className="order-1 md:order-2 relative">
+                                <img
+                                    src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=986&q=80"
+                                    alt="Fashion designer at work"
+                                    className="w-full h-[400px] object-cover rounded-lg shadow-xl"
+                                    keywords="fashion design, designer, fashion creation, haute couture"
+                                />
+                                <div className="absolute -bottom-5 -right-5 bg-primary-100 w-40 h-40 rounded-lg -z-10"></div>
+                                <div className="absolute -top-5 -left-5 bg-gray-100 w-40 h-40 rounded-lg -z-10"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Achievements Section */}
+                <section className="py-16 px-6 md:px-12 lg:px-24 bg-gray-50">
+                    <div className="max-w-7xl mx-auto">
+                        <div className="text-center mb-12">
+                            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Achievements</h2>
+                            <p className="text-gray-600 max-w-2xl mx-auto">
+                                Celebrating our journey of excellence and recognition in the fashion industry.
+                            </p>
+                            <div className="w-24 h-1 bg-primary-500 mx-auto mt-6"></div>
+                        </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <div className="bg-white p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                                <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                                    <span className="material-symbols-outlined text-primary-600 text-3xl">
+                                        emoji_events
+                                    </span>
+                                </div>
+                                <h3 className="text-xl font-bold mb-2">RAW's Annual Cultural Fest'20</h3>
+                                <p className="text-gray-600 mb-4">
+                                    Secured the first position with our innovative designs and exceptional choreography.
+                                </p>
+                                <div className="flex items-center text-primary-600">
+                                    <span>Read more</span>
+                                    <span className="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+                                </div>
+                            </div>
+
+                            <div className="bg-white p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                                <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                                    <span className="material-symbols-outlined text-primary-600 text-3xl">
+                                        military_tech
+                                    </span>
+                                </div>
+                                <h3 className="text-xl font-bold mb-2">National Design Excellence Award</h3>
+                                <p className="text-gray-600 mb-4">
+                                    Recognized for our sustainable fashion initiatives and groundbreaking design
+                                    concepts.
+                                </p>
+                                <div className="flex items-center text-primary-600">
+                                    <span>Read more</span>
+                                    <span className="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+                                </div>
+                            </div>
+
+                            <div className="bg-white p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                                <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                                    <span className="material-symbols-outlined text-primary-600 text-3xl">
+                                        workspace_premium
+                                    </span>
+                                </div>
+                                <h3 className="text-xl font-bold mb-2">Intercollege Fashion Championship</h3>
+                                <p className="text-gray-600 mb-4">
+                                    Three consecutive wins showcasing our consistency and dedication to excellence.
+                                </p>
+                                <div className="flex items-center text-primary-600">
+                                    <span>Read more</span>
+                                    <span className="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Gallery Section */}
+                <section className="py-16 px-6 md:px-12 lg:px-24">
+                    <div className="max-w-7xl mx-auto">
+                        <div className="text-center mb-12">
+                            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Gallery</h2>
+                            <p className="text-gray-600 max-w-2xl mx-auto">
+                                Showcasing our creative costumes, outstanding choreography, and supremely talented
+                                models.
+                            </p>
+                            <div className="w-24 h-1 bg-primary-500 mx-auto mt-6"></div>
+                        </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div className="md:col-span-2 row-span-2 relative group overflow-hidden rounded-lg">
+                                <img
+                                    src="https://images.unsplash.com/photo-1509319117193-57bab727e09d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+                                    alt="Fashion show main highlight"
+                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                    keywords="fashion show, runway, models, haute couture"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                                    <div className="text-white">
+                                        <h3 className="text-xl font-bold">Annual Showcase 2023</h3>
+                                        <p>Our most acclaimed runway presentation featuring avant-garde designs</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="relative group overflow-hidden rounded-lg">
+                                <img
+                                    src="https://images.unsplash.com/photo-1504051771394-dd2e66b2e08f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+                                    alt="Fashion design closeup"
+                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                    keywords="fashion detail, design, clothing, fabric"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                                    <div className="text-white">
+                                        <h3 className="text-lg font-bold">Design Details</h3>
+                                        <p className="text-sm">Craftsmanship excellence</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="relative group overflow-hidden rounded-lg">
+                                <img
+                                    src="https://images.unsplash.com/photo-1589894404892-7310b92ea7a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+                                    alt="Fashion models backstage"
+                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                    keywords="backstage, fashion show preparation, models getting ready"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                                    <div className="text-white">
+                                        <h3 className="text-lg font-bold">Backstage Moments</h3>
+                                        <p className="text-sm">The magic behind the scenes</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="relative group overflow-hidden rounded-lg">
+                                <img
+                                    src="https://images.unsplash.com/photo-1605902711622-cfb43c4437b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1969&q=80"
+                                    alt="Fashion design workshop"
+                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                    keywords="fashion design, workshop, creative process, design studio"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                                    <div className="text-white">
+                                        <h3 className="text-lg font-bold">Creative Process</h3>
+                                        <p className="text-sm">Where ideas come to life</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Testimonials */}
+                <section className="py-16 px-6 md:px-12 lg:px-24 bg-gray-50">
+                    <div className="max-w-7xl mx-auto">
+                        <div className="text-center mb-12">
+                            <h2 className="text-3xl md:text-4xl font-bold mb-4">What People Say</h2>
+                            <p className="text-gray-600 max-w-2xl mx-auto">
+                                People have appreciated and fallen in love with Noora's talent.
+                            </p>
+                            <div className="w-24 h-1 bg-primary-500 mx-auto mt-6"></div>
+                        </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <div className="bg-white p-8 rounded-lg shadow-md relative transition-all duration-300 hover:shadow-xl">
+                                <div className="absolute -top-5 left-8 w-10 h-10 bg-primary-500 rounded-full flex items-center justify-center">
+                                    <span className="material-symbols-outlined text-white">format_quote</span>
+                                </div>
+                                <p className="text-gray-600 italic mb-6 pt-4">
+                                    Noora has never failed to impress the audience with its creative costumes,
+                                    outstanding choreography, and supremely talented models.
+                                </p>
+                                <div className="flex items-center">
+                                    <img
+                                        src="https://randomuser.me/api/portraits/women/45.jpg"
+                                        alt="Testimonial author"
+                                        className="w-12 h-12 rounded-full mr-4"
+                                        keywords="fashion critic, reviewer, testimonial"
+                                    />
+                                    <div>
+                                        <h4 className="font-bold">Sarah Johnson</h4>
+                                        <p className="text-sm text-gray-500">Fashion Critic</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="bg-white p-8 rounded-lg shadow-md relative transition-all duration-300 hover:shadow-xl">
+                                <div className="absolute -top-5 left-8 w-10 h-10 bg-primary-500 rounded-full flex items-center justify-center">
+                                    <span className="material-symbols-outlined text-white">format_quote</span>
+                                </div>
+                                <p className="text-gray-600 italic mb-6 pt-4">
+                                    The level of creativity and professionalism shown by Noora at RAW's Annual Cultural
+                                    Fest was simply breathtaking. They truly deserved the win.
+                                </p>
+                                <div className="flex items-center">
+                                    <img
+                                        src="https://randomuser.me/api/portraits/men/32.jpg"
+                                        alt="Testimonial author"
+                                        className="w-12 h-12 rounded-full mr-4"
+                                        keywords="event judge, fashion expert, testimonial"
+                                    />
+                                    <div>
+                                        <h4 className="font-bold">Michael Chen</h4>
+                                        <p className="text-sm text-gray-500">Event Judge</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="bg-white p-8 rounded-lg shadow-md relative transition-all duration-300 hover:shadow-xl">
+                                <div className="absolute -top-5 left-8 w-10 h-10 bg-primary-500 rounded-full flex items-center justify-center">
+                                    <span className="material-symbols-outlined text-white">format_quote</span>
+                                </div>
+                                <p className="text-gray-600 italic mb-6 pt-4">
+                                    I've been following Noora for years, and they consistently raise the bar in college
+                                    fashion. Their designs and performances are always a cut above the rest.
+                                </p>
+                                <div className="flex items-center">
+                                    <img
+                                        src="https://randomuser.me/api/portraits/women/68.jpg"
+                                        alt="Testimonial author"
+                                        className="w-12 h-12 rounded-full mr-4"
+                                        keywords="fashion blogger, influencer, testimonial"
+                                    />
+                                    <div>
+                                        <h4 className="font-bold">Priya Sharma</h4>
+                                        <p className="text-sm text-gray-500">Fashion Blogger</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Contact Section */}
+                <section className="py-16 px-6 md:px-12 lg:px-24">
+                    <div className="max-w-7xl mx-auto">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                            <div>
+                                <h2 className="text-3xl md:text-4xl font-bold mb-6 relative">
+                                    Join <span className="text-primary-600">Noora</span>
+                                    <span className="absolute bottom-0 left-0 w-16 h-1 bg-primary-500 transform -translate-y-2"></span>
+                                </h2>
+                                <p className="text-gray-700 mb-6 leading-relaxed">
+                                    Interested in being part of our award-winning fashion society? Whether you're a
+                                    designer, model, choreographer, or passionate about fashion, we'd love to have you
+                                    join our creative family.
+                                </p>
+
+                                <form className="space-y-4">
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                        <div>
+                                            <label className="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                                            <input
+                                                type="text"
+                                                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-300"
+                                                placeholder="Your name"
+                                            />
+                                        </div>
+                                        <div>
+                                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                                                Email
+                                            </label>
+                                            <input
+                                                type="email"
+                                                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-300"
+                                                placeholder="Your email"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label className="block text-sm font-medium text-gray-700 mb-1">Interest</label>
+                                        <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-300">
+                                            <option>Modeling</option>
+                                            <option>Design</option>
+                                            <option>Choreography</option>
+                                            <option>Event Management</option>
+                                            <option>Other</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label className="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                                        <textarea
+                                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-300 h-32"
+                                            placeholder="Tell us about yourself and why you'd like to join Noora"
+                                        ></textarea>
+                                    </div>
+                                    <button className="px-6 py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition duration-300 transform hover:scale-105 w-full md:w-auto">
+                                        Submit Application
+                                    </button>
+                                </form>
+                            </div>
+
+                            <div className="relative">
+                                <div className="absolute inset-0 bg-gradient-to-b from-primary-100 to-white -z-10 rounded-xl transform rotate-3"></div>
+                                <img
+                                    src="https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1965&q=80"
+                                    alt="Fashion team collaboration"
+                                    className="w-full h-[500px] object-cover rounded-xl shadow-xl transform -rotate-2 transition-all duration-500 hover:rotate-0"
+                                    keywords="fashion team, collaboration, creative meeting, design team"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Next: "Add an upcoming events section with dates and featured showcases" */}
+                {/* Next: "Add a section highlighting the creative team and leadership" */}
+                {/* Next: "Add a blog/news section featuring fashion trends and society updates" */}
+            </div>
         </div>
-  )
+    )
 }
 
-export default Noora;
+export default Noora ;
