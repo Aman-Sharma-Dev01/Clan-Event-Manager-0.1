@@ -18,7 +18,7 @@ const HeroSection = () => {
         <p> Unite with your fellow clan members and make your mark!</p>
 
         <div className="home-btns">
-        <button onClick={toRegister}>Join Now</button>
+        <a href="#society-section"><button >Join Now</button></a>
         <button id='btn2' onClick={toEvent} >View Event</button>
         </div>
         </div>

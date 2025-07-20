@@ -17,7 +17,7 @@ const societies = [
 
 const SocietySection = () => {
   return (
-    <div className="society-section">
+    <div id='society-section' className="society-section">
       <h2 className="section-title">Our Societies</h2>
       <div className="society-card-container">
         {societies.map((society, index) => (

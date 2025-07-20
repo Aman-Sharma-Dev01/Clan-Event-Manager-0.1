@@ -4,3 +4,6 @@
   box-sizing: border-box;
   font-family: Helvetica, sans-serif
 }
+html, body {
+  scroll-behavior: smooth;
+}
