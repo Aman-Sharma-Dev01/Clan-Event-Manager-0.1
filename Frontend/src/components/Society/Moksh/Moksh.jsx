@@ -3,7 +3,7 @@ import React from "react";
 import "./Moksh.css";
 
 
-export const Component = () => {
+const Moksh= () => {
   return (
 <div id="webcrumbs"> 
             <div className="min-h-screen bg-gradient-to-b from-indigo-900 to-purple-900 text-white">
@@ -436,4 +436,8 @@ export const Component = () => {
         </div>
   )
 }
+
+
+export default Moksh;
+
 
