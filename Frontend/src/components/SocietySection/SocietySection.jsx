@@ -1,16 +1,16 @@
 import React from 'react';
 import './SocietySection.css';
 import { Link } from 'react-router-dom';
-import khalbaliLogo from "../../../public/SocietyLogo/khalbali.jpg"
-import mokshLOGO from "../../../public/SocietyLogo/Moksh.jpg"
-import feliciaLogo from "../../../public/SocietyLogo/Felicia.png"
-import nooraLogo from "../../../public/SocietyLogo/noora.JPG"
-import rehnumaLogo from "../../../public/SocietyLogo/rehnuma.jpg"
-import techsoulLogo from "../../../public/SocietyLogo/techsoul.jpg"
-import gamenixLogo from "../../../public/SocietyLogo/gameinx.jpg"
-import atheliteLogo from "../../../public/SocietyLogo/athelites.jpg"
-import rudraLogo from "../../../public/SocietyLogo/rudra.png"
-import drishtiLogo from "../../../public/SocietyLogo/drishti.jpg"
+import khalbaliLogo from "../../assets/SocietyLogo/khalbali.jpg"
+import mokshLOGO from "../../assets/SocietyLogo/Moksh.jpg"
+import feliciaLogo from "../../assets/SocietyLogo/Felicia.png"
+import nooraLogo from "../../assets/SocietyLogo/noora.JPG"
+import rehnumaLogo from "../../assets/SocietyLogo/rehnuma.jpg"
+import techsoulLogo from "../../assets/SocietyLogo/techsoul.jpg"
+import gamenixLogo from "../../assets/SocietyLogo/gameinx.jpg"
+import atheliteLogo from "../../assets/SocietyLogo/athelites.jpg"
+import rudraLogo from "../../assets/SocietyLogo/rudra.png"
+import drishtiLogo from "../../assets/SocietyLogo/drishti.jpg"
 
 const societies = [
   { name: "Khalbali", img:khalbaliLogo , path: "/khalbali-page"},
