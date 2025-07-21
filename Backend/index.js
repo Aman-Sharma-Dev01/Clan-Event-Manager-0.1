@@ -5,6 +5,7 @@ import cookieParser from 'cookie-parser';
 import userRoute from "./routes/user.route.js"
 import eventRoute from "./routes/event.route.js"
 import fileUpload from "express-fileupload";
+import winnerRoute from "./routes/winner.route.js";
 import { v2 as cloudinary } from "cloudinary";
 import cors from "cors";
 
@@ -41,6 +42,7 @@ try {
 //DEFINING ROUTES
 app.use("/api/users",userRoute);
 app.use("/api/event",eventRoute);
+app.use("/api/winners", winnerRoute);
 
 //cloudinary config
 cloudinary.config({ 
