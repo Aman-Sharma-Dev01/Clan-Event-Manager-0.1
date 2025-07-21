@@ -1,79 +1,79 @@
-WildCats.css
+/* WaterSharks.css */
 
 body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  
+ 
 }
 
-.wildcats-container {
+.watersharks-container {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 30px;
-  background: linear-gradient(135deg, #ffffff10, #ffd70020);
+  background: linear-gradient(135deg, #e0f7fa40, #a7ffeb30);
   backdrop-filter: blur(10px);
 }
 
-.wildcats-hero {
+.watersharks-hero {
   background: rgba(255, 255, 255, 0.15);
   padding: 40px 60px;
   border-radius: 25px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   text-align: center;
-  color: #2c2c2c;
+  color: #0a2540;
   margin-bottom: 40px;
 }
 
-.wildcats-hero h1 {
+.watersharks-hero h1 {
   font-size: 3rem;
   font-weight: 800;
   margin-bottom: 10px;
 }
 
-.wildcats-hero p {
+.watersharks-hero p {
   font-size: 1.2rem;
   font-weight: 500;
 }
 
-.wildcats-content {
+.watersharks-content {
   width: 100%;
   max-width: 900px;
   display: grid;
   gap: 40px;
 }
 
-.wildcats-about,
-.wildcats-events,
-.wildcats-join {
-  background: rgba(255, 255, 255, 0.2);
+.watersharks-about,
+.watersharks-events,
+.watersharks-join {
+  background: rgba(255, 255, 255, 0.25);
   padding: 30px;
   border-radius: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  color: #333;
+  color: #093b5c;
 }
 
-.wildcats-about h2,
-.wildcats-events h2,
-.wildcats-join h2 {
+.watersharks-about h2,
+.watersharks-events h2,
+.watersharks-join h2 {
   font-size: 2rem;
   margin-bottom: 10px;
-  color: #1e293b;
+  color: #01579b;
 }
 
-.wildcats-about p,
-.wildcats-join p {
+.watersharks-about p,
+.watersharks-join p {
   font-size: 1rem;
   line-height: 1.6;
 }
 
-.wildcats-events ul {
+.watersharks-events ul {
   list-style: none;
   padding-left: 0;
 }
 
-.wildcats-events li {
+.watersharks-events li {
   margin-bottom: 10px;
   font-size: 1.05rem;
   background: rgba(255, 255, 255, 0.3);
@@ -82,13 +82,13 @@ body {
   transition: transform 0.2s ease;
 }
 
-.wildcats-events li:hover {
+.watersharks-events li:hover {
   transform: scale(1.02);
   background: rgba(255, 255, 255, 0.4);
 }
 
 .join-button {
-  background: #1e40af;
+  background: #0277bd;
   color: #fff;
   padding: 12px 24px;
   border: none;
@@ -101,5 +101,5 @@ body {
 }
 
 .join-button:hover {
-  background: #1d4ed8;
+  background: #01579b;
 }
