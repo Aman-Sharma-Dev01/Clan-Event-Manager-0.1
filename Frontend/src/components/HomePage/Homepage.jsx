@@ -4,12 +4,14 @@ import HeroSection from '../HeroSection/HeroSection';
 import ClanLogoSection from '../ClanLogoSection/ClanLogoSection';
 import EventSection from '../EventSection/EventSection';
 import SocietySection from '../SocietySection/SocietySection';
+import WinnersPhoto from '../WinnersPhoto/WinnersPhoto';
 
 const Homepage = () => {
   return (
     <div>
         <HeroSection/>
         <ClanLogoSection/>
+        <WinnersPhoto/>
         <EventSection/>
         <SocietySection/>
     </div>

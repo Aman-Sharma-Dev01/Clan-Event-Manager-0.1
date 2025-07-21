@@ -1,0 +1,81 @@
+.winners-section {
+  padding: 2rem;
+  background-color: #f8f2ea;
+  text-align: center;
+}
+
+.winners-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.headline-input {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  width: 80%;
+  max-width: 600px;
+}
+
+.headline-display {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.winners-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.winner-card {
+  width: 200px;
+  text-align: center;
+}
+
+.winner-1st {
+  transform: scale(1.2);
+}
+
+.winner-image-wrapper {
+  height: 200px;
+  border: 2px dashed #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  overflow: hidden;
+}
+
+.winner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.placeholder-image {
+  color: #BC2027;
+  font-size: 1rem;
+}
+
+.admin-controls {
+  margin-top: 0.5rem;
+}
+
+.admin-controls input {
+  display: block;
+  margin: 0.5rem auto;
+}
+
+.submit-btn {
+  margin-top: 2rem;
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  background-color: #BC2027;    
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
