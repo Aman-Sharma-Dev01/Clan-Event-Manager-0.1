@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import confetti from 'canvas-confetti';
 import { useAuth } from '../../Context/AuthProvider.jsx';
 import { BACKEND_URL } from '../utils.js';
 import './WinnersPhoto.css';
 
-// This list remains for controlling the UI (showing/hiding buttons)
 const ADMIN_IDS = [
   "6870f6f9436c91c3428aa9b2",
   "6870fbc9883f05472f4eacaf",
@@ -22,19 +22,16 @@ const WinnersPhoto = () => {
   const [winners, setWinners] = useState(initialWinnersState);
   const [headline, setHeadline] = useState('');
   const [winnerDocId, setWinnerDocId] = useState(null);
-  
   const { profile } = useAuth();
   const isAdmin = ADMIN_IDS.includes(profile?._id);
 
   useEffect(() => {
     const fetchWinners = async () => {
       try {
-        // We removed the token and Authorization header.
-        // withCredentials handles the authentication cookie automatically.
         const { data } = await axios.get(`${BACKEND_URL}/api/winners/all`, {
           withCredentials: true,
         });
-        
+
         if (data.winners && data.winners.length > 0) {
           const latestWinners = data.winners[0];
           setWinnerDocId(latestWinners._id);
@@ -51,7 +48,26 @@ const WinnersPhoto = () => {
         console.error("Failed to fetch winners:", err);
       }
     };
+
     fetchWinners();
+
+    const canvas = document.getElementById('confetti-canvas');
+    if (canvas) {
+      const myConfetti = confetti.create(canvas, {
+        resize: true,
+        useWorker: true
+      });
+
+      const interval = setInterval(() => {
+        myConfetti({
+          particleCount: 80,
+          spread: 70,
+          origin: { y: 0.6 }
+        });
+      }, 3000);
+
+      return () => clearInterval(interval);
+    }
   }, []);
 
   const handleImageChange = (e, index) => {
@@ -89,13 +105,10 @@ const WinnersPhoto = () => {
     formData.append('winner2_photo', winner2.file);
     formData.append('winner3_name', winner3.name);
     formData.append('winner3_photo', winner3.file);
-    
+
     try {
-      // This now matches the working request structure from EventUpload.jsx
       const response = await axios.post(`${BACKEND_URL}/api/winners/add`, formData, {
-        headers: {
-          "Content-Type": "multipart/form-data"
-        },
+        headers: { "Content-Type": "multipart/form-data" },
         withCredentials: true,
       });
 
@@ -108,19 +121,18 @@ const WinnersPhoto = () => {
       console.error(err);
     }
   };
-  
+
   const handleDeleteAll = async () => {
     if (!winnerDocId) {
       alert("No winner data to delete.");
       return;
     }
-    
+
     if (!window.confirm("Are you sure you want to delete this winner entry? This action cannot be undone.")) {
       return;
     }
 
     try {
-      // Same here: rely on the cookie for authentication.
       const response = await axios.delete(`${BACKEND_URL}/api/winners/${winnerDocId}`, {
         withCredentials: true,
       });
@@ -139,6 +151,8 @@ const WinnersPhoto = () => {
 
   return (
     <div className="winners-section">
+      <canvas id="confetti-canvas" className="confetti-canvas"></canvas>
+
       <h2 className="winners-title">Event Winners Of {headline}</h2>
 
       {isAdmin && (
