@@ -64,7 +64,7 @@ const WinnersPhoto = () => {
           spread: 70,
           origin: { y: 0.6 }
         });
-      }, 3000);
+      }, 2000);
 
       return () => clearInterval(interval);
     }

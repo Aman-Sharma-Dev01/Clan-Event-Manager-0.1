@@ -1,5 +1,5 @@
 import React from "react";
-import "./WildCatsPage.css";
+import "./WildCatssPage.css";
 
 const WildCatsPage = () => {
   return (

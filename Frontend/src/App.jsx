@@ -16,7 +16,7 @@ import { Toaster } from 'react-hot-toast'
 import WaterSharksPage from './components/KnowYourClan/WaterSharksPage.jsx'
 import ForestRhinosPage from './components/KnowYourClan/ForestRhinosPage.jsx'
 import AirFalconsPage from './components/KnowYourClan/AirFalconsPage.jsx'
-import WildCatsPage from './components/KnowYourClan/WildCatsPage.jsx'
+import WildCatssPage from './components/KnowYourClan/WildCatssPage.jsx'
 import Khalbali from './components/Society/Khalbali/Khalbali.jsx'
 import Moksh from './components/Society/Moksh/Moksh.jsx'
 import Noora from './components/Society/Noora/Noora.jsx'
@@ -61,7 +61,7 @@ const App = () => {
        {/* <Route exact path="/register" element = {<Register/>} /> */}
        <Route exact path="/event" element = {<EventPage/>} />
        <Route path="/event/:id" element={<EventDetail/> } />
-       <Route exact path="/wild-cats-page" element = {<WildCatsPage/>} />
+       <Route exact path="/wild-cats-page" element = {<WildCatssPage/>} />
        <Route exact path="/forest-rhinos-page" element = {<ForestRhinosPage/>} />
        <Route exact path="/water-sharks-page" element = {<WaterSharksPage/>} />
        <Route exact path="/air-falcons-page" element = {<AirFalconsPage/>} />
