@@ -4,6 +4,7 @@ import confetti from 'canvas-confetti';
 import { useAuth } from '../../Context/AuthProvider.jsx';
 import { BACKEND_URL } from '../utils.js';
 import './WinnersPhoto.css';
+import toast from 'react-hot-toast';
 
 const ADMIN_IDS = [
   "6870f6f9436c91c3428aa9b2",
@@ -104,7 +105,7 @@ scalar: 1 // 👈 Makes confetti smaller });
     const winner2 = winners.find(w => w.position === '2nd');
     const winner3 = winners.find(w => w.position === '3rd');
     if (!winner1?.file || !winner2?.file || !winner3?.file || !winner1?.name || !winner2?.name || !winner3?.name || !headline) {
-      alert('Please fill out all fields and provide all three winner photos.');
+      toast.error('Please fill out all fields and provide all three winner photos.');
       return;
     }
     formData.append('winner1_name', winner1.name);
@@ -119,35 +120,35 @@ scalar: 1 // 👈 Makes confetti smaller });
         withCredentials: true,
       });
       if (response.status === 201) {
-        alert('Winners data submitted successfully!');
+        toast.success('Winners data submitted successfully!');
         window.location.reload();
       }
     } catch (err) {
-      alert(`Error: ${err.response?.data?.message || 'Failed to submit winners data.'}`);
+      toast.error(`Error: ${err.response?.data?.message || 'Failed to submit winners data.'}`);
       console.error(err);
     }
   };
 
   const handleDeleteAll = async () => {
     if (!winnerDocId) {
-      alert("No winner data to delete.");
+      toast.error("No winner data to delete.");
       return;
     }
-    if (!window.confirm("Are you sure you want to delete this winner entry? This action cannot be undone.")) {
-      return;
-    }
+    // if (!window.confirm("Are you sure you want to delete this winner entry? This action cannot be undone.")) {
+    //   return;
+    // }
     try {
       const response = await axios.delete(`${BACKEND_URL}/api/winners/${winnerDocId}`, {
         withCredentials: true,
       });
       if (response.status === 200) {
-        alert('Winners data deleted successfully!');
+        toast.success('Winners data deleted successfully!');
         setWinners(initialWinnersState);
         setHeadline('');
         setWinnerDocId(null);
       }
     } catch (err) {
-      alert(`Error: ${err.response?.data?.message || 'Failed to delete winners data.'}`);
+      toast.error(`Error: ${err.response?.data?.message || 'Failed to delete winners data.'}`);
       console.error(err);
     }
   };
