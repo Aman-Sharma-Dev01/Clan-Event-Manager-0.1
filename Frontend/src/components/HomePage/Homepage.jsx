@@ -5,13 +5,15 @@ import ClanLogoSection from '../ClanLogoSection/ClanLogoSection';
 import EventSection from '../EventSection/EventSection';
 import SocietySection from '../SocietySection/SocietySection';
 import WinnersPhoto from '../WinnersPhoto/WinnersPhoto';
+import AllWinnersSlideshow from '../AllWinnersSlideshow/AllWinnersSlideshow';
 
 const Homepage = () => {
   return (
     <div>
         <HeroSection/>
         <ClanLogoSection/>
-        <WinnersPhoto/>
+        {/* <WinnersPhoto/> */}
+        <AllWinnersSlideshow/>
         <EventSection/>
         <SocietySection/>
     </div>

@@ -1,0 +1,305 @@
+/* AllWinnersSlideshow.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&family=Montserrat:wght@400;700;800;900&display=swap');
+
+/* body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #0d0d1a; 
+  overflow-x: hidden;
+} */
+
+/* Enhanced Background for the entire section */
+.all-winners-slideshow-section {
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #0f002a 0%, #2a0066 100%); /* Deeper, richer purple gradient */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* For pseudo-elements */
+  overflow: hidden; /* Ensure background elements don't spill */
+}
+
+/* Background circles/blobs for dynamic feel */
+.all-winners-slideshow-section::before,
+.all-winners-slideshow-section::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.3) 0%, rgba(139, 92, 246, 0) 70%);
+  filter: blur(80px); /* Soft blur */
+  opacity: 0.6;
+  z-index: 0;
+}
+
+.all-winners-slideshow-section::before {
+  width: 400px;
+  height: 400px;
+  top: -100px;
+  left: -100px;
+  animation: float1 15s infinite ease-in-out alternate;
+}
+
+.all-winners-slideshow-section::after {
+  width: 500px;
+  height: 500px;
+  bottom: -150px;
+  right: -150px;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.3) 0%, rgba(59, 130, 246, 0) 70%);
+  filter: blur(80px); /* Soft blur */
+  animation: float2 20s infinite ease-in-out alternate-reverse;
+}
+
+@keyframes float1 {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(50px, 50px); }
+  100% { transform: translate(0, 0); }
+}
+
+@keyframes float2 {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(-70px, -70px); }
+  100% { transform: translate(0, 0); }
+}
+
+
+.confetti-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.slideshow-content {
+  position: relative;
+  z-index: 2;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem; /* Larger padding for larger screens */
+  background: rgba(18, 18, 28, 0.9); /* Slightly more opaque dark background */
+  backdrop-filter: blur(12px); /* Stronger blur */
+  -webkit-backdrop-filter: blur(12px);
+  border: 2px solid rgba(139, 92, 246, 0.5); /* More prominent purple border */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7), 0 0 0 4px rgba(139, 92, 246, 0.3); /* Deeper shadow, thicker glow */
+  transition: all 0.5s ease-in-out; /* Smooth transition for content box */
+}
+
+.event-heading {
+  font-family: 'Montserrat', sans-serif; /* A more impactful font for headings */
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-shadow: 0px 6px 20px rgba(0, 0, 0, 0.8); /* Even deeper shadow */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent; /* Needed for background-clip */
+  background-image: linear-gradient(45deg, #6EE7B7, #3B82F6, #8B5CF6); /* Brighter gradient */
+  animation: headingGlow 2s infinite alternate; /* Subtle glow animation */
+}
+
+@keyframes headingGlow {
+  from { text-shadow: 0px 6px 20px rgba(0, 0, 0, 0.8); }
+  to { text-shadow: 0px 6px 25px rgba(139, 92, 246, 0.7); }
+}
+
+
+/* --- Orientation & Talent Hunt Award Item Styles (No Change) --- */
+.award-item, .talent-award-item {
+  background: rgba(45, 45, 60, 0.9); /* Darker, more opaque background */
+  border: 1px solid rgba(100, 100, 120, 0.7); /* Clearer border */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* Stronger initial shadow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.award-item:hover, .talent-award-item:hover {
+  transform: translateY(-5px) scale(1.02);
+  background: rgba(55, 55, 70, 0.95); /* Slightly lighter on hover */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6), 0 0 0 3px rgba(139, 92, 246, 0.6); /* More pronounced glow */
+}
+
+.award-title, .talent-category {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700; /* Bolder titles */
+  color: #a78bfa; /* Richer purple */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.award-winner, .talent-winner {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800; /* Extra bold winner names */
+  color: #fcd34d; /* Brighter yellow */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+.award-winner span, .talent-winner span {
+  font-family: 'Inter', sans-serif; /* Keep department in Inter */
+  font-weight: 400;
+  color: #cbd5e1; /* Lighter gray for department */
+}
+
+
+/* --- NEW Treasure Hunt Specific Styles --- */
+.treasure-hunt-display {
+  display: grid;
+  grid-template-columns: 1fr; /* Default to single column */
+  gap: 1.5rem; /* Tailwind gap-6 */
+  width: 100%;
+  max-width: 900px; /* Limit width for better readability */
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) { /* md breakpoint */
+  .treasure-hunt-display {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens and up */
+  }
+  .treasure-hunt-display .treasure-time {
+    grid-column: span 3; /* Make time taken span all columns */
+  }
+}
+
+
+.treasure-prize-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem; /* Tailwind p-6 */
+  border-radius: 0.75rem; /* Tailwind rounded-xl */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); /* Stronger shadow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.treasure-prize-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+}
+
+.prize-label {
+  font-weight: 900; /* Extra bold label */
+  letter-spacing: 0.05em;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.team-name {
+  font-weight: 800; /* Extra bold team name */
+  letter-spacing: 0.02em;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.members-list {
+  font-family: 'Inter', sans-serif; /* Use Inter for members list */
+  font-weight: 500; /* Medium weight */
+  line-height: 1.4;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Specific colors for prize cards */
+.treasure-prize-card.prize-1 {
+  background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); /* Gold to Orange */
+  border-color: #FFEA00;
+  color: #333; /* Darker text for contrast on gold */
+}
+.treasure-prize-card.prize-1 .prize-label,
+.treasure-prize-card.prize-1 .team-name {
+  color: #333;
+  text-shadow: 0 2px 5px rgba(255, 255, 255, 0.4);
+}
+.treasure-prize-card.prize-1 .members-list {
+  color: #555;
+}
+
+
+.treasure-prize-card.prize-2 {
+  background: linear-gradient(135deg, #C0C0C0 0%, #808080 100%); /* Silver to Dark Gray */
+  border-color: #D0D0D0;
+  color: #eee;
+}
+.treasure-prize-card.prize-2 .prize-label,
+.treasure-prize-card.prize-2 .team-name {
+  color: #eee;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+.treasure-prize-card.prize-2 .members-list {
+  color: #ccc;
+}
+
+
+.treasure-prize-card.prize-3 {
+  background: linear-gradient(135deg, #CD7F32 0%, #6F4E37 100%); /* Bronze to Dark Brown */
+  border-color: #D88E4B;
+  color: #eee;
+}
+.treasure-prize-card.prize-3 .prize-label,
+.treasure-prize-card.prize-3 .team-name {
+  color: #eee;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+.treasure-prize-card.prize-3 .members-list {
+  color: #ccc;
+}
+
+
+.treasure-time {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #cbd5e1;
+  margin-top: 2rem; /* Space from cards */
+}
+.treasure-time span {
+  color: #fcd34d;
+  font-weight: 900;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+
+/* --- Animation for slide transitions --- */
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(20px) scale(0.98); }
+  5% { opacity: 1; transform: translateY(0) scale(1); }
+  95% { opacity: 1; transform: translateY(0) scale(1); }
+  100% { opacity: 0; transform: translateY(-20px) scale(0.98); }
+}
+
+.animate-fade-in-out {
+  animation: fadeInOut 8s ease-in-out forwards;
+}
+
+/* Responsive adjustments */
+@media (max-width: 639px) { /* Small screens */
+  .event-heading {
+    font-size: 2rem;
+  }
+  .slideshow-content {
+    padding: 1rem;
+    min-height: 450px;
+  }
+  .orientation-awards-grid,
+  .talent-hunt-display {
+    grid-template-columns: 1fr;
+  }
+  .award-item, .talent-award-item {
+    padding: 1rem;
+  }
+  .treasure-prize-card {
+    padding: 1rem;
+  }
+  .prize-label {
+    font-size: 2rem;
+  }
+  .team-name {
+    font-size: 1.5rem;
+  }
+  .members-list {
+    font-size: 1rem;
+  }
+}
