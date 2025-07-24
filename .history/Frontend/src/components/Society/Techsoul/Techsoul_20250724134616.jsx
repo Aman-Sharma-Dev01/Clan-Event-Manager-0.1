@@ -10,7 +10,7 @@ export const Techsoul = () => {
                     {/* Hero Section */}
                     <div className="mb-16 text-center">
                         <div className="flex justify-center mb-6">
-                            {/* <div className="h-24 w-24 rounded-full bg-primary-600 flex items-center justify-center transform hover:scale-105 transition-all duration-300 shadow-lg shadow-primary-500/30"> */}
+                            <div className="h-24 w-24 rounded-full bg-primary-600 flex items-center justify-center transform hover:scale-105 transition-all duration-300 shadow-lg shadow-primary-500/30">
                                 {/* <span className="material-symbols-outlined text-5xl">devices</span> */}
                                 <img src="/SocietyLogo/techsoul.jpg" alt="techsoulLogo" className="h-24 w-24 rounded-full bg-primary-600 flex items-center justify-center transform hover:scale-105 transition-all duration-300 shadow-lg shadow-primary-500/30"/>
                             {/* </div> */}
@@ -346,7 +346,7 @@ export const Techsoul = () => {
 
                     {/* Footer Section */}
                     <div className="text-center text-slate-400 text-sm">
-                        <p>© 2025 Tech Soul Society - MRU. All rights reserved.</p>
+                        <p>© 2023 Tech Soul Society - MRU. All rights reserved.</p>
                     </div>
                 </div>
             </div>

@@ -346,7 +346,7 @@ export const Techsoul = () => {
 
                     {/* Footer Section */}
                     <div className="text-center text-slate-400 text-sm">
-                        <p>© 2025 Tech Soul Society - MRU. All rights reserved.</p>
+                        <p>© 2023 Tech Soul Society - MRU. All rights reserved.</p>
                     </div>
                 </div>
             </div>

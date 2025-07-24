@@ -10,10 +10,9 @@ export const Techsoul = () => {
                     {/* Hero Section */}
                     <div className="mb-16 text-center">
                         <div className="flex justify-center mb-6">
-                            {/* <div className="h-24 w-24 rounded-full bg-primary-600 flex items-center justify-center transform hover:scale-105 transition-all duration-300 shadow-lg shadow-primary-500/30"> */}
-                                {/* <span className="material-symbols-outlined text-5xl">devices</span> */}
-                                <img src="/SocietyLogo/techsoul.jpg" alt="techsoulLogo" className="h-24 w-24 rounded-full bg-primary-600 flex items-center justify-center transform hover:scale-105 transition-all duration-300 shadow-lg shadow-primary-500/30"/>
-                            {/* </div> */}
+                            <div className="h-24 w-24 rounded-full bg-primary-600 flex items-center justify-center transform hover:scale-105 transition-all duration-300 shadow-lg shadow-primary-500/30">
+                                <span className="material-symbols-outlined text-5xl">devices</span>
+                            </div>
                         </div>
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary-400 to-indigo-400">
                             Tech Soul Society
@@ -97,7 +96,7 @@ export const Techsoul = () => {
                             <div className="bg-slate-800/60 rounded-2xl overflow-hidden shadow-lg hover:shadow-primary-500/20 transition-all duration-300 transform hover:-translate-y-1">
                                 <div className="h-48 bg-slate-700 relative">
                                     <img
-                                        src="/TechSoul/10.png"
+                                        src="https://images.unsplash.com/photo-1523961131990-5ea7c61b2107"
                                         alt="Hackathon"
                                         className="w-full h-full object-cover"
                                         keywords="hackathon, coding, programming, competition"
@@ -117,7 +116,7 @@ export const Techsoul = () => {
                             <div className="bg-slate-800/60 rounded-2xl overflow-hidden shadow-lg hover:shadow-primary-500/20 transition-all duration-300 transform hover:-translate-y-1">
                                 <div className="h-48 bg-slate-700 relative">
                                     <img
-                                        src="/TechSoul/11.png"
+                                        src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2"
                                         alt="Tech Workshop"
                                         className="w-full h-full object-cover"
                                         keywords="workshop, learning, technology, education"
@@ -137,7 +136,7 @@ export const Techsoul = () => {
                             <div className="bg-slate-800/60 rounded-2xl overflow-hidden shadow-lg hover:shadow-primary-500/20 transition-all duration-300 transform hover:-translate-y-1">
                                 <div className="h-48 bg-slate-700 relative">
                                     <img
-                                        src="/TechSoul/3.png"
+                                        src="https://images.unsplash.com/photo-1540575467063-178a50c2df87"
                                         alt="Tech Talk"
                                         className="w-full h-full object-cover"
                                         keywords="tech talk, seminar, industry experts, learning"
@@ -346,7 +345,7 @@ export const Techsoul = () => {
 
                     {/* Footer Section */}
                     <div className="text-center text-slate-400 text-sm">
-                        <p>© 2025 Tech Soul Society - MRU. All rights reserved.</p>
+                        <p>© 2023 Tech Soul Society - MRU. All rights reserved.</p>
                     </div>
                 </div>
             </div>
