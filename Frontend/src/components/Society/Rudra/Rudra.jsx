@@ -146,7 +146,7 @@ import "./Rudra.css"
                                 <div className="bg-gradient-to-br from-primary-500/20 to-purple-500/20 rounded-2xl p-1 transform hover:scale-[1.02] transition-all duration-500">
                                     <div className="relative overflow-hidden rounded-2xl aspect-[4/3]">
                                         <img
-                                            src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80"
+                                            src="/Rudra/first.jpg"
                                             alt="Dance performance"
                                             className="w-full h-full object-cover"
                                             keywords="dance performance, stage, performers, colorful, energetic"
@@ -176,14 +176,14 @@ import "./Rudra.css"
                                     </div>
                                     <div className="bg-gradient-to-br from-black to-primary-900/30 p-4 rounded-lg border border-primary-500/20 hover:border-primary-500/50 transition-all duration-300">
                                         <div className="text-3xl font-bold text-primary-400">50+</div>
-                                        <div className="text-gray-400">National Awards</div>
+                                        <div className="text-gray-400">Participations</div>
                                     </div>
                                     <div className="bg-gradient-to-br from-black to-primary-900/30 p-4 rounded-lg border border-primary-500/20 hover:border-primary-500/50 transition-all duration-300">
                                         <div className="text-3xl font-bold text-primary-400">200+</div>
                                         <div className="text-gray-400">Performances</div>
                                     </div>
                                     <div className="bg-gradient-to-br from-black to-primary-900/30 p-4 rounded-lg border border-primary-500/20 hover:border-primary-500/50 transition-all duration-300">
-                                        <div className="text-3xl font-bold text-primary-400">100+</div>
+                                        <div className="text-3xl font-bold text-primary-400">20+</div>
                                         <div className="text-gray-400">Active Members</div>
                                     </div>
                                 </div>
@@ -207,7 +207,7 @@ import "./Rudra.css"
                             <div className="group relative overflow-hidden rounded-xl bg-gradient-to-br from-primary-900/30 to-purple-900/30 p-1 hover:from-primary-600/30 hover:to-purple-600/30 transition-all duration-500">
                                 <div className="overflow-hidden rounded-lg">
                                     <img
-                                        src="https://images.unsplash.com/photo-1546427660-eb346c344ba5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+                                        src="/Rudra/second.jpg"
                                         alt="Urban Dance Battle"
                                         className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-700"
                                         keywords="dance competition, urban dance, performance, stage lights"
@@ -233,7 +233,7 @@ import "./Rudra.css"
                             <div className="group relative overflow-hidden rounded-xl bg-gradient-to-br from-primary-900/30 to-purple-900/30 p-1 hover:from-primary-600/30 hover:to-purple-600/30 transition-all duration-500">
                                 <div className="overflow-hidden rounded-lg">
                                     <img
-                                        src="https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                                        src="/Rudra/third.jpg"
                                         alt="Fusion Festival"
                                         className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-700"
                                         keywords="dance festival, fusion dance, colorful costumes, stage performance"
@@ -259,7 +259,7 @@ import "./Rudra.css"
                             <div className="group relative overflow-hidden rounded-xl bg-gradient-to-br from-primary-900/30 to-purple-900/30 p-1 hover:from-primary-600/30 hover:to-purple-600/30 transition-all duration-500">
                                 <div className="overflow-hidden rounded-lg">
                                     <img
-                                        src="https://images.unsplash.com/photo-1511715282680-fbf93a50e721?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNDZ8MHwxfHNlYXJjaHwxfHxkYW5jZSUyMHBlcmZvcm1hbmNlfGVufDB8fHx8MTc1MzAzMTQ5MXww&ixlib=rb-4.1.0&q=80&w=1080"
+                                        src="/Rudra/fourth.jpg"
                                         alt="Rhythm Divine"
                                         className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-700"
                                         keywords="dance performance, rhythm, stage show, professional dancers"
@@ -283,6 +283,282 @@ import "./Rudra.css"
                                 </div>
                             </div>
                         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div className="group relative overflow-hidden rounded-xl bg-gradient-to-br from-primary-900/30 to-purple-900/30 p-1 hover:from-primary-600/30 hover:to-purple-600/30 transition-all duration-500">
+                                <div className="overflow-hidden rounded-lg">
+                                    <img
+                                        src="/Rudra/fifth.jpg"
+                                        alt="Urban Dance Battle"
+                                        className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-700"
+                                        keywords="dance competition, urban dance, performance, stage lights"
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-80 group-hover:opacity-70 transition-opacity duration-300"></div>
+                                    <div className="absolute bottom-0 left-0 p-5 w-full">
+                                        <h3 className="text-xl font-bold mb-2 group-hover:text-primary-400 transition-colors duration-300">
+                                            Republic Day Battle
+                                        </h3>
+                                        <p className="text-gray-300 text-sm mb-3 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                                            A high-energy showcase of classical dance styles that crossed boundaries.
+                                        </p>
+                                        <div className="flex items-center text-primary-400 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 delay-100">
+                                            <span className="text-sm">View Details</span>
+                                            <span className="material-symbols-outlined text-sm ml-1">
+                                                arrow_forward
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="group relative overflow-hidden rounded-xl bg-gradient-to-br from-primary-900/30 to-purple-900/30 p-1 hover:from-primary-600/30 hover:to-purple-600/30 transition-all duration-500">
+                                <div className="overflow-hidden rounded-lg">
+                                    <img
+                                        src="/Rudra/sixth.jpg"
+                                        alt="Fusion Festival"
+                                        className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-700"
+                                        keywords="dance festival, fusion dance, colorful costumes, stage performance"
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-80 group-hover:opacity-70 transition-opacity duration-300"></div>
+                                    <div className="absolute bottom-0 left-0 p-5 w-full">
+                                        <h3 className="text-xl font-bold mb-2 group-hover:text-primary-400 transition-colors duration-300">
+                                            Street style
+                                        </h3>
+                                        <p className="text-gray-300 text-sm mb-3 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                                            Blending classical and contemporary styles in a mesmerizing performance.
+                                        </p>
+                                        <div className="flex items-center text-primary-400 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 delay-100">
+                                            <span className="text-sm">View Details</span>
+                                            <span className="material-symbols-outlined text-sm ml-1">
+                                                arrow_forward
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="group relative overflow-hidden rounded-xl bg-gradient-to-br from-primary-900/30 to-purple-900/30 p-1 hover:from-primary-600/30 hover:to-purple-600/30 transition-all duration-500">
+                                <div className="overflow-hidden rounded-lg">
+                                    <img
+                                        src="/Rudra/seventh.jpg"
+                                        alt="Rhythm Divine"
+                                        className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-700"
+                                        keywords="dance performance, rhythm, stage show, professional dancers"
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-80 group-hover:opacity-70 transition-opacity duration-300"></div>
+                                    <div className="absolute bottom-0 left-0 p-5 w-full">
+                                        <h3 className="text-xl font-bold mb-2 group-hover:text-primary-400 transition-colors duration-300">
+                                            Lyrics of Life
+                                        </h3>
+                                        <p className="text-gray-300 text-sm mb-3 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                                            An award-winning choreography that took the audience on an emotional
+                                            journey.
+                                        </p>
+                                        <div className="flex items-center text-primary-400 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 delay-100">
+                                            <span className="text-sm">View Details</span>
+                                            <span className="material-symbols-outlined text-sm ml-1">
+                                                arrow_forward
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div className="group relative overflow-hidden rounded-xl bg-gradient-to-br from-primary-900/30 to-purple-900/30 p-1 hover:from-primary-600/30 hover:to-purple-600/30 transition-all duration-500">
+                                <div className="overflow-hidden rounded-lg">
+                                    <img
+                                        src="/Rudra/eight.jpg"
+                                        alt="Urban Dance Battle"
+                                        className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-700"
+                                        keywords="dance competition, urban dance, performance, stage lights"
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-80 group-hover:opacity-70 transition-opacity duration-300"></div>
+                                    <div className="absolute bottom-0 left-0 p-5 w-full">
+                                        <h3 className="text-xl font-bold mb-2 group-hover:text-primary-400 transition-colors duration-300">
+                                            Enthusiatic Dance Performance
+                                        </h3>
+                                        <p className="text-gray-300 text-sm mb-3 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                                            A high-energy showcase of street dance styles that pushed boundaries.
+                                        </p>
+                                        <div className="flex items-center text-primary-400 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 delay-100">
+                                            <span className="text-sm">View Details</span>
+                                            <span className="material-symbols-outlined text-sm ml-1">
+                                                arrow_forward
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="group relative overflow-hidden rounded-xl bg-gradient-to-br from-primary-900/30 to-purple-900/30 p-1 hover:from-primary-600/30 hover:to-purple-600/30 transition-all duration-500">
+                                <div className="overflow-hidden rounded-lg">
+                                    <img
+                                        src="/Rudra/ninth.jpg"
+                                        alt="Fusion Festival"
+                                        className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-700"
+                                        keywords="dance festival, fusion dance, colorful costumes, stage performance"
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-80 group-hover:opacity-70 transition-opacity duration-300"></div>
+                                    <div className="absolute bottom-0 left-0 p-5 w-full">
+                                        <h3 className="text-xl font-bold mb-2 group-hover:text-primary-400 transition-colors duration-300">
+                                            Inter college performance
+                                        </h3>
+                                        <p className="text-gray-300 text-sm mb-3 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                                            Blending classical and contemporary styles in a mesmerizing performance.
+                                        </p>
+                                        <div className="flex items-center text-primary-400 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 delay-100">
+                                            <span className="text-sm">View Details</span>
+                                            <span className="material-symbols-outlined text-sm ml-1">
+                                                arrow_forward
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="group relative overflow-hidden rounded-xl bg-gradient-to-br from-primary-900/30 to-purple-900/30 p-1 hover:from-primary-600/30 hover:to-purple-600/30 transition-all duration-500">
+                                <div className="overflow-hidden rounded-lg">
+                                    <img
+                                        src="/Rudra/tenth.jpg"
+                                        alt="Rhythm Divine"
+                                        className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-700"
+                                        keywords="dance performance, rhythm, stage show, professional dancers"
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-80 group-hover:opacity-70 transition-opacity duration-300"></div>
+                                    <div className="absolute bottom-0 left-0 p-5 w-full">
+                                        <h3 className="text-xl font-bold mb-2 group-hover:text-primary-400 transition-colors duration-300">
+                                          Freestyle performance
+                                        </h3>
+                                        <p className="text-gray-300 text-sm mb-3 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                                            An award-winning choreography that took the audience on an emotional
+                                            journey.
+                                        </p>
+                                        <div className="flex items-center text-primary-400 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 delay-100">
+                                            <span className="text-sm">View Details</span>
+                                            <span className="material-symbols-outlined text-sm ml-1">
+                                                arrow_forward
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                         {/* <div className="text-center mt-12">
                             <button className="bg-transparent border-2 border-primary-500 text-white font-bold py-3 px-8 rounded-full hover:bg-primary-500/20 transition-all duration-300 transform hover:scale-105">
