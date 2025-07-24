@@ -87,9 +87,9 @@ export const Techsoul = () => {
                     </div>
 
                     {/* Events Section */}
-                    {/* <div className="mb-20">
+                    <div className="mb-20">
                         <div className="text-center mb-12">
-                            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Events</h2>
+                            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Gallery</h2>
                             <div className="h-1 w-24 bg-primary-500 mx-auto rounded-full"></div>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -101,9 +101,7 @@ export const Techsoul = () => {
                                         className="w-full h-full object-cover"
                                         keywords="hackathon, coding, programming, competition"
                                     />
-                                    <div className="absolute top-4 right-4 bg-primary-500 text-white px-3 py-1 rounded-full text-sm font-medium">
-                                        Annual
-                                    </div>
+                                   
                                 </div>
                                 <div className="p-6">
                                     <h3 className="text-xl font-semibold mb-2">MRU Hackathon</h3>
@@ -111,12 +109,7 @@ export const Techsoul = () => {
                                         A 48-hour coding marathon where teams compete to build innovative solutions to
                                         real-world problems.
                                     </p>
-                                    <div className="flex items-center text-sm text-slate-400">
-                                        <span className="material-symbols-outlined text-primary-400 mr-1">
-                                            calendar_month
-                                        </span>
-                                        October 2023
-                                    </div>
+                                    
                                 </div>
                             </div>
 
@@ -128,9 +121,7 @@ export const Techsoul = () => {
                                         className="w-full h-full object-cover"
                                         keywords="workshop, learning, technology, education"
                                     />
-                                    <div className="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">
-                                        Monthly
-                                    </div>
+                                    
                                 </div>
                                 <div className="p-6">
                                     <h3 className="text-xl font-semibold mb-2">Tech Workshops</h3>
@@ -138,12 +129,7 @@ export const Techsoul = () => {
                                         Hands-on workshops covering the latest technologies, programming languages, and
                                         tools.
                                     </p>
-                                    <div className="flex items-center text-sm text-slate-400">
-                                        <span className="material-symbols-outlined text-primary-400 mr-1">
-                                            calendar_month
-                                        </span>
-                                        Every Month
-                                    </div>
+                                    
                                 </div>
                             </div>
 
@@ -155,9 +141,7 @@ export const Techsoul = () => {
                                         className="w-full h-full object-cover"
                                         keywords="tech talk, seminar, industry experts, learning"
                                     />
-                                    <div className="absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium">
-                                        Quarterly
-                                    </div>
+                                   
                                 </div>
                                 <div className="p-6">
                                     <h3 className="text-xl font-semibold mb-2">Industry Tech Talks</h3>
@@ -165,23 +149,18 @@ export const Techsoul = () => {
                                         Engaging sessions with industry experts sharing insights on emerging
                                         technologies and career paths.
                                     </p>
-                                    <div className="flex items-center text-sm text-slate-400">
-                                        <span className="material-symbols-outlined text-primary-400 mr-1">
-                                            calendar_month
-                                        </span>
-                                        Quarterly
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
                         <div className="text-center mt-8">
-                            <button className="px-6 py-3 bg-slate-700 hover:bg-slate-600 rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:shadow-slate-500/30 inline-flex items-center gap-2">
+                            {/* <button className="px-6 py-3 bg-slate-700 hover:bg-slate-600 rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:shadow-slate-500/30 inline-flex items-center gap-2">
                                 <span className="material-symbols-outlined">landscape</span>
                                 View All Events
-                            </button>
+                            </button> */}
                         </div>
                        
-                    </div> */}
+                    </div>
 
                     {/* Tech Areas Section */}
                     <div className="mb-20">
