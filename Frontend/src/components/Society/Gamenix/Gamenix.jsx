@@ -60,9 +60,9 @@ export const Gamenix = () => {
                                         Online gaming has reached an all-time high. Start your gaming journey with us
                                         today.
                                     </p>
-                                    <button className="bg-primary-600 hover:bg-primary-500 transition-colors duration-300 py-3 px-8 rounded-lg font-semibold shadow-lg hover:shadow-primary-500/30">
+                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUxm28UF8rWU5Q1dqvKQHqaNxsyw6KvwcamiKjNbhN0i9gpA/viewform" className="bg-primary-600 hover:bg-primary-500 transition-colors duration-300 py-3 px-8 rounded-lg font-semibold shadow-lg hover:shadow-primary-500/30">
                                         Join Gamenics
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -170,7 +170,7 @@ export const Gamenix = () => {
                         {/* Next: "Add a game spotlight section" */}
                     </section>
 
-                    <section className="mb-10">
+                    {/* <section className="mb-10">
                         <div className="bg-gradient-to-r from-primary-900/50 to-purple-900/50 rounded-xl p-8 md:p-10">
                             <h2 className="text-3xl font-bold mb-6 text-center">Join Our Gaming Community</h2>
                             <p className="text-center text-lg mb-8 max-w-3xl mx-auto">
@@ -210,8 +210,8 @@ export const Gamenix = () => {
                                 </button>
                             </form>
                         </div>
-                        {/* Next: "Add social media links" */}
-                    </section>
+        
+                    </section> */}
                 </main>
             </div>
         </div>

@@ -25,9 +25,9 @@ export const Khalbali = () => {
                         <p className="text-xl md:text-2xl mb-8 opacity-90 leading-relaxed animate-fade-in">
                             The Drama Society That Touches Hearts & Awakens Souls
                         </p>
-                        <button className="bg-yellow-500 hover:bg-yellow-400 text-purple-900 font-bold py-3 px-8 rounded-full text-lg transform transition duration-300 hover:scale-110 hover:shadow-lg">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUxm28UF8rWU5Q1dqvKQHqaNxsyw6KvwcamiKjNbhN0i9gpA/viewform" className="bg-yellow-500 hover:bg-yellow-400 text-purple-900 font-bold py-3 px-8 rounded-full text-lg transform transition duration-300 hover:scale-110 hover:shadow-lg">
                             Join Our Journey
-                        </button>
+                        </a>
                     </div>
                     <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
                         <span className="material-symbols-outlined text-4xl text-yellow-400">expand_more</span>
@@ -290,7 +290,7 @@ export const Khalbali = () => {
                 </section>
 
                 {/* Upcoming Events */}
-                <section className="py-20 px-4 bg-indigo-950/50 relative">
+                {/* <section className="py-20 px-4 bg-indigo-950/50 relative">
                     <div className="max-w-6xl mx-auto">
                         <div className="text-center mb-16">
                             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-yellow-400">Upcoming Events</h2>
@@ -359,54 +359,7 @@ export const Khalbali = () => {
                             </div>
                         </div>
                     </div>
-                </section>
-
-                {/* Join Us */}
-                <section className="py-20 px-4 relative">
-                    <div className="max-w-4xl mx-auto bg-gradient-to-br from-purple-800/40 to-indigo-800/40 p-10 rounded-xl backdrop-blur-sm relative overflow-hidden">
-                        <div className="absolute -top-20 -right-20 w-40 h-40 bg-yellow-400/30 rounded-full blur-3xl"></div>
-                        <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-purple-500/30 rounded-full blur-3xl"></div>
-
-                        <div className="relative z-10 text-center">
-                            <h2 className="text-4xl font-bold mb-6 text-yellow-400">Join Khalbali</h2>
-                            <p className="text-purple-100 mb-8 text-lg">
-                                Become a part of our vibrant drama family. Whether you're interested in acting,
-                                direction, scriptwriting, or production, there's a place for your talent in Khalbali.
-                            </p>
-
-                            <form className="max-w-md mx-auto">
-                                <div className="mb-4">
-                                    <input
-                                        type="text"
-                                        placeholder="Your Name"
-                                        className="w-full px-4 py-3 rounded-lg bg-purple-900/50 border border-purple-600 text-white placeholder-purple-300 focus:outline-none focus:ring-2 focus:ring-yellow-400"
-                                    />
-                                </div>
-                                <div className="mb-4">
-                                    <input
-                                        type="email"
-                                        placeholder="Your Email"
-                                        className="w-full px-4 py-3 rounded-lg bg-purple-900/50 border border-purple-600 text-white placeholder-purple-300 focus:outline-none focus:ring-2 focus:ring-yellow-400"
-                                    />
-                                </div>
-                                <div className="mb-6">
-                                    <select className="w-full px-4 py-3 rounded-lg bg-purple-900/50 border border-purple-600 text-white focus:outline-none focus:ring-2 focus:ring-yellow-400">
-                                        <option value="">Area of Interest</option>
-                                        <option value="acting">Acting</option>
-                                        <option value="directing">Directing</option>
-                                        <option value="scriptwriting">Scriptwriting</option>
-                                        <option value="production">Production</option>
-                                        <option value="costume">Costume Design</option>
-                                        <option value="technical">Technical Support</option>
-                                    </select>
-                                </div>
-                                <button className="w-full bg-yellow-500 hover:bg-yellow-400 text-purple-900 font-bold py-3 px-6 rounded-lg text-lg transform transition duration-300 hover:scale-105 hover:shadow-lg">
-                                    Submit Application
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                </section>
+                </section> */}
 
                 {/* Footer */}
                 <footer className="bg-purple-950 py-12 px-4">
@@ -499,16 +452,16 @@ export const Khalbali = () => {
                                         <span className="material-symbols-outlined mr-2 text-yellow-400">
                                             landscape
                                         </span>
-                                        University Campus, Drama Building
+                                        Manav Rachna University
                                     </li>
-                                    <li className="flex items-center text-purple-200">
+                                    {/* <li className="flex items-center text-purple-200">
                                         <span className="material-symbols-outlined mr-2 text-yellow-400">call</span>
                                         +91 98765 43210
                                     </li>
                                     <li className="flex items-center text-purple-200">
                                         <span className="material-symbols-outlined mr-2 text-yellow-400">mail</span>
                                         khalbali@university.edu
-                                    </li>
+                                    </li> */}
                                 </ul>
                             </div>
 
@@ -517,7 +470,7 @@ export const Khalbali = () => {
                                 <p className="text-purple-200 mb-4">
                                     Subscribe to our newsletter for updates on upcoming performances and events.
                                 </p>
-                                <div className="flex">
+                                {/* <div className="flex">
                                     <input
                                         type="email"
                                         placeholder="Your Email"
@@ -526,12 +479,12 @@ export const Khalbali = () => {
                                     <button className="bg-yellow-500 hover:bg-yellow-400 text-purple-900 px-4 py-2 rounded-r-lg transition duration-300">
                                         <span className="material-symbols-outlined">send</span>
                                     </button>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
 
                         <div className="border-t border-purple-800 mt-12 pt-8 text-center text-purple-300 text-sm">
-                            <p>© 2023 Khalbali Drama Society. All rights reserved.</p>
+                            <p>© 2025 Khalbali Drama Society. All rights reserved.</p>
                         </div>
                     </div>
                 </footer>

@@ -22,14 +22,14 @@ export const Techsoul = () => {
                             it all.
                         </p>
                         <div className="mt-8 flex flex-wrap gap-4 justify-center">
-                            <button className="px-6 py-3 bg-primary-600 hover:bg-primary-700 rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/30 flex items-center gap-2">
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUxm28UF8rWU5Q1dqvKQHqaNxsyw6KvwcamiKjNbhN0i9gpA/viewform" className="px-6 py-3 bg-primary-600 hover:bg-primary-700 rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/30 flex items-center gap-2">
                                 <span className="material-symbols-outlined">rocket_launch</span>
                                 Join Our Community
-                            </button>
-                            <button className="px-6 py-3 bg-slate-700 hover:bg-slate-600 rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:shadow-slate-500/30 flex items-center gap-2">
+                            </a>
+                            {/* <button className="px-6 py-3 bg-slate-700 hover:bg-slate-600 rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:shadow-slate-500/30 flex items-center gap-2">
                                 <span className="material-symbols-outlined">event</span>
                                 Upcoming Events
-                            </button>
+                            </button> */}
                         </div>
                         {/* Next: "Add animated waves divider" */}
                     </div>
@@ -87,7 +87,7 @@ export const Techsoul = () => {
                     </div>
 
                     {/* Events Section */}
-                    <div className="mb-20">
+                    {/* <div className="mb-20">
                         <div className="text-center mb-12">
                             <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Events</h2>
                             <div className="h-1 w-24 bg-primary-500 mx-auto rounded-full"></div>
@@ -180,8 +180,8 @@ export const Techsoul = () => {
                                 View All Events
                             </button>
                         </div>
-                        {/* Next: "Add event registration form" */}
-                    </div>
+                       
+                    </div> */}
 
                     {/* Tech Areas Section */}
                     <div className="mb-20">
@@ -258,11 +258,11 @@ export const Techsoul = () => {
                                 <h3 className="font-semibold">AR/VR</h3>
                             </div>
                         </div>
-                        {/* Next: "Add project showcase section" */}
+                  
                     </div>
 
                     {/* Contact Section */}
-                    <div className="bg-slate-800/60 rounded-2xl p-8 mb-12 shadow-xl">
+                    {/* <div className="bg-slate-800/60 rounded-2xl p-8 mb-12 shadow-xl">
                         <div className="text-center mb-8">
                             <h2 className="text-3xl font-bold mb-4">Join Tech Soul Society</h2>
                             <p className="text-slate-300 max-w-2xl mx-auto">
@@ -361,8 +361,8 @@ export const Techsoul = () => {
                                 </form>
                             </div>
                         </div>
-                        {/* Next: "Add FAQ section with accordion" */}
-                    </div>
+                      
+                    </div> */}
 
                     {/* Footer Section */}
                     <div className="text-center text-slate-400 text-sm">

@@ -60,18 +60,18 @@ import "./Drishti.css"
                                 <a href="#about" className="font-medium hover:text-indigo-600 transition-colors">
                                     About
                                 </a>
-                                <a href="#events" className="font-medium hover:text-indigo-600 transition-colors">
+                                {/* <a href="#events" className="font-medium hover:text-indigo-600 transition-colors">
                                     Events
-                                </a>
+                                </a> */}
                                 <a href="#gallery" className="font-medium hover:text-indigo-600 transition-colors">
                                     Gallery
                                 </a>
-                                <a href="#team" className="font-medium hover:text-indigo-600 transition-colors">
+                                {/* <a href="#team" className="font-medium hover:text-indigo-600 transition-colors">
                                     Team
-                                </a>
-                                <a href="#contact" className="font-medium hover:text-indigo-600 transition-colors">
+                                </a> */}
+                                {/* <a href="#contact" className="font-medium hover:text-indigo-600 transition-colors">
                                     Contact
-                                </a>
+                                </a> */}
                             </div>
                             <div className="md:hidden">
                                 <details className="relative">
@@ -85,19 +85,19 @@ import "./Drishti.css"
                                         >
                                             About
                                         </a>
-                                        <a
+                                        {/* <a
                                             href="#events"
                                             className="block px-4 py-2 hover:bg-indigo-50 transition-colors"
                                         >
                                             Events
-                                        </a>
+                                        </a> */}
                                         <a
                                             href="#gallery"
                                             className="block px-4 py-2 hover:bg-indigo-50 transition-colors"
                                         >
                                             Gallery
                                         </a>
-                                        <a
+                                        {/* <a
                                             href="#team"
                                             className="block px-4 py-2 hover:bg-indigo-50 transition-colors"
                                         >
@@ -108,7 +108,7 @@ import "./Drishti.css"
                                             className="block px-4 py-2 hover:bg-indigo-50 transition-colors"
                                         >
                                             Contact
-                                        </a>
+                                        </a> */}
                                     </div>
                                 </details>
                             </div>
@@ -125,17 +125,17 @@ import "./Drishti.css"
                                 </p>
                                 <div className="flex flex-wrap gap-4">
                                     <a
-                                        href="#join"
+                                        href="https://docs.google.com/forms/d/e/1FAIpQLSdUxm28UF8rWU5Q1dqvKQHqaNxsyw6KvwcamiKjNbhN0i9gpA/viewform"
                                         className="px-6 py-3 bg-indigo-600 text-white font-medium rounded-lg shadow-md hover:bg-indigo-700 transform hover:-translate-y-1 transition-all duration-300"
                                     >
                                         Join Us
                                     </a>
-                                    <a
+                                    {/* <a
                                         href="#events"
                                         className="px-6 py-3 bg-white text-indigo-600 font-medium rounded-lg shadow-md hover:bg-indigo-50 transform hover:-translate-y-1 transition-all duration-300"
                                     >
                                         Our Events
-                                    </a>
+                                    </a> */}
                                 </div>
                             </div>
                             <div className="md:w-1/2">
@@ -200,7 +200,7 @@ import "./Drishti.css"
                 </section>
 
                 {/* Events Section */}
-                <section id="events" className="py-16 md:py-24 bg-indigo-50">
+                {/* <section id="events" className="py-16 md:py-24 bg-indigo-50">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="text-center mb-16">
                             <h2 className="text-3xl md:text-4xl font-bold text-indigo-900 mb-4">Upcoming Events</h2>
@@ -293,7 +293,7 @@ import "./Drishti.css"
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
 
                 {/* Gallery Section */}
                 <section id="gallery" className="py-16 md:py-24 bg-white">
@@ -355,18 +355,18 @@ import "./Drishti.css"
                         </div>
 
                         <div className="text-center mt-10">
-                            <a
+                            {/* <a
                                 href="#more-gallery"
                                 className="inline-block px-6 py-3 bg-indigo-600 text-white font-medium rounded-lg shadow-md hover:bg-indigo-700 transform hover:-translate-y-1 transition-all duration-300"
                             >
                                 View Full Gallery
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                 </section>
 
                 {/* Team Section */}
-                <section id="team" className="py-16 md:py-24 bg-indigo-50">
+                {/* <section id="team" className="py-16 md:py-24 bg-indigo-50">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="text-center mb-16">
                             <h2 className="text-3xl md:text-4xl font-bold text-indigo-900 mb-4">Meet Our Team</h2>
@@ -484,10 +484,10 @@ import "./Drishti.css"
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
 
                 {/* Contact Section */}
-                <section id="contact" className="py-16 md:py-24 bg-white">
+                {/* <section id="contact" className="py-16 md:py-24 bg-white">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="text-center mb-16">
                             <h2 className="text-3xl md:text-4xl font-bold text-indigo-900 mb-4">Get In Touch</h2>
@@ -558,7 +558,7 @@ import "./Drishti.css"
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
             </div>
         </div>
     )

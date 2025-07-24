@@ -25,9 +25,9 @@ const Felicia = () => {
 	      <p className="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-10">
 	        An immersive society dedicated to the celebration of artistic expression in all its forms, nurturing creativity and fostering connections through the universal language of art.
 	      </p>
-	      <button className="px-8 py-3 bg-gradient-to-r from-primary-500 to-purple-600 text-white rounded-full text-lg font-medium transform transition duration-500 hover:scale-105 hover:shadow-lg">
+	      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUxm28UF8rWU5Q1dqvKQHqaNxsyw6KvwcamiKjNbhN0i9gpA/viewform" className="px-8 py-3 bg-gradient-to-r from-primary-500 to-purple-600 text-white rounded-full text-lg font-medium transform transition duration-500 hover:scale-105 hover:shadow-lg">
 	        Join Our Community
-	      </button>
+	      </a>
 	    </div>
 	    
 	    <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
@@ -104,7 +104,7 @@ const Felicia = () => {
 	  </section>
 	
 	  {/* Events Section */}
-	  <section className="py-20 px-4 relative bg-white/30 backdrop-blur-sm">
+	  {/* <section className="py-20 px-4 relative bg-white/30 backdrop-blur-sm">
 	    <div className="max-w-6xl mx-auto">
 	      <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-purple-700">Upcoming Events</h2>
 	      
@@ -178,7 +178,7 @@ const Felicia = () => {
 	        </div>
 	      </div>
 	    </div>
-	  </section>
+	  </section> */}
 	
 	  {/* Testimonials */}
 	  <section className="py-20 px-4 relative">
@@ -246,7 +246,7 @@ const Felicia = () => {
 	  </section>
 	
 	  {/* Join Section */}
-	  <section className="py-20 px-4 relative overflow-hidden">
+	  {/* <section className="py-20 px-4 relative overflow-hidden">
 	    <div className="absolute inset-0 bg-gradient-to-r from-purple-100 to-pink-100 opacity-80"></div>
 	    
 	    <div className="max-w-4xl mx-auto relative z-10 text-center">
@@ -276,7 +276,7 @@ const Felicia = () => {
 	        </button>
 	      </form>
 	    </div>
-	  </section>
+	  </section> */}
 	
 	  {/* Footer */}
 	  <footer className="py-12 px-4 bg-gradient-to-r from-gray-900 to-gray-800 text-white">

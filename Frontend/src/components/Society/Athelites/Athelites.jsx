@@ -23,9 +23,9 @@ export const Athelites = () => {
                         <p className="text-xl md:text-2xl text-center max-w-3xl mx-auto mb-8">
                             Manav Rachna University's Premier Sports Society
                         </p>
-                        <button className="bg-primary-600 hover:bg-primary-700 text-white font-bold py-3 px-8 rounded-full transform hover:scale-105 transition-all duration-300 shadow-lg">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUxm28UF8rWU5Q1dqvKQHqaNxsyw6KvwcamiKjNbhN0i9gpA/viewform" className="bg-primary-600 hover:bg-primary-700 text-white font-bold py-3 px-8 rounded-full transform hover:scale-105 transition-all duration-300 shadow-lg">
                             Join Our Team
-                        </button>
+                        </a>
                     </div>
                 </header>
 
@@ -320,7 +320,7 @@ export const Athelites = () => {
                 </section>
 
                 {/* Contact Section */}
-                <section className="py-16 px-4 md:px-8 bg-gray-50">
+                {/* <section className="py-16 px-4 md:px-8 bg-gray-50">
                     <div className="max-w-7xl mx-auto">
                         <div className="text-center mb-12">
                             <h2 className="text-3xl md:text-4xl font-bold mb-4">Contact Us</h2>
@@ -425,7 +425,7 @@ export const Athelites = () => {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
 
                 {/* Footer */}
                 <footer className="bg-gray-900 text-white py-12 px-4 md:px-8">

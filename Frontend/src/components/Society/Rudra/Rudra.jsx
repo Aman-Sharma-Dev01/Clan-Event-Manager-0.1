@@ -117,12 +117,12 @@ import "./Rudra.css"
                             Unleash the rhythm. Feel the beat. Dance like nobody's watching.
                         </p>
                         <div className="flex flex-wrap justify-center gap-4">
-                            <button className="bg-gradient-to-r from-primary-600 to-pink-600 hover:from-primary-500 hover:to-pink-500 text-white font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUxm28UF8rWU5Q1dqvKQHqaNxsyw6KvwcamiKjNbhN0i9gpA/viewform" className="bg-gradient-to-r from-primary-600 to-pink-600 hover:from-primary-500 hover:to-pink-500 text-white font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
                                 Join Us
-                            </button>
-                            <button className="bg-transparent border-2 border-primary-500 text-white font-bold py-3 px-8 rounded-full hover:bg-primary-500/20 transition-all duration-300 transform hover:scale-105">
+                            </a>
+                            {/* <button className="bg-transparent border-2 border-primary-500 text-white font-bold py-3 px-8 rounded-full hover:bg-primary-500/20 transition-all duration-300 transform hover:scale-105">
                                 Upcoming Shows
-                            </button>
+                            </button> */}
                         </div>
                     </div>
 
@@ -284,16 +284,16 @@ import "./Rudra.css"
                             </div>
                         </div>
 
-                        <div className="text-center mt-12">
+                        {/* <div className="text-center mt-12">
                             <button className="bg-transparent border-2 border-primary-500 text-white font-bold py-3 px-8 rounded-full hover:bg-primary-500/20 transition-all duration-300 transform hover:scale-105">
                                 View All Performances
                             </button>
-                        </div>
+                        </div> */}
                     </div>
                 </section>
 
                 {/* Team Section */}
-                <section id="team" className="py-20 px-6 lg:px-12 relative">
+                {/* <section id="team" className="py-20 px-6 lg:px-12 relative">
                     <div className="max-w-6xl mx-auto">
                         <div className="text-center mb-16">
                             <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary-400 to-purple-500 inline-block">
@@ -304,7 +304,7 @@ import "./Rudra.css"
 
                         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
                     </div>
-                </section>
+                </section> */}
             </div>
         </div>
     )

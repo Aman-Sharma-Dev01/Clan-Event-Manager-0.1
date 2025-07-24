@@ -48,8 +48,16 @@ const Rehnuma = () => {
                                 <span className="px-4 py-2 bg-teal-100 text-teal-800 rounded-full font-medium hover:bg-teal-200 transition-colors duration-300">
                                     Competitions
                                 </span>
+                                
                             </div>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUxm28UF8rWU5Q1dqvKQHqaNxsyw6KvwcamiKjNbhN0i9gpA/viewform"
+                                    type="submit"
+                                    className="px-6 py-3 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors duration-300 transform hover:scale-105"
+                                >
+                                    Join Now
+                                </a>
                         </div>
+                        
                     </section>
 
                     <section className="max-w-6xl mx-auto mb-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -202,7 +210,7 @@ const Rehnuma = () => {
                         </div>
                     </section>
 
-                    <section className="max-w-4xl mx-auto mb-12 bg-white rounded-xl p-8 shadow-lg">
+                    {/* <section className="max-w-4xl mx-auto mb-12 bg-white rounded-xl p-8 shadow-lg">
                         <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center">Join Rehnuma</h2>
                         <p className="text-center mb-8">
                             Be a part of our vibrant literary community and express yourself through words and
@@ -265,15 +273,15 @@ const Rehnuma = () => {
                             </div>
 
                             <div className="text-center">
-                                <button
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUxm28UF8rWU5Q1dqvKQHqaNxsyw6KvwcamiKjNbhN0i9gpA/viewform"
                                     type="submit"
                                     className="px-6 py-3 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors duration-300 transform hover:scale-105"
                                 >
-                                    Submit Application
-                                </button>
+                                    Join Now
+                                </a>
                             </div>
                         </form>
-                    </section>
+                    </section> */}
                     {/* Next: "Add testimonials section from past members" */}
                 </main>
 
@@ -298,7 +306,7 @@ const Rehnuma = () => {
                             <i className="fa-brands fa-twitter text-indigo-600"></i>
                         </a>
                     </div>
-                    <p className="text-gray-600">© 2023 Rehnuma Literary Society. All rights reserved.</p>
+                    <p className="text-gray-600">© 2025 Rehnuma Literary Society. All rights reserved.</p>
                     {/* Next: "Add contact information and location map" */}
                 </footer>
             </div>

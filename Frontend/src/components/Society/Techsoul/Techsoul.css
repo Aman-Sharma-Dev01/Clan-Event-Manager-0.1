@@ -276,6 +276,7 @@ hr,
 p,
 pre {
     margin: 0;
+    
 }
 fieldset {
     margin: 0;
@@ -824,4 +825,7 @@ video {
         font-size: 60px;
         line-height: 66px;
     }
+}
+.font-semibold{
+    color: white;
 }

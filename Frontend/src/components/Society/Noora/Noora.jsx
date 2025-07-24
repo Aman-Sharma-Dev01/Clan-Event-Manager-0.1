@@ -45,12 +45,12 @@ export const Noora = () => {
                                     to create unforgettable fashion experiences that push boundaries and set new trends.
                                 </p>
                                 <div className="flex space-x-4">
-                                    <button className="px-6 py-3 bg-primary-600 text-white rounded-full hover:bg-primary-700 transition duration-300 transform hover:scale-105">
+                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUxm28UF8rWU5Q1dqvKQHqaNxsyw6KvwcamiKjNbhN0i9gpA/viewform" className="px-6 py-3 bg-primary-600 text-white rounded-full hover:bg-primary-700 transition duration-300 transform hover:scale-105">
                                         Join Us
-                                    </button>
-                                    <button className="px-6 py-3 border-2 border-primary-600 text-primary-600 rounded-full hover:bg-primary-50 transition duration-300 transform hover:scale-105">
+                                    </a>
+                                    {/* <button className="px-6 py-3 border-2 border-primary-600 text-primary-600 rounded-full hover:bg-primary-50 transition duration-300 transform hover:scale-105">
                                         Learn More
-                                    </button>
+                                    </button> */}
                                 </div>
                             </div>
                             <div className="order-1 md:order-2 relative">
@@ -289,7 +289,7 @@ export const Noora = () => {
                 </section>
 
                 {/* Contact Section */}
-                <section className="py-16 px-6 md:px-12 lg:px-24">
+                {/* <section className="py-16 px-6 md:px-12 lg:px-24">
                     <div className="max-w-7xl mx-auto">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                             <div>
@@ -358,7 +358,7 @@ export const Noora = () => {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
 
                 {/* Next: "Add an upcoming events section with dates and featured showcases" */}
                 {/* Next: "Add a section highlighting the creative team and leadership" */}

@@ -26,9 +26,9 @@ const Moksh= () => {
             <span className="text-2xl md:text-3xl font-light block mt-2">Singing Society</span>
           </h1>
           <p className="text-xl md:text-2xl max-w-2xl mx-auto mb-8 text-white/90">Unleashing voices, creating harmony, and crafting musical memories together</p>
-          <button className="bg-primary-500 hover:bg-primary-600 text-white py-3 px-8 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUxm28UF8rWU5Q1dqvKQHqaNxsyw6KvwcamiKjNbhN0i9gpA/viewform" className="bg-primary-500 hover:bg-primary-600 text-white py-3 px-8 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
             Join Our Journey
-          </button>
+          </a>
         </div>
       </header>
     
@@ -326,7 +326,7 @@ const Moksh= () => {
       </section>
     
       {/* Join Us Section */}
-      <section className="py-16 px-6 md:px-12 lg:px-24 relative">
+      {/* <section className="py-16 px-6 md:px-12 lg:px-24 relative">
         <div className="absolute inset-0 z-0 opacity-20">
           <img 
             src="https://images.unsplash.com/photo-1465847899084-d164df4dedc6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
@@ -403,7 +403,7 @@ const Moksh= () => {
           </div>
         </div>
       </section>
-    
+     */}
       {/* Footer */}
       <footer className="bg-indigo-950 text-white/80 py-12 px-6 md:px-12 lg:px-24">
         <div className="max-w-6xl mx-auto">
@@ -416,7 +416,8 @@ const Moksh= () => {
               <p className="mb-4">Unleashing voices, creating harmony, and crafting musical memories together since 2015.</p>
               <div className="flex space-x-4">
                 <a href="#" className="text-white hover:text-primary-300 transition-colors">
-                  <i className="fa-brands fa-facebook text-xl"></i></a></div></div></div></div></footer></div> 
+                  <i className="fa-brands fa-facebook text-xl"></i></a></div></div></div></div></footer>
+                  </div> 
         </div>
   )
 }
