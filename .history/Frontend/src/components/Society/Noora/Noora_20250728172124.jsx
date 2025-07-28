@@ -55,7 +55,7 @@ export const Noora = () => {
                             </div>
                             <div className="order-1 md:order-2 relative">
                                 <img
-                                    src="/Noora/eight.jpg"
+                                    src=""
                                     alt="Fashion designer at work"
                                     className="w-full h-[400px] object-cover rounded-lg shadow-xl"
                                     keywords="fashion design, designer, fashion creation, haute couture"

@@ -55,7 +55,7 @@ export const Noora = () => {
                             </div>
                             <div className="order-1 md:order-2 relative">
                                 <img
-                                    src="/Noora/eight.jpg"
+                                    src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=986&q=80"
                                     alt="Fashion designer at work"
                                     className="w-full h-[400px] object-cover rounded-lg shadow-xl"
                                     keywords="fashion design, designer, fashion creation, haute couture"
@@ -176,7 +176,7 @@ export const Noora = () => {
 
                             <div className="relative group overflow-hidden rounded-lg">
                                 <img
-                                    src="/Noora/fourth.jpg"
+                                    src="/Noora/first.jpg"
                                     alt="Fashion models backstage"
                                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                                     keywords="backstage, fashion show preparation, models getting ready"
@@ -191,7 +191,7 @@ export const Noora = () => {
 
                             <div className="relative group overflow-hidden rounded-lg">
                                 <img
-                                    src="/Noora/fifth.jpg"
+                                    src="https://images.unsplash.com/photo-1605902711622-cfb43c4437b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1969&q=80"
                                     alt="Fashion design workshop"
                                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                                     keywords="fashion design, workshop, creative process, design studio"
@@ -203,50 +203,6 @@ export const Noora = () => {
                                     </div>
                                 </div>
                             </div>
-
-
-
-
-
-
- <div className="relative group overflow-hidden rounded-lg">
-                                <img
-                                    src="/Noora/sixth.jpg"
-                                    alt="Fashion design workshop"
-                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                                    keywords="fashion design, workshop, creative process, design studio"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                                    <div className="text-white">
-                                        <h3 className="text-lg font-bold">Creative Process</h3>
-                                        <p className="text-sm">Where ideas come to life</p>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-
- <div className="relative group overflow-hidden rounded-lg">
-                                <img
-                                    src="/Noora/seventh.jpg"
-                                    alt="Fashion design closeup"
-                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                                    keywords="fashion detail, design, clothing, fabric"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                                    <div className="text-white">
-                                        <h3 className="text-lg font-bold">Design Details</h3>
-                                        <p className="text-sm">Craftsmanship excellence</p>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-
-
-
                         </div>
                     </div>
                 </section>
@@ -327,22 +283,6 @@ export const Noora = () => {
                                         <p className="text-sm text-gray-500">Fashion Blogger</p>
                                     </div>
                                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                             </div>
                         </div>
                     </div>
