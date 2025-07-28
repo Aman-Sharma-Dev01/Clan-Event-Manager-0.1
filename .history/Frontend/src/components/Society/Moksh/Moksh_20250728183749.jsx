@@ -252,14 +252,14 @@ const Moksh= () => {
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
                   <img 
-                    src="/Moksh/Aryan.jpg" 
+                    src="https://images.unsplash.com/photo-1654723011680-0e037c2a4f18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNDZ8MHwxfHNlYXJjaHwyfHx0ZXN0aW1vbmlhbHxlbnwwfHx8fDE3NTI5ODA5NzJ8MA&ixlib=rb-4.1.0&q=80&w=1080" 
                     alt="Member testimonial" 
                     className="w-full h-full object-cover"
                     keywords="testimonial, member, person, portrait"
                   />
                 </div>
                 <div>
-                  <h4 className="font-semibold">Aryan Singh</h4>
+                  <h4 className="font-semibold">Arjun Patel</h4>
                   <p className="text-white/70 text-sm">Member since 2020</p>
                 </div>
               </div>
@@ -277,14 +277,14 @@ const Moksh= () => {
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
                   <img 
-                    src="/Moksh/taman.jpg" 
+                    src="c:\Users\Shivam Kumar\Downloads\taman.jpg" 
                     alt="Member testimonial" 
                     className="w-full h-full object-cover"
                     keywords="testimonial, member, person, portrait"
                   />
                 </div>
                 <div>
-                  <h4 className="font-semibold">Taman Yadav</h4>
+                  <h4 className="font-semibold">Meera Khanna</h4>
                   <p className="text-white/70 text-sm">Member since 2019</p>
                 </div>
               </div>

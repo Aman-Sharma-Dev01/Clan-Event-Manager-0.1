@@ -74,7 +74,7 @@ const Moksh= () => {
             <div className="bg-gradient-to-br from-indigo-800/70 to-purple-800/70 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="h-48 relative overflow-hidden">
                 <img 
-                  src="/Moksh/akhil2.jpg" 
+                  src="/Moksh/akhil" 
                   alt="Annual Concert" 
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                   keywords="concert, performance, stage, audience, event"
@@ -91,7 +91,7 @@ const Moksh= () => {
             <div className="bg-gradient-to-br from-indigo-800/70 to-purple-800/70 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="h-48 relative overflow-hidden">
                 <img 
-                  src="/Moksh/first.jpg" 
+                  src="https://images.unsplash.com/photo-1485579149621-3123dd979885?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1631&q=80" 
                   alt="Singing workshop" 
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                   keywords="workshop, vocal training, singing lesson, music education"
@@ -108,7 +108,7 @@ const Moksh= () => {
             <div className="bg-gradient-to-br from-indigo-800/70 to-purple-800/70 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="h-48 relative overflow-hidden">
                 <img 
-                  src="/Moksh/second.jpg" 
+                  src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
                   alt="Singing competition" 
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                   keywords="competition, talent show, performance, music contest"
@@ -142,7 +142,7 @@ const Moksh= () => {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             <div className="overflow-hidden rounded-lg h-40 md:h-48 lg:h-56 hover:shadow-lg transition-all duration-300 transform hover:scale-105">
               <img 
-                src="/Moksh/akhil3.jpg" 
+                src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
                 alt="Performance on stage" 
                 className="w-full h-full object-cover"
                 keywords="singing, performance, concert, stage"
@@ -150,7 +150,7 @@ const Moksh= () => {
             </div>
             <div className="overflow-hidden rounded-lg h-40 md:h-48 lg:h-56 hover:shadow-lg transition-all duration-300 transform hover:scale-105">
               <img 
-                src="/Moksh/third.jpg" 
+                src="https://images.unsplash.com/photo-1460723237483-7a6dc9d0b212?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
                 alt="Concert audience" 
                 className="w-full h-full object-cover"
                 keywords="audience, concert, crowd, music event"
@@ -166,7 +166,7 @@ const Moksh= () => {
             </div>
             <div className="overflow-hidden rounded-lg h-40 md:h-48 lg:h-56 hover:shadow-lg transition-all duration-300 transform hover:scale-105">
               <img 
-                src="/Moksh/fourth.jpg" 
+                src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
                 alt="Group performance" 
                 className="w-full h-full object-cover"
                 keywords="group singing, choir, ensemble, performance"
@@ -174,7 +174,7 @@ const Moksh= () => {
             </div>
             <div className="overflow-hidden rounded-lg h-40 md:h-48 lg:h-56 hover:shadow-lg transition-all duration-300 transform hover:scale-105">
               <img 
-                src="/Moksh/sixth.jpg" 
+                src="https://images.unsplash.com/photo-1517230878791-4d28214057c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" 
                 alt="Music rehearsal" 
                 className="w-full h-full object-cover"
                 keywords="rehearsal, practice, singing group, music"
@@ -252,14 +252,14 @@ const Moksh= () => {
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
                   <img 
-                    src="/Moksh/Aryan.jpg" 
+                    src="https://images.unsplash.com/photo-1654723011680-0e037c2a4f18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNDZ8MHwxfHNlYXJjaHwyfHx0ZXN0aW1vbmlhbHxlbnwwfHx8fDE3NTI5ODA5NzJ8MA&ixlib=rb-4.1.0&q=80&w=1080" 
                     alt="Member testimonial" 
                     className="w-full h-full object-cover"
                     keywords="testimonial, member, person, portrait"
                   />
                 </div>
                 <div>
-                  <h4 className="font-semibold">Aryan Singh</h4>
+                  <h4 className="font-semibold">Arjun Patel</h4>
                   <p className="text-white/70 text-sm">Member since 2020</p>
                 </div>
               </div>
@@ -277,14 +277,14 @@ const Moksh= () => {
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
                   <img 
-                    src="/Moksh/taman.jpg" 
+                    src="https://images.unsplash.com/photo-1654723011681-98b30a0029ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNDZ8MHwxfHNlYXJjaHwzfHx0ZXN0aW1vbmlhbHxlbnwwfHx8fDE3NTI5ODA5NzJ8MA&ixlib=rb-4.1.0&q=80&w=1080" 
                     alt="Member testimonial" 
                     className="w-full h-full object-cover"
                     keywords="testimonial, member, person, portrait"
                   />
                 </div>
                 <div>
-                  <h4 className="font-semibold">Taman Yadav</h4>
+                  <h4 className="font-semibold">Meera Khanna</h4>
                   <p className="text-white/70 text-sm">Member since 2019</p>
                 </div>
               </div>

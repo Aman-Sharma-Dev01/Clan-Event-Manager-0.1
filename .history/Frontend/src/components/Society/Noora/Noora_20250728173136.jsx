@@ -89,7 +89,10 @@ export const Noora = () => {
                                 <p className="text-gray-600 mb-4">
                                     Secured the first position with our innovative designs and exceptional choreography.
                                 </p>
-                               
+                                <div className="flex items-center text-primary-600">
+                                    <span>Read more</span>
+                                    <span className="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+                                </div>
                             </div>
 
                             <div className="bg-white p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
@@ -103,7 +106,10 @@ export const Noora = () => {
                                     Recognized for our sustainable fashion initiatives and groundbreaking design
                                     concepts.
                                 </p>
-                               
+                                <div className="flex items-center text-primary-600">
+                                    <span>Read more</span>
+                                    <span className="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+                                </div>
                             </div>
 
                             <div className="bg-white p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
@@ -116,7 +122,10 @@ export const Noora = () => {
                                 <p className="text-gray-600 mb-4">
                                     Three consecutive wins showcasing our consistency and dedication to excellence.
                                 </p>
-                                
+                                <div className="flex items-center text-primary-600">
+                                    <span>Read more</span>
+                                    <span className="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -172,7 +181,8 @@ export const Noora = () => {
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                                     <div className="text-white">
-                                       
+                                        <h3 className="text-lg font-bold">Backstage Moments</h3>
+                                        <p className="text-sm">The magic behind the scenes</p>
                                     </div>
                                 </div>
                             </div>
@@ -186,7 +196,8 @@ export const Noora = () => {
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                                     <div className="text-white">
-                                        
+                                        <h3 className="text-lg font-bold">Creative Process</h3>
+                                        <p className="text-sm">Where ideas come to life</p>
                                     </div>
                                 </div>
                             </div>
@@ -205,7 +216,8 @@ export const Noora = () => {
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                                     <div className="text-white">
-                                      
+                                        <h3 className="text-lg font-bold">Creative Process</h3>
+                                        <p className="text-sm">Where ideas come to life</p>
                                     </div>
                                 </div>
                             </div>
@@ -222,7 +234,8 @@ export const Noora = () => {
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                                     <div className="text-white">
-                                        
+                                        <h3 className="text-lg font-bold">Design Details</h3>
+                                        <p className="text-sm">Craftsmanship excellence</p>
                                     </div>
                                 </div>
                             </div>

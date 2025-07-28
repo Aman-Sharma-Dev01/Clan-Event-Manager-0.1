@@ -252,7 +252,7 @@ const Moksh= () => {
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
                   <img 
-                    src="/Moksh/Aryan.jpg" 
+                    src="" 
                     alt="Member testimonial" 
                     className="w-full h-full object-cover"
                     keywords="testimonial, member, person, portrait"

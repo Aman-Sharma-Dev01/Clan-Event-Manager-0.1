@@ -11,7 +11,7 @@ const Moksh= () => {
       <header className="relative h-[70vh] overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/Moksh/enjoy.jpg" 
+            src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
             alt="Singers performing on stage" 
             className="w-full h-full object-cover opacity-60"
             keywords="concert, singers, performance, stage, microphone, music"
@@ -36,7 +36,7 @@ const Moksh= () => {
       <section className="py-16 px-6 md:px-12 lg:px-24">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 classWhite">About Moksh</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">About Moksh</h2>
             <div className="w-20 h-1 bg-primary-400 mx-auto"></div>
           </div>
           
@@ -62,11 +62,11 @@ const Moksh= () => {
         </div>
       </section>
     
-      {/* Resurrection 2024 */}
+      {/* Upcoming Events */}
       <section className="py-16 px-6 md:px-12 lg:px-24 bg-white/5">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 classWhite">Resurrection 2024</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Upcoming Events</h2>
             <div className="w-20 h-1 bg-primary-400 mx-auto"></div>
           </div>
           
@@ -74,51 +74,75 @@ const Moksh= () => {
             <div className="bg-gradient-to-br from-indigo-800/70 to-purple-800/70 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="h-48 relative overflow-hidden">
                 <img 
-                  src="/Moksh/akhil2.jpg" 
+                  src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
                   alt="Annual Concert" 
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                   keywords="concert, performance, stage, audience, event"
                 />
-                
+                <div className="absolute top-0 left-0 bg-primary-500 text-white px-3 py-1 m-4 rounded-full text-sm font-semibold">
+                  OCT 15
+                </div>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">Annual Harmony Concert</h3>
                 <p className="text-white/80 mb-4">Our flagship event featuring solo and group performances across various musical genres.</p>
-               
+                <div className="flex items-center text-white/70 text-sm">
+                  <span className="material-symbols-outlined text-primary-300 mr-1">schedule</span>
+                  <span>7:00 PM</span>
+                  <span className="mx-2">•</span>
+                  <span className="material-symbols-outlined text-primary-300 mr-1">location_on</span>
+                  <span>Main Auditorium</span>
+                </div>
               </div>
             </div>
             
             <div className="bg-gradient-to-br from-indigo-800/70 to-purple-800/70 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="h-48 relative overflow-hidden">
                 <img 
-                  src="/Moksh/first.jpg" 
+                  src="https://images.unsplash.com/photo-1485579149621-3123dd979885?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1631&q=80" 
                   alt="Singing workshop" 
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                   keywords="workshop, vocal training, singing lesson, music education"
                 />
-               
+                <div className="absolute top-0 left-0 bg-primary-500 text-white px-3 py-1 m-4 rounded-full text-sm font-semibold">
+                  NOV 5
+                </div>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">Vocal Technique Workshop</h3>
                 <p className="text-white/80 mb-4">Learn advanced vocal techniques from industry professionals and enhance your singing skills.</p>
-               
+                <div className="flex items-center text-white/70 text-sm">
+                  <span className="material-symbols-outlined text-primary-300 mr-1">schedule</span>
+                  <span>2:00 PM</span>
+                  <span className="mx-2">•</span>
+                  <span className="material-symbols-outlined text-primary-300 mr-1">location_on</span>
+                  <span>Music Room 102</span>
+                </div>
               </div>
             </div>
             
             <div className="bg-gradient-to-br from-indigo-800/70 to-purple-800/70 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="h-48 relative overflow-hidden">
                 <img 
-                  src="/Moksh/second.jpg" 
+                  src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
                   alt="Singing competition" 
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                   keywords="competition, talent show, performance, music contest"
                 />
-               
+                <div className="absolute top-0 left-0 bg-primary-500 text-white px-3 py-1 m-4 rounded-full text-sm font-semibold">
+                  DEC 10
+                </div>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">Winter Melodies Competition</h3>
                 <p className="text-white/80 mb-4">Showcase your talent in our seasonal singing competition with amazing prizes to be won.</p>
-                
+                <div className="flex items-center text-white/70 text-sm">
+                  <span className="material-symbols-outlined text-primary-300 mr-1">schedule</span>
+                  <span>5:30 PM</span>
+                  <span className="mx-2">•</span>
+                  <span className="material-symbols-outlined text-primary-300 mr-1">location_on</span>
+                  <span>Community Hall</span>
+                </div>
               </div>
             </div>
           </div>
@@ -135,14 +159,14 @@ const Moksh= () => {
       <section className="py-16 px-6 md:px-12 lg:px-24">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 classWhite">Our Gallery</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Gallery</h2>
             <div className="w-20 h-1 bg-primary-400 mx-auto"></div>
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             <div className="overflow-hidden rounded-lg h-40 md:h-48 lg:h-56 hover:shadow-lg transition-all duration-300 transform hover:scale-105">
               <img 
-                src="/Moksh/akhil3.jpg" 
+                src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
                 alt="Performance on stage" 
                 className="w-full h-full object-cover"
                 keywords="singing, performance, concert, stage"
@@ -150,7 +174,7 @@ const Moksh= () => {
             </div>
             <div className="overflow-hidden rounded-lg h-40 md:h-48 lg:h-56 hover:shadow-lg transition-all duration-300 transform hover:scale-105">
               <img 
-                src="/Moksh/third.jpg" 
+                src="https://images.unsplash.com/photo-1460723237483-7a6dc9d0b212?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
                 alt="Concert audience" 
                 className="w-full h-full object-cover"
                 keywords="audience, concert, crowd, music event"
@@ -166,7 +190,7 @@ const Moksh= () => {
             </div>
             <div className="overflow-hidden rounded-lg h-40 md:h-48 lg:h-56 hover:shadow-lg transition-all duration-300 transform hover:scale-105">
               <img 
-                src="/Moksh/fourth.jpg" 
+                src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
                 alt="Group performance" 
                 className="w-full h-full object-cover"
                 keywords="group singing, choir, ensemble, performance"
@@ -174,7 +198,7 @@ const Moksh= () => {
             </div>
             <div className="overflow-hidden rounded-lg h-40 md:h-48 lg:h-56 hover:shadow-lg transition-all duration-300 transform hover:scale-105">
               <img 
-                src="/Moksh/sixth.jpg" 
+                src="https://images.unsplash.com/photo-1517230878791-4d28214057c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" 
                 alt="Music rehearsal" 
                 className="w-full h-full object-cover"
                 keywords="rehearsal, practice, singing group, music"
@@ -218,7 +242,7 @@ const Moksh= () => {
       <section className="py-16 px-6 md:px-12 lg:px-24 bg-white/5">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 classWhite">What Our Members Say</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">What Our Members Say</h2>
             <div className="w-20 h-1 bg-primary-400 mx-auto"></div>
           </div>
           
@@ -252,14 +276,14 @@ const Moksh= () => {
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
                   <img 
-                    src="/Moksh/Aryan.jpg" 
+                    src="https://images.unsplash.com/photo-1654723011680-0e037c2a4f18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNDZ8MHwxfHNlYXJjaHwyfHx0ZXN0aW1vbmlhbHxlbnwwfHx8fDE3NTI5ODA5NzJ8MA&ixlib=rb-4.1.0&q=80&w=1080" 
                     alt="Member testimonial" 
                     className="w-full h-full object-cover"
                     keywords="testimonial, member, person, portrait"
                   />
                 </div>
                 <div>
-                  <h4 className="font-semibold">Aryan Singh</h4>
+                  <h4 className="font-semibold">Arjun Patel</h4>
                   <p className="text-white/70 text-sm">Member since 2020</p>
                 </div>
               </div>
@@ -277,14 +301,14 @@ const Moksh= () => {
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
                   <img 
-                    src="/Moksh/taman.jpg" 
+                    src="https://images.unsplash.com/photo-1654723011681-98b30a0029ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzkyNDZ8MHwxfHNlYXJjaHwzfHx0ZXN0aW1vbmlhbHxlbnwwfHx8fDE3NTI5ODA5NzJ8MA&ixlib=rb-4.1.0&q=80&w=1080" 
                     alt="Member testimonial" 
                     className="w-full h-full object-cover"
                     keywords="testimonial, member, person, portrait"
                   />
                 </div>
                 <div>
-                  <h4 className="font-semibold">Taman Yadav</h4>
+                  <h4 className="font-semibold">Meera Khanna</h4>
                   <p className="text-white/70 text-sm">Member since 2019</p>
                 </div>
               </div>
@@ -383,7 +407,16 @@ const Moksh= () => {
       {/* Footer */}
       <footer className="bg-indigo-950 text-white/80 py-12 px-6 md:px-12 lg:px-24">
         <div className="max-w-6xl mx-auto">
-         </div></footer>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+            <div>
+              <div className="flex items-center space-x-2 mb-4">
+                <span className="material-symbols-outlined text-3xl text-primary-300">music_note</span>
+                <h3 className="text-2xl font-bold text-white">MOKSH</h3>
+              </div>
+              <p className="mb-4">Unleashing voices, creating harmony, and crafting musical memories together since 2015.</p>
+              <div className="flex space-x-4">
+                <a href="#" className="text-white hover:text-primary-300 transition-colors">
+                  <i className="fa-brands fa-facebook text-xl"></i></a></div></div></div></div></footer>
                   </div> 
         </div>
   )

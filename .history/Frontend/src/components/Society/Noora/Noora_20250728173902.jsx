@@ -89,7 +89,9 @@ export const Noora = () => {
                                 <p className="text-gray-600 mb-4">
                                     Secured the first position with our innovative designs and exceptional choreography.
                                 </p>
-                               
+                                <div className="flex items-center text-primary-600">
+                                  
+                                </div>
                             </div>
 
                             <div className="bg-white p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
