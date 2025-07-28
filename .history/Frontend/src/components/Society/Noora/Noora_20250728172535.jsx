@@ -19,7 +19,7 @@ export const Noora = () => {
                         <h1 className="text-5xl md:text-7xl font-bold mb-4 text-center animate-fade-in-down classWhite">NOORA</h1>
                         <p className="text-xl md:text-2xl italic text-center mb-6 classWhite">Fashion Society</p>
                         <div className="w-24 h-1 bg-primary-500 mb-8 transform transition-all duration-300 hover:w-32 hover:bg-primary-400"></div>
-                        <p className="text-center max-w-2xl text-lg classWhite ">
+                        <p className="text-center max-w-2xl text-lg">
                             The most prestigious and accomplished fashion society, known for creative excellence and
                             outstanding performances.
                         </p>
