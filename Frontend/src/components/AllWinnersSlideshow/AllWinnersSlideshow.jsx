@@ -92,7 +92,7 @@ const AllWinnersSlideshow = () => {
   // Removed renderTreasureWinnerCard as it's no longer needed
 
   return (
-    <div className="all-winners-slideshow-section bg-gray-900 text-white min-h-screen flex flex-col items-center justify-center p-4 sm:p-8 relative overflow-hidden">
+    <div id='all-winners' className="all-winners-slideshow-section bg-gray-900 text-white min-h-screen flex flex-col items-center justify-center p-4 sm:p-8 relative overflow-hidden">
       <canvas ref={canvasRef} className="confetti-canvas"></canvas>
 
       <div key={currentSlide.id} className="slideshow-content relative w-full max-w-4xl rounded-3xl shadow-2xl p-6 sm:p-10 text-center animate-fade-in-out border border-purple-700">

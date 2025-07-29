@@ -10,7 +10,7 @@ const Footer = () => {
     <footer className="footer-cta">
       <h2>Ready to Join the Adventure?</h2>
       <p>Connect with your clan, participate in events, and build lasting memories.</p>
-      <button onClick={toAbout} className="cta-btn">Get Started Today</button>
+      <a href="#all-winners"><button className="cta-btn">Get Started Today</button></a>
     </footer>
   );
 };

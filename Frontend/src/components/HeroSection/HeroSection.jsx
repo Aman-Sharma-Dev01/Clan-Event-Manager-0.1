@@ -19,7 +19,7 @@ const HeroSection = () => {
 
         <div className="home-btns">
         <a href="#society-section"><button >Join Now</button></a>
-        <button id='btn2' onClick={toEvent} >View Event</button>
+       <a href='#event-sec'> <button id='btn2' >View Event</button></a>
         </div>
         </div>
     </div>

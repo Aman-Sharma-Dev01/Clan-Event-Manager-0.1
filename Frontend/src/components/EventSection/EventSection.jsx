@@ -16,8 +16,8 @@ const EventSection = () => {
     navigate("/event");
   }
   return (
-    <section className="events-section">
-      <div className="events-header">
+    <section id="event-sec" className="events-section">
+      <div id="event-sec" className="events-header">
         <h2>Upcoming Events</h2>
         <button onClick={viewallEvents} className="view-all-btn">View All Events</button>
       </div>

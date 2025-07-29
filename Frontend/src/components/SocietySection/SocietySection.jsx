@@ -11,6 +11,7 @@ import gamenixLogo from "../../assets/SocietyLogo/gameinx.jpg"
 import atheliteLogo from "../../assets/SocietyLogo/athelites.jpg"
 import rudraLogo from "../../assets/SocietyLogo/rudra.png"
 import drishtiLogo from "../../assets/SocietyLogo/drishti.jpg"
+import DSWlogo from "../../assets/SocietyLogo/DSWlogo.png"
 
 const societies = [
   { name: "Khalbali", img:khalbaliLogo , path: "/khalbali-page"},
@@ -23,6 +24,10 @@ const societies = [
   { name: "Athelites", img: atheliteLogo , path: "/athelites-page"  },
   { name: "Rudra", img: rudraLogo ,  path: "/rudra-page" },
   { name: "Drishti", img: drishtiLogo , path: "/drishti-page"  },
+  { name: "Leo Club", img: DSWlogo , path: "/"  },
+  { name: "ISR Club", img: DSWlogo , path: "/"  },
+  { name: "Editorial Club", img: DSWlogo , path: "/"  },
+  { name: "IETE", img: DSWlogo , path: "/"  },
 ];
 
 const SocietySection = () => {
