@@ -12,7 +12,7 @@ const ForestRhinosPage = () => {
       <div className="forest-content">
         <section className="forest-about">
           
-<h2> The Unshakeable Force of Manav Rachna</h2>
+<h2>About the Forest Rhinos Clan: The Unshakeable Force of Manav Rachna</h2>
 
       <p>
         In a world that values speed and flash, one clan stands apart, defined by its deep-rooted strength and unstoppable will. We are the Forest Rhinos, the enduring and powerful foundation of Manav Rachna University.
