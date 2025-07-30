@@ -21,7 +21,7 @@ const Navbar = () => {
 
   const [isOpen, setIsOpen] = useState(false);
   const isAdmin = profile && adminIds.includes(profile._id);
-  const isDashboard = path === "/dashboard" || path === "/about" || path === "/event" ;
+  const isDashboard = path === "/dashboard" || path === "/about" || path === "/event" || path === "/wild-cats-page" || path === "/forest-rhinos-page" || path === "/air-falcons-page" || path === "/water-sharks-page" ;
   const isHome = path === "/";
 
   const toggleMenu = () => {
