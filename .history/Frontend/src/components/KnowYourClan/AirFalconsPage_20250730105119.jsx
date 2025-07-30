@@ -12,7 +12,7 @@ const AirFalconsPage = () => {
       <div className="airfalcons-content">
         <section className="airfalcons-about">
          
- <h2> Soaring Above the Horizon of Success</h2>
+ <h2>About the Air Falcons Clan: Soaring Above the Horizon of Success</h2>
 
       <p>
         While some clans prowl the earth and others navigate the seas, one clan claims the endless expanse of the sky. We are the Air Falcons, the masters of altitude and ambition at Manav Rachna University.
