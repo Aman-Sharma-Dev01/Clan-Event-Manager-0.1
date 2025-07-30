@@ -13,8 +13,9 @@ const HeroSection = () => {
     <div className='Hero-section'>
         <div className="mid-part">
 
-        <h1>Clan Event Manager</h1>
-        <p>Join your clan, participate in exciting events, and compete for glory.</p>
+        <h1>Aarambh</h1>
+        <p className='subtitle'>Where Every Passion finds its first step.</p>
+        <p>Join your Society, participate in exciting events, and compete for glory.</p>
         <p> Unite with your fellow clan members and make your mark!</p>
 
         <div className="home-btns">

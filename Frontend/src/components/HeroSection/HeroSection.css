@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&family=Montserrat:wght@400;700;800;900&display=swap');
+
+
 .Hero-section {
   background: rgba(0, 0, 0, 0.6) url(/clf_img-Photoroom.png);
   background-blend-mode: darken;
@@ -31,6 +34,10 @@
   font-size: 25px;
   color: #fff;
   margin: -4px;
+}
+.subtitle{
+  font-family: 'Montserrat', sans-serif;
+   font-weight: bold;
 }
 
 .home-btns {
