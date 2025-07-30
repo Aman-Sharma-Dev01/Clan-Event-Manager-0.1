@@ -11,7 +11,7 @@ const WildCatsPage = () => {
 
       <div className="wildcats-content">
         <section className="wildcats-about">
-          
+          <h2>About Wild Cats</h2>
           
 
 

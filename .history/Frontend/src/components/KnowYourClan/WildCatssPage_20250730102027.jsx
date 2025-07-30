@@ -11,11 +11,11 @@ const WildCatsPage = () => {
 
       <div className="wildcats-content">
         <section className="wildcats-about">
-          
+          <h2>About Wild Cats</h2>
           
 
 
-<h2> Ferocious in Spirit, United in Pride</h2>
+<h2>About the Wild Cats Clan: Ferocious in Spirit, United in Pride</h2>
 
       <p>
         In the vibrant ecosystem of Manav Rachna University, one clan roams with an unmatched spirit and a fierce determination to lead. We are the Wild Cats.
@@ -54,7 +54,7 @@ const WildCatsPage = () => {
       </p>
 
       <p className="final-call">
-       
+        <strong>Join the roar. We are the Wild Cats.</strong>
       </p>
 
 

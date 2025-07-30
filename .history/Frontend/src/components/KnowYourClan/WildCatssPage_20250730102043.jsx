@@ -11,7 +11,7 @@ const WildCatsPage = () => {
 
       <div className="wildcats-content">
         <section className="wildcats-about">
-          
+          <h2>About Wild Cats</h2>
           
 
 
@@ -54,7 +54,7 @@ const WildCatsPage = () => {
       </p>
 
       <p className="final-call">
-       
+        <strong>Join the roar. We are the Wild Cats.</strong>
       </p>
 
 
