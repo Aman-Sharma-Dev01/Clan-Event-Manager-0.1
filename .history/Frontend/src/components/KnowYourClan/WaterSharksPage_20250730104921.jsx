@@ -16,7 +16,7 @@ const WaterSharksPage = () => {
 
 
 
-      <h2> Dominating the Depths of Excellence</h2>
+      <h2>About the Water Sharks Clan: Dominating the Depths of Excellence</h2>
 
       <p>
         In the vast ocean of opportunity at Manav Rachna University, one clan navigates the currents with unparalleled focus and relentless drive. We are the Water Sharks.
