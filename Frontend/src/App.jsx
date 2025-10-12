@@ -28,6 +28,8 @@ import Rudra from './components/Society/Rudra/Rudra.jsx'
 import Athelites from './components/Society/Athelites/Athelites.jsx'
 import Gamenix from './components/Society/Gamenix/Gamenix.jsx'
 import Techsoul from './components/Society/Techsoul/Techsoul.jsx'
+import ClanPointsScoreCard from './components/ScoreCard/ClanPointsScoreCard.jsx'
+
 
 const App = () => {
   const location = useLocation();
@@ -54,7 +56,8 @@ const App = () => {
     <Routes>
      <Route exact path="/" element = {<Homepage/>} />
        <Route exact path="/dashboard" element = {token ? <Dashboard /> : <Navigate to={"/login"} />}/>
-        <Route exact path="/about" element = {<About />}/>
+        {/* <Route exact path="/about" element = {<About />}/> */}
+        <Route exact path="/about" element = {<ClanPointsScoreCard />}/>
        <Route exact path="/uploadevent" element={token ? <EventUpload /> : <Navigate to={"/login"} />}/>
 
        <Route exact path="/login" element = {<Login/>} />
